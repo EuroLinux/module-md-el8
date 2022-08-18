@@ -5390,3 +5390,1818 @@ data:
     - rubygems-0:3.0.3.1-108.module+el8.5.0+13719+08a8ba32.noarch
     - rubygems-devel-0:3.0.3.1-108.module+el8.5.0+13719+08a8ba32.noarch
 ...
+---
+document: modulemd
+version: 2
+data:
+  name: llvm-toolset
+  stream: rhel8
+  version: '8060020220204053142'
+  context: d63f516d
+  arch: i686
+  license:
+    module:
+    - MIT
+    content:
+    - NCSA
+    - NCSA and MIT
+    - NCSA or MIT
+  summary: LLVM
+  description: LLVM Tools and libraries
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.6.0
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      clang:
+        rationale: clang tools and libraries
+        ref: stream-rhel-8-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      compiler-rt:
+        rationale: LLVM compiler intrinsic and sanitizer libraries
+        ref: stream-rhel-8-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      libomp:
+        rationale: LLVM OpenMP runtime
+        ref: stream-rhel-8-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      lld:
+        rationale: LLVM linker
+        ref: stream-rhel-8-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      lldb:
+        rationale: lldb debugger
+        ref: stream-rhel-8-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      llvm:
+        rationale: LLVM tools and libraries
+        ref: stream-rhel-8-rhel-8.6.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      llvm-toolset:
+        rationale: Meta package for llvm-toolset providing scl enable scripts.
+        ref: stream-rhel-8-rhel-8.6.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      python-lit:
+        rationale: Lit test runner for LLVM
+        ref: stream-rhel-8-rhel-8.6.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - clang
+    - clang-analyzer
+    - clang-devel
+    - clang-libs
+    - clang-tools-extra
+    - git-clang-format
+    - lld
+    - lld-libs
+    - lldb
+    - lldb-devel
+    - llvm
+    - llvm-devel
+    - llvm-libs
+  profiles:
+    common:
+      rpms:
+      - llvm-toolset
+  artifacts:
+    rpms:
+    - python3-lit-0:13.0.1-1.module+el8.6.0+14118+d530a951.noarch
+    - llvm-toolset-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-devel-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-doc-0:13.0.1-1.module+el8.6.0+14118+d530a951.noarch
+    - llvm-libs-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-static-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-test-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-googletest-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-debugsource-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-devel-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-libs-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-test-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - lld-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - lld-devel-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - lld-libs-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - lld-debugsource-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - lld-debuginfo-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - lld-libs-debuginfo-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - compiler-rt-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - compiler-rt-debugsource-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - compiler-rt-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - clang-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - clang-libs-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - clang-devel-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - clang-resource-filesystem-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - clang-analyzer-0:13.0.1-1.module+el8.6.0+14118+d530a951.noarch
+    - clang-tools-extra-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - git-clang-format-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - python3-clang-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - clang-debugsource-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - clang-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - clang-libs-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - clang-tools-extra-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - lldb-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - lldb-devel-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - python3-lldb-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - lldb-debugsource-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - lldb-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-devel-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-test-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-debugsource-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-test-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+...
+---
+document: modulemd
+version: 2
+data:
+  name: rust-toolset
+  stream: rhel8
+  version: '8060020220125235043'
+  context: eab6f2ea
+  arch: i686
+  license:
+    module:
+    - MIT
+    content:
+    - (ASL 2.0 or MIT) and (BSD and MIT)
+    - ASL 2.0 or MIT
+  summary: Rust
+  description: Rust Toolset
+  dependencies:
+  - buildrequires:
+      llvm-toolset:
+      - rhel8
+      platform:
+      - el8.6.0
+      rust-toolset:
+      - rhel8
+    requires:
+      llvm-toolset:
+      - rhel8
+      platform:
+      - el8
+  components:
+    rpms:
+      rust:
+        rationale: Rust compiler and tools
+        ref: stream-rhel-8-rhel-8.6.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rust-toolset:
+        rationale: Meta package for rust-toolset.
+        ref: stream-rhel-8-rhel-8.6.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - cargo
+    - cargo-doc
+    - clippy
+    - rls
+    - rust
+    - rust-analysis
+    - rust-doc
+    - rust-gdb
+    - rust-lldb
+    - rust-src
+    - rust-std-static
+    - rust-toolset
+    - rustfmt
+  profiles:
+    common:
+      rpms:
+      - rust-toolset
+  artifacts:
+    rpms:
+    - rust-std-static-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rustfmt-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - cargo-debuginfo-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - clippy-debuginfo-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rls-debuginfo-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rust-src-0:1.58.1-1.module+el8.6.0+14021+586eff1a.noarch
+    - rustfmt-debuginfo-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - clippy-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rust-doc-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rust-debugsource-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rust-std-static-wasm32-unknown-unknown-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rust-analysis-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rust-debuginfo-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - cargo-doc-0:1.58.1-1.module+el8.6.0+14021+586eff1a.noarch
+    - rls-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rust-toolset-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rust-gdb-0:1.58.1-1.module+el8.6.0+14021+586eff1a.noarch
+    - rust-debugger-common-0:1.58.1-1.module+el8.6.0+14021+586eff1a.noarch
+    - rust-std-static-wasm32-wasi-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rust-lldb-0:1.58.1-1.module+el8.6.0+14021+586eff1a.noarch
+    - cargo-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rust-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+...
+---
+document: modulemd
+version: 2
+data:
+  name: virt
+  stream: rhel
+  version: '8060020220225074856'
+  context: d63f516d
+  arch: i686
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 2.0
+    - GPLv2 and GPLv2+ and CC-BY
+    - GPLv2+
+    - GPLv2+ or Artistic
+    - LGPLv2
+    - LGPLv2+
+    - LGPLv2+ and BSD
+  summary: Virtualization module
+  description: A virtualization module
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.6.0
+    requires:
+      platform:
+      - el8
+      virt:
+      - rhel
+  components:
+    rpms:
+      SLOF:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - ppc64le
+      hivex:
+        rationale: libguestfs dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libguestfs:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libguestfs-winsupport:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '5'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libiscsi:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libnbd:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libtpms:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libvirt:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libvirt-dbus:
+        rationale: libvirt-dbus is part of the virtualization module
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libvirt-python:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      nbdkit:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '5'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      netcf:
+        rationale: libvirt dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      perl-Sys-Virt:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      qemu-kvm:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      seabios:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - ppc64le
+        - x86_64
+      sgabios:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - ppc64le
+        - x86_64
+      supermin:
+        rationale: libguestfs dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      swtpm:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      virt-v2v:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '6'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  filter:
+    rpms:
+    - ocaml-hivex
+    - ocaml-hivex-debuginfo
+    - ocaml-hivex-devel
+    - ocaml-libguestfs
+    - ocaml-libguestfs-debuginfo
+    - ocaml-libguestfs-devel
+    - ocaml-libnbd
+    - ocaml-libnbd-debuginfo
+    - ocaml-libnbd-devel
+    - qemu-kvm-tests
+    - qemu-kvm-tests-debuginfo
+  artifacts:
+    rpms:
+    - python3-libvirt-debuginfo-0:8.0.0-1.module+el8.6.0+13888+55157bfb.i686
+    - ocaml-libnbd-devel-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.i686
+    - libvirt-daemon-driver-storage-iscsi-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-nss-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - hivex-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - hivex-debugsource-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - sgabios-1:0.20170427git-3.module+el8.6.0+12861+13975d62.i686
+    - libvirt-daemon-driver-nwfilter-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-docs-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-network-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - ruby-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - perl-Sys-Virt-debuginfo-0:8.0.0-1.module+el8.6.0+13888+55157bfb.i686
+    - netcf-libs-0:0.2.8-12.module+el8.6.0+12861+13975d62.i686
+    - netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+12861+13975d62.i686
+    - libnbd-debugsource-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.i686
+    - libvirt-daemon-driver-storage-logical-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - ocaml-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.i686
+    - libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+12861+13975d62.i686
+    - netcf-debuginfo-0:0.2.8-12.module+el8.6.0+12861+13975d62.i686
+    - libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+12861+13975d62.i686
+    - libvirt-daemon-driver-storage-disk-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-storage-core-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-storage-mpath-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - netcf-0:0.2.8-12.module+el8.6.0+12861+13975d62.i686
+    - libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+12861+13975d62.i686
+    - libvirt-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-libs-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libguestfs-winsupport-0:8.6-1.module+el8.6.0+12861+13975d62.i686
+    - libiscsi-devel-0:1.18.0-8.module+el8.6.0+12861+13975d62.i686
+    - libvirt-client-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - ruby-hivex-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - ocaml-libnbd-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.i686
+    - libvirt-daemon-driver-network-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-dbus-0:1.3.0-2.module+el8.6.0+12861+13975d62.i686
+    - libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.i686
+    - netcf-debugsource-0:0.2.8-12.module+el8.6.0+12861+13975d62.i686
+    - libvirt-daemon-driver-storage-iscsi-direct-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libnbd-bash-completion-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.noarch
+    - ocaml-hivex-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - libvirt-daemon-config-nwfilter-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - python3-libnbd-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.i686
+    - libvirt-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-wireshark-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libiscsi-utils-0:1.18.0-8.module+el8.6.0+12861+13975d62.i686
+    - libvirt-libs-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - python3-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.i686
+    - libvirt-daemon-driver-storage-mpath-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-nodedev-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - ocaml-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - libnbd-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.i686
+    - perl-hivex-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - perl-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - perl-Sys-Virt-debugsource-0:8.0.0-1.module+el8.6.0+13888+55157bfb.i686
+    - libvirt-devel-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - sgabios-bin-1:0.20170427git-3.module+el8.6.0+12861+13975d62.noarch
+    - netcf-devel-0:0.2.8-12.module+el8.6.0+12861+13975d62.i686
+    - libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+12861+13975d62.i686
+    - libvirt-daemon-driver-storage-scsi-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - nbdfuse-debuginfo-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.i686
+    - libvirt-python-debugsource-0:8.0.0-1.module+el8.6.0+13888+55157bfb.i686
+    - libiscsi-0:1.18.0-8.module+el8.6.0+12861+13975d62.i686
+    - libvirt-daemon-driver-storage-logical-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - nbdfuse-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.i686
+    - libvirt-nss-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - ocaml-hivex-devel-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - libvirt-daemon-config-network-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libnbd-devel-0:1.6.0-5.module+el8.6.0+14156+faad4bd2.i686
+    - libvirt-daemon-driver-secret-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-nwfilter-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - hivex-devel-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - libvirt-debugsource-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - python3-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - libvirt-wireshark-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-secret-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-client-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - hivex-debuginfo-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - libvirt-daemon-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-storage-iscsi-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-storage-iscsi-direct-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-storage-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - python3-hivex-0:1.3.18-23.module+el8.6.0+12861+13975d62.i686
+    - libvirt-daemon-driver-nodedev-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+12861+13975d62.i686
+    - libvirt-daemon-driver-storage-disk-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - python3-libvirt-0:8.0.0-1.module+el8.6.0+13888+55157bfb.i686
+    - perl-Sys-Virt-0:8.0.0-1.module+el8.6.0+13888+55157bfb.i686
+    - libvirt-daemon-driver-interface-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-interface-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-storage-scsi-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+    - libvirt-daemon-driver-storage-core-debuginfo-0:8.0.0-5.module+el8.6.0+14344+04da0821.i686
+...
+---
+document: modulemd
+version: 2
+data:
+  name: ruby
+  stream: '2.6'
+  version: '8060020220527104428'
+  context: ad008a3a
+  arch: i686
+  license:
+    module:
+    - MIT
+    content:
+    - (BSD or Ruby) and PostgreSQL
+    - (Ruby or BSD) and (Ruby or BSD or Python) and (Ruby or BSD or LGPLv2+)
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+    - (Ruby or GPLv2) and UCD
+    - ASL 2.0
+    - GPLv2 and Ruby and MIT and OFL
+    - MIT
+    - Ruby or BSD
+    - Ruby or MIT
+  summary: An interpreter of object-oriented scripting language
+  description: Ruby is the interpreted scripting language for quick and easy object-oriented
+    programming.  It has many features to process text files and to do system management
+    tasks (as in Perl).  It is simple, straight-forward, and extensible.
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.6.0.z
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      ruby:
+        rationale: An interpreter of object-oriented scripting language
+        ref: stream-ruby-2.6-rhel-8.6.0
+        buildorder: '101'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      rubygem-abrt:
+        rationale: ABRT support for Ruby
+        ref: stream-ruby-2.6-rhel-8.6.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rubygem-bson:
+        rationale: Ruby Implementation of the BSON specification
+        ref: stream-ruby-2.6-rhel-8.6.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rubygem-mongo:
+        rationale: Ruby driver for MongoDB
+        ref: stream-ruby-2.6-rhel-8.6.0
+        buildorder: '103'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rubygem-mysql2:
+        rationale: A simple, fast Mysql library for Ruby, binding to libmysql
+        ref: stream-ruby-2.6-rhel-8.6.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rubygem-pg:
+        rationale: A Ruby interface to the PostgreSQL RDBMS
+        ref: stream-ruby-2.6-rhel-8.6.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - ruby
+    - ruby-devel
+    - ruby-libs
+    - rubygem-abrt
+    - rubygem-bigdecimal
+    - rubygem-bson
+    - rubygem-bundler
+    - rubygem-did_you_mean
+    - rubygem-io-console
+    - rubygem-irb
+    - rubygem-json
+    - rubygem-minitest
+    - rubygem-mongo
+    - rubygem-mysql2
+    - rubygem-net-telnet
+    - rubygem-openssl
+    - rubygem-pg
+    - rubygem-power_assert
+    - rubygem-psych
+    - rubygem-rake
+    - rubygem-rdoc
+    - rubygem-test-unit
+    - rubygem-xmlrpc
+    - rubygems
+    - rubygems-devel
+  buildopts:
+    rpms:
+      macros: '%_without_rubypick 1
+
+        '
+  references:
+    community: http://ruby-lang.org/
+    documentation: https://www.ruby-lang.org/en/documentation/
+    tracker: https://bugs.ruby-lang.org/
+  profiles:
+    common:
+      rpms:
+      - ruby
+  artifacts:
+    rpms:
+    - ruby-0:2.6.10-109.module+el8.6.0+15475+c55337b4.i686
+    - ruby-debuginfo-0:2.6.10-109.module+el8.6.0+15475+c55337b4.i686
+    - ruby-debugsource-0:2.6.10-109.module+el8.6.0+15475+c55337b4.i686
+    - ruby-devel-0:2.6.10-109.module+el8.6.0+15475+c55337b4.i686
+    - ruby-doc-0:2.6.10-109.module+el8.6.0+15475+c55337b4.noarch
+    - ruby-libs-0:2.6.10-109.module+el8.6.0+15475+c55337b4.i686
+    - ruby-libs-debuginfo-0:2.6.10-109.module+el8.6.0+15475+c55337b4.i686
+    - rubygem-abrt-0:0.3.0-4.module+el8.1.0+3653+beb38eb0.noarch
+    - rubygem-abrt-0:0.3.0-4.module+el8.1.0+3653+beb38eb0.src
+    - rubygem-abrt-doc-0:0.3.0-4.module+el8.1.0+3653+beb38eb0.noarch
+    - rubygem-bigdecimal-0:1.4.1-109.module+el8.6.0+15475+c55337b4.i686
+    - rubygem-bigdecimal-debuginfo-0:1.4.1-109.module+el8.6.0+15475+c55337b4.i686
+    - rubygem-bson-0:4.5.0-1.module+el8.1.0+3653+beb38eb0.i686
+    - rubygem-bson-0:4.5.0-1.module+el8.1.0+3653+beb38eb0.src
+    - rubygem-bson-debuginfo-0:4.5.0-1.module+el8.1.0+3653+beb38eb0.i686
+    - rubygem-bson-debugsource-0:4.5.0-1.module+el8.1.0+3653+beb38eb0.i686
+    - rubygem-bson-doc-0:4.5.0-1.module+el8.1.0+3653+beb38eb0.noarch
+    - rubygem-bundler-0:1.17.2-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygem-did_you_mean-0:1.3.0-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygem-io-console-0:0.4.7-109.module+el8.6.0+15475+c55337b4.i686
+    - rubygem-io-console-debuginfo-0:0.4.7-109.module+el8.6.0+15475+c55337b4.i686
+    - rubygem-irb-0:1.0.0-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygem-json-0:2.1.0-109.module+el8.6.0+15475+c55337b4.i686
+    - rubygem-json-debuginfo-0:2.1.0-109.module+el8.6.0+15475+c55337b4.i686
+    - rubygem-minitest-0:5.11.3-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygem-mongo-0:2.8.0-1.module+el8.1.0+3653+beb38eb0.noarch
+    - rubygem-mongo-0:2.8.0-1.module+el8.1.0+3653+beb38eb0.src
+    - rubygem-mongo-doc-0:2.8.0-1.module+el8.1.0+3653+beb38eb0.noarch
+    - rubygem-mysql2-0:0.5.2-1.module+el8.1.0+3653+beb38eb0.i686
+    - rubygem-mysql2-0:0.5.2-1.module+el8.1.0+3653+beb38eb0.src
+    - rubygem-mysql2-debuginfo-0:0.5.2-1.module+el8.1.0+3653+beb38eb0.i686
+    - rubygem-mysql2-debugsource-0:0.5.2-1.module+el8.1.0+3653+beb38eb0.i686
+    - rubygem-mysql2-doc-0:0.5.2-1.module+el8.1.0+3653+beb38eb0.noarch
+    - rubygem-net-telnet-0:0.2.0-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygem-openssl-0:2.1.2-109.module+el8.6.0+15475+c55337b4.i686
+    - rubygem-openssl-debuginfo-0:2.1.2-109.module+el8.6.0+15475+c55337b4.i686
+    - rubygem-pg-0:1.1.4-1.module+el8.1.0+3653+beb38eb0.i686
+    - rubygem-pg-0:1.1.4-1.module+el8.1.0+3653+beb38eb0.src
+    - rubygem-pg-debuginfo-0:1.1.4-1.module+el8.1.0+3653+beb38eb0.i686
+    - rubygem-pg-debugsource-0:1.1.4-1.module+el8.1.0+3653+beb38eb0.i686
+    - rubygem-pg-doc-0:1.1.4-1.module+el8.1.0+3653+beb38eb0.noarch
+    - rubygem-power_assert-0:1.1.3-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygem-psych-0:3.1.0-109.module+el8.6.0+15475+c55337b4.i686
+    - rubygem-psych-debuginfo-0:3.1.0-109.module+el8.6.0+15475+c55337b4.i686
+    - rubygem-rake-0:12.3.3-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygem-rdoc-0:6.1.2.1-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygem-test-unit-0:3.2.9-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygem-xmlrpc-0:0.3.0-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygems-0:3.0.3.1-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygems-devel-0:3.0.3.1-109.module+el8.6.0+15475+c55337b4.noarch
+...
+---
+document: modulemd
+version: 2
+data:
+  name: llvm-toolset
+  stream: rhel8
+  version: '8060020220527164039'
+  context: ad008a3a
+  arch: i686
+  license:
+    module:
+    - MIT
+    content:
+    - NCSA
+    - NCSA and MIT
+    - NCSA or MIT
+  summary: LLVM
+  description: LLVM Tools and libraries
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.6.0.z
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      clang:
+        rationale: clang tools and libraries
+        ref: stream-rhel-8-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      compiler-rt:
+        rationale: LLVM compiler intrinsic and sanitizer libraries
+        ref: stream-rhel-8-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      libomp:
+        rationale: LLVM OpenMP runtime
+        ref: stream-rhel-8-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      lld:
+        rationale: LLVM linker
+        ref: stream-rhel-8-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      lldb:
+        rationale: lldb debugger
+        ref: stream-rhel-8-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      llvm:
+        rationale: LLVM tools and libraries
+        ref: stream-rhel-8-rhel-8.6.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      llvm-toolset:
+        rationale: Meta package for llvm-toolset providing scl enable scripts.
+        ref: stream-rhel-8-rhel-8.6.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      python-lit:
+        rationale: Lit test runner for LLVM
+        ref: stream-rhel-8-rhel-8.6.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - clang
+    - clang-analyzer
+    - clang-devel
+    - clang-libs
+    - clang-tools-extra
+    - git-clang-format
+    - lld
+    - lld-libs
+    - lldb
+    - lldb-devel
+    - llvm
+    - llvm-devel
+    - llvm-libs
+  profiles:
+    common:
+      rpms:
+      - llvm-toolset
+  artifacts:
+    rpms:
+    - clang-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.i686
+    - clang-analyzer-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.noarch
+    - clang-debuginfo-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.i686
+    - clang-debugsource-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.i686
+    - clang-devel-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.i686
+    - clang-libs-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.i686
+    - clang-libs-debuginfo-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.i686
+    - clang-resource-filesystem-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.i686
+    - clang-tools-extra-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.i686
+    - clang-tools-extra-debuginfo-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.i686
+    - compiler-rt-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - compiler-rt-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - compiler-rt-debugsource-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - git-clang-format-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.i686
+    - libomp-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-debugsource-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-devel-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-test-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-test-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - lld-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - lld-debuginfo-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - lld-debugsource-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - lld-devel-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - lld-libs-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - lld-libs-debuginfo-0:13.0.1-2.module+el8.6.0+14118+d530a951.i686
+    - lldb-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - lldb-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - lldb-debugsource-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - lldb-devel-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-debugsource-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-devel-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-devel-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-doc-0:13.0.1-1.module+el8.6.0+14118+d530a951.noarch
+    - llvm-googletest-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-libs-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-libs-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-static-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-test-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-test-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - llvm-toolset-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - python3-clang-0:13.0.1-2.module+el8.6.0+15487+86bd2a95.i686
+    - python3-lit-0:13.0.1-1.module+el8.6.0+14118+d530a951.noarch
+    - python3-lldb-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+...
+---
+document: modulemd
+version: 2
+data:
+  name: virt
+  stream: rhel
+  version: '8060020220408104655'
+  context: d63f516d
+  arch: i686
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 2.0
+    - GPLv2 and GPLv2+ and CC-BY
+    - GPLv2+
+    - GPLv2+ or Artistic
+    - LGPLv2
+    - LGPLv2+
+    - LGPLv2+ and BSD
+  summary: Virtualization module
+  description: A virtualization module
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.6.0
+    requires:
+      platform:
+      - el8
+      virt:
+      - rhel
+  components:
+    rpms:
+      SLOF:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - ppc64le
+      hivex:
+        rationale: libguestfs dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libguestfs:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libguestfs-winsupport:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '5'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libiscsi:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libnbd:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libtpms:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libvirt:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libvirt-dbus:
+        rationale: libvirt-dbus is part of the virtualization module
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libvirt-python:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      nbdkit:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '5'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      netcf:
+        rationale: libvirt dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      perl-Sys-Virt:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      qemu-kvm:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      seabios:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - ppc64le
+        - x86_64
+      sgabios:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - ppc64le
+        - x86_64
+      supermin:
+        rationale: libguestfs dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      swtpm:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      virt-v2v:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '6'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  filter:
+    rpms:
+    - ocaml-hivex
+    - ocaml-hivex-debuginfo
+    - ocaml-hivex-devel
+    - ocaml-libguestfs
+    - ocaml-libguestfs-debuginfo
+    - ocaml-libguestfs-devel
+    - ocaml-libnbd
+    - ocaml-libnbd-debuginfo
+    - ocaml-libnbd-devel
+    - qemu-kvm-tests
+    - qemu-kvm-tests-debuginfo
+  artifacts:
+    rpms:
+    - ocaml-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-network-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-logical-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-libvirt-debuginfo-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-libs-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-scsi-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-debugsource-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-libs-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-config-nwfilter-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - sgabios-1:0.20170427git-3.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-client-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-interface-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-nodedev-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-iscsi-direct-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - nbdfuse-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-scsi-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-interface-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-network-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - ocaml-hivex-devel-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-libnbd-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-wireshark-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-client-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-wireshark-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - perl-hivex-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-docs-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - ocaml-libnbd-devel-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-libs-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-utils-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-secret-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libnbd-devel-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - ocaml-hivex-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - ruby-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-dbus-0:1.3.0-2.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-devel-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - ocaml-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - perl-Sys-Virt-debuginfo-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - hivex-debuginfo-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-logical-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libnbd-debugsource-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-debuginfo-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-hivex-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-iscsi-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-core-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-python-debugsource-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - ocaml-libnbd-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-nss-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-debugsource-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-config-network-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-nss-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-disk-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - ruby-hivex-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-nodedev-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - perl-Sys-Virt-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-secret-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-core-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-devel-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-mpath-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - hivex-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-devel-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - hivex-devel-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-iscsi-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - perl-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-nwfilter-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-iscsi-direct-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - sgabios-bin-1:0.20170427git-3.module+el8.6.0+14480+c0a3aa0f.noarch
+    - perl-Sys-Virt-debugsource-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - hivex-debugsource-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-mpath-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libnbd-bash-completion-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.noarch
+    - libvirt-daemon-driver-storage-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-libvirt-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - libnbd-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - nbdfuse-debuginfo-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-storage-disk-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libguestfs-winsupport-0:8.6-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-daemon-driver-nwfilter-debuginfo-0:8.0.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+...
+---
+document: modulemd
+version: 2
+data:
+  name: ruby
+  stream: '2.5'
+  version: '8060020220715152618'
+  context: ad008a3a
+  arch: i686
+  license:
+    module:
+    - MIT
+    content:
+    - (BSD or Ruby) and PostgreSQL
+    - (Ruby or BSD) and (Ruby or BSD or Python) and (Ruby or BSD or LGPLv2+)
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+    - (Ruby or GPLv2) and UCD
+    - ASL 2.0
+    - GPLv2 and Ruby and MIT and OFL
+    - MIT
+    - Ruby or BSD
+    - Ruby or MIT
+  summary: An interpreter of object-oriented scripting language
+  description: Ruby is the interpreted scripting language for quick and easy object-oriented
+    programming.  It has many features to process text files and to do system management
+    tasks (as in Perl).  It is simple, straight-forward, and extensible.
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.6.0.z
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      ruby:
+        rationale: An interpreter of object-oriented scripting language
+        ref: stream-ruby-2.5-rhel-8.6.0
+        buildorder: '101'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      rubygem-abrt:
+        rationale: ABRT support for Ruby
+        ref: stream-ruby-2.5-rhel-8.6.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rubygem-bson:
+        rationale: Ruby Implementation of the BSON specification
+        ref: stream-ruby-2.5-rhel-8.6.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rubygem-bundler:
+        rationale: Library and utilities to manage a Ruby application's gem dependencies
+        ref: stream-ruby-2.5-rhel-8.6.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rubygem-mongo:
+        rationale: Ruby driver for MongoDB
+        ref: stream-ruby-2.5-rhel-8.6.0
+        buildorder: '103'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rubygem-mysql2:
+        rationale: A simple, fast Mysql library for Ruby, binding to libmysql
+        ref: stream-ruby-2.5-rhel-8.6.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rubygem-pg:
+        rationale: A Ruby interface to the PostgreSQL RDBMS
+        ref: stream-ruby-2.5-rhel-8.6.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - ruby
+    - ruby-devel
+    - ruby-irb
+    - ruby-libs
+    - rubygem-abrt
+    - rubygem-bigdecimal
+    - rubygem-bson
+    - rubygem-bundler
+    - rubygem-did_you_mean
+    - rubygem-io-console
+    - rubygem-json
+    - rubygem-minitest
+    - rubygem-mongo
+    - rubygem-mysql2
+    - rubygem-net-telnet
+    - rubygem-openssl
+    - rubygem-pg
+    - rubygem-power_assert
+    - rubygem-psych
+    - rubygem-rake
+    - rubygem-rdoc
+    - rubygem-test-unit
+    - rubygem-xmlrpc
+    - rubygems
+    - rubygems-devel
+  buildopts:
+    rpms:
+      macros: '%_without_rubypick 1
+
+        '
+  references:
+    community: http://ruby-lang.org/
+    documentation: https://www.ruby-lang.org/en/documentation/
+    tracker: https://bugs.ruby-lang.org/
+  profiles:
+    common:
+      rpms:
+      - ruby
+  artifacts:
+    rpms:
+    - ruby-0:2.5.9-110.module+el8.6.0+15956+aa803fc1.i686
+    - ruby-debuginfo-0:2.5.9-110.module+el8.6.0+15956+aa803fc1.i686
+    - ruby-debugsource-0:2.5.9-110.module+el8.6.0+15956+aa803fc1.i686
+    - ruby-devel-0:2.5.9-110.module+el8.6.0+15956+aa803fc1.i686
+    - ruby-doc-0:2.5.9-110.module+el8.6.0+15956+aa803fc1.noarch
+    - ruby-irb-0:2.5.9-110.module+el8.6.0+15956+aa803fc1.noarch
+    - ruby-libs-0:2.5.9-110.module+el8.6.0+15956+aa803fc1.i686
+    - ruby-libs-debuginfo-0:2.5.9-110.module+el8.6.0+15956+aa803fc1.i686
+    - rubygem-abrt-0:0.3.0-4.module+el8.1.0+3656+f80bfa1d.noarch
+    - rubygem-abrt-0:0.3.0-4.module+el8.1.0+3656+f80bfa1d.src
+    - rubygem-abrt-doc-0:0.3.0-4.module+el8.1.0+3656+f80bfa1d.noarch
+    - rubygem-bigdecimal-0:1.3.4-110.module+el8.6.0+15956+aa803fc1.i686
+    - rubygem-bigdecimal-debuginfo-0:1.3.4-110.module+el8.6.0+15956+aa803fc1.i686
+    - rubygem-bson-0:4.3.0-2.module+el8.1.0+3656+f80bfa1d.src
+    - rubygem-bson-doc-0:4.3.0-2.module+el8.1.0+3656+f80bfa1d.noarch
+    - rubygem-bundler-0:1.16.1-4.module+el8.6.0+14229+2452087f.noarch
+    - rubygem-bundler-doc-0:1.16.1-4.module+el8.6.0+14229+2452087f.noarch
+    - rubygem-did_you_mean-0:1.2.0-110.module+el8.6.0+15956+aa803fc1.noarch
+    - rubygem-io-console-0:0.4.6-110.module+el8.6.0+15956+aa803fc1.i686
+    - rubygem-io-console-debuginfo-0:0.4.6-110.module+el8.6.0+15956+aa803fc1.i686
+    - rubygem-json-0:2.1.0-110.module+el8.6.0+15956+aa803fc1.i686
+    - rubygem-json-debuginfo-0:2.1.0-110.module+el8.6.0+15956+aa803fc1.i686
+    - rubygem-minitest-0:5.10.3-110.module+el8.6.0+15956+aa803fc1.noarch
+    - rubygem-mongo-0:2.5.1-2.module+el8.1.0+3656+f80bfa1d.noarch
+    - rubygem-mongo-0:2.5.1-2.module+el8.1.0+3656+f80bfa1d.src
+    - rubygem-mongo-doc-0:2.5.1-2.module+el8.1.0+3656+f80bfa1d.noarch
+    - rubygem-mysql2-0:0.4.10-4.module+el8.1.0+3656+f80bfa1d.src
+    - rubygem-mysql2-doc-0:0.4.10-4.module+el8.1.0+3656+f80bfa1d.noarch
+    - rubygem-net-telnet-0:0.1.1-110.module+el8.6.0+15956+aa803fc1.noarch
+    - rubygem-openssl-0:2.1.2-110.module+el8.6.0+15956+aa803fc1.i686
+    - rubygem-openssl-debuginfo-0:2.1.2-110.module+el8.6.0+15956+aa803fc1.i686
+    - rubygem-pg-0:1.0.0-2.module+el8.1.0+3656+f80bfa1d.src
+    - rubygem-pg-doc-0:1.0.0-2.module+el8.1.0+3656+f80bfa1d.noarch
+    - rubygem-power_assert-0:1.1.1-110.module+el8.6.0+15956+aa803fc1.noarch
+    - rubygem-psych-0:3.0.2-110.module+el8.6.0+15956+aa803fc1.i686
+    - rubygem-psych-debuginfo-0:3.0.2-110.module+el8.6.0+15956+aa803fc1.i686
+    - rubygem-rake-0:12.3.3-110.module+el8.6.0+15956+aa803fc1.noarch
+    - rubygem-rdoc-0:6.0.1.1-110.module+el8.6.0+15956+aa803fc1.noarch
+    - rubygem-test-unit-0:3.2.7-110.module+el8.6.0+15956+aa803fc1.noarch
+    - rubygem-xmlrpc-0:0.3.0-110.module+el8.6.0+15956+aa803fc1.noarch
+    - rubygems-0:2.7.6.3-110.module+el8.6.0+15956+aa803fc1.noarch
+    - rubygems-devel-0:2.7.6.3-110.module+el8.6.0+15956+aa803fc1.noarch
+...
+---
+document: modulemd
+version: 2
+data:
+  name: virt
+  stream: rhel
+  version: '8060020220616155742'
+  context: ad008a3a
+  arch: i686
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 2.0
+    - BSD
+    - GPLv2 and GPLv2+ and CC-BY
+    - GPLv2+
+    - GPLv2+ or Artistic
+    - LGPLv2
+    - LGPLv2+
+    - LGPLv2+ and BSD
+    - LGPLv3
+  summary: Virtualization module
+  description: A virtualization module
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.6.0.z
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      SLOF:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - ppc64le
+      hivex:
+        rationale: libguestfs dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libguestfs:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libguestfs-winsupport:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '5'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libiscsi:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libnbd:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libtpms:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libvirt:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libvirt-dbus:
+        rationale: libvirt-dbus is part of the virtualization module
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libvirt-python:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      nbdkit:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '5'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      netcf:
+        rationale: libvirt dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      perl-Sys-Virt:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      qemu-kvm:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      seabios:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - ppc64le
+        - x86_64
+      sgabios:
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - ppc64le
+        - x86_64
+      supermin:
+        rationale: libguestfs dep
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      swtpm:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      virt-v2v:
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.6.0
+        buildorder: '6'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  profiles:
+    common:
+      rpms:
+      - libguestfs
+      - libvirt-client
+      - libvirt-daemon-config-network
+      - libvirt-daemon-kvm
+  filter:
+    rpms:
+    - ocaml-hivex
+    - ocaml-hivex-debuginfo
+    - ocaml-hivex-devel
+    - ocaml-libguestfs
+    - ocaml-libguestfs-debuginfo
+    - ocaml-libguestfs-devel
+    - ocaml-libnbd
+    - ocaml-libnbd-debuginfo
+    - ocaml-libnbd-devel
+    - qemu-kvm-tests
+    - qemu-kvm-tests-debuginfo
+  artifacts:
+    rpms:
+    - hivex-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - hivex-debuginfo-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - hivex-debugsource-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - hivex-devel-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - libguestfs-winsupport-0:8.6-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-devel-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-utils-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+14480+c0a3aa0f.i686
+    - libnbd-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libnbd-bash-completion-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.noarch
+    - libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libnbd-debugsource-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libnbd-devel-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-client-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-client-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-config-network-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-config-nwfilter-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-interface-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-interface-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-network-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-network-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-nodedev-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-nodedev-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-nwfilter-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-nwfilter-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-secret-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-secret-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-core-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-core-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-disk-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-disk-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-iscsi-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-iscsi-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-iscsi-direct-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-iscsi-direct-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-logical-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-logical-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-mpath-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-mpath-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-scsi-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-daemon-driver-storage-scsi-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-dbus-0:1.3.0-2.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-debugsource-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-devel-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-docs-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-libs-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-libs-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-nss-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-nss-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-python-debugsource-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - libvirt-wireshark-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - libvirt-wireshark-debuginfo-0:8.0.0-5.2.module+el8.6.0+15256+3a0914fe.i686
+    - nbdfuse-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - nbdfuse-debuginfo-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-debuginfo-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-debugsource-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-devel-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-libs-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+14480+c0a3aa0f.i686
+    - ocaml-hivex-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - ocaml-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - ocaml-hivex-devel-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - ocaml-libnbd-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - ocaml-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - ocaml-libnbd-devel-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - perl-Sys-Virt-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - perl-Sys-Virt-debuginfo-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - perl-Sys-Virt-debugsource-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - perl-hivex-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - perl-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-hivex-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-libnbd-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-libvirt-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - python3-libvirt-debuginfo-0:8.0.0-1.module+el8.6.0+14480+c0a3aa0f.i686
+    - ruby-hivex-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - ruby-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+14480+c0a3aa0f.i686
+    - sgabios-1:0.20170427git-3.module+el8.6.0+14480+c0a3aa0f.i686
+    - sgabios-bin-1:0.20170427git-3.module+el8.6.0+14480+c0a3aa0f.noarch
+...
