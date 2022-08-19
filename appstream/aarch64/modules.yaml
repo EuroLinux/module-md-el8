@@ -46807,6 +46807,8 @@ data:
     - rubygem-json-0:2.1.0-109.module+el8.6.0+15475+c55337b4.aarch64
     - rubygem-json-debuginfo-0:2.1.0-109.module+el8.6.0+15475+c55337b4.aarch64
     - rubygem-minitest-0:5.11.3-109.module+el8.6.0+15475+c55337b4.noarch
+    - rubygem-mongo-0:2.8.0-1.module+el8.1.0+3653+beb38eb0.noarch
+    - rubygem-mongo-doc-0:2.8.0-1.module+el8.1.0+3653+beb38eb0.noarch
     - rubygem-mysql2-0:0.5.2-1.module+el8.1.0+3653+beb38eb0.aarch64
     - rubygem-mysql2-debuginfo-0:0.5.2-1.module+el8.1.0+3653+beb38eb0.aarch64
     - rubygem-mysql2-debugsource-0:0.5.2-1.module+el8.1.0+3653+beb38eb0.aarch64
