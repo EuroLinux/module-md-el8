@@ -7,6 +7,5 @@ Public repository with EuroLinux 8 modular metadata.
 For a new beta:
 
 1. Pull changes `git pull origin master`
-2. Remove everything from beta `rm -rf ./beta/*`
-3. Copy appstream and powertools `cp -r appstream ./beta && cp -r powertools ./beta`
-4. Commit and push
+2. Merge master with/create beta branch
+3. Push to GH
