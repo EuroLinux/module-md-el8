@@ -50079,3 +50079,113 @@ data:
     - utf8proc-debugsource-0:2.6.1-3.module+el8.7.0+15837+7cfc8c53.aarch64
     - utf8proc-devel-0:2.6.1-3.module+el8.7.0+15837+7cfc8c53.aarch64
 ...
+---
+document: modulemd
+version: 2
+data:
+  name: pki-core
+  stream: '10.6'
+  version: '8070020220726172732'
+  context: 6e5cea50
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - GPLv2 and LGPLv2
+    - LGPLv2+
+    - MPLv1.1 or GPLv2+ or LGPLv2+
+  summary: PKI Core module for PKI 10.6 or later
+  description: A module for PKI Core packages for PKI version 10.6 or later.
+  dependencies:
+  - buildrequires:
+      golang-ecosystem:
+      - '1.0'
+      pki-deps:
+      - '10.6'
+      platform:
+      - el8.7.0
+    requires:
+      pki-deps:
+      - '10.6'
+      platform:
+      - el8
+  components:
+    rpms:
+      jss:
+        rationale: JSS packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      ldapjdk:
+        rationale: LDAP JDK packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      pki-core:
+        rationale: PKI Core packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      tomcatjss:
+        rationale: TomcatJSS packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  references:
+    community: https://www.dogtagpki.org
+    documentation: https://www.dogtagpki.org
+    tracker: https://github.com/dogtagpki/pki/issues
+  artifacts:
+    rpms:
+    - idm-pki-acme-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-base-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-base-java-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-ca-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-kra-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-server-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-symkey-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - idm-pki-symkey-debuginfo-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - idm-pki-tools-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - idm-pki-tools-debuginfo-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - jss-0:4.9.4-1.module+el8.7.0+15532+95bac9ee.aarch64
+    - jss-debuginfo-0:4.9.4-1.module+el8.7.0+15532+95bac9ee.aarch64
+    - jss-debugsource-0:4.9.4-1.module+el8.7.0+15532+95bac9ee.aarch64
+    - jss-javadoc-0:4.9.4-1.module+el8.7.0+15532+95bac9ee.aarch64
+    - ldapjdk-0:4.23.0-1.module+el8.5.0+11983+6ba118b4.noarch
+    - ldapjdk-javadoc-0:4.23.0-1.module+el8.5.0+11983+6ba118b4.noarch
+    - pki-acme-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-base-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-base-java-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-ca-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-core-debuginfo-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - pki-core-debugsource-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - pki-kra-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-server-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-symkey-0:10.12.0-2.module+el8.6.0+14115+8b467244.aarch64
+    - pki-symkey-debuginfo-0:10.12.0-2.module+el8.6.0+14115+8b467244.aarch64
+    - pki-tools-0:10.12.0-2.module+el8.6.0+14115+8b467244.aarch64
+    - pki-tools-debuginfo-0:10.12.0-2.module+el8.6.0+14115+8b467244.aarch64
+    - python3-idm-pki-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - python3-pki-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - tomcatjss-0:7.7.1-1.module+el8.6.0+13291+248751b1.noarch
+...
