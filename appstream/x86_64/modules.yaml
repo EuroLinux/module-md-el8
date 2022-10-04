@@ -63167,3 +63167,64 @@ data:
     - scipy-0:1.0.0-21.module+el8.5.0+10858+05337455.src
     - scipy-debugsource-0:1.0.0-21.module+el8.5.0+10858+05337455.x86_64
 ...
+---
+document: modulemd
+version: 2
+data:
+  name: mercurial
+  stream: '6.2'
+  version: '8070020220729131051'
+  context: 3dbb8329
+  arch: x86_64
+  license:
+    module:
+    - MIT
+    content:
+    - GPLv2+
+  summary: Mercurial -- a distributed SCM
+  description: Mercurial is a fast, lightweight source control management system designed
+    for efficient handling of very large distributed projects.
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0
+      python36:
+      - '3.6'
+    requires:
+      platform:
+      - el8
+      python36:
+      - '3.6'
+  components:
+    rpms:
+      mercurial:
+        rationale: Mercurial -- a distributed SCM
+        ref: stream-mercurial-6.2-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - mercurial
+    - mercurial-chg
+    - mercurial-hgk
+  references:
+    community: https://www.mercurial-scm.org/
+    documentation: https://www.mercurial-scm.org/guide
+    tracker: https://www.mercurial-scm.org/wiki/BugTracker
+  profiles:
+    common:
+      rpms:
+      - mercurial
+  artifacts:
+    rpms:
+    - mercurial-0:6.2-1.module+el8.7.0+16197+6fb5eee8.x86_64
+    - mercurial-hgk-0:6.2-1.module+el8.7.0+16197+6fb5eee8.x86_64
+    - mercurial-chg-0:6.2-1.module+el8.7.0+16197+6fb5eee8.x86_64
+    - mercurial-debugsource-0:6.2-1.module+el8.7.0+16197+6fb5eee8.x86_64
+    - mercurial-debuginfo-0:6.2-1.module+el8.7.0+16197+6fb5eee8.x86_64
+    - mercurial-chg-debuginfo-0:6.2-1.module+el8.7.0+16197+6fb5eee8.x86_64
+...
