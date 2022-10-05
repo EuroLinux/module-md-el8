@@ -66288,3 +66288,70 @@ data:
     - golang-src-0:1.18.4-1.module+el8.7.0+16015+724888d8.noarch
     - golang-tests-0:1.18.4-1.module+el8.7.0+16015+724888d8.noarch
 ...
+---
+document: modulemd
+version: 2
+data:
+  name: mod_auth_openidc
+  stream: '2.3'
+  version: '8070020220413132751'
+  context: 3b9f49c4
+  arch: x86_64
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 2.0
+    - MIT
+  summary: Apache module suporting OpenID Connect authentication
+  description: This module enables an Apache 2.x web server to operate as an OpenID
+    Connect Relying Party and/or OAuth 2.0 Resource Server.
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      cjose:
+        rationale: Provides JOSE support
+        ref: stream-mod_auth_open_idc-2.3-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      mod_auth_openidc:
+        rationale: Provides the core functionality.
+        ref: stream-mod_auth_open_idc-2.3-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  references:
+    community: https://github.com/zmartzone/mod_auth_openidc
+    documentation: https://github.com/zmartzone/mod_auth_openidc/wiki
+    tracker: https://github.com/zmartzone/mod_auth_openidc/issues
+  profiles:
+    default:
+      description: Default mod_auth_openidc module installation
+      rpms:
+      - cjose
+      - mod_auth_openidc
+  artifacts:
+    rpms:
+    - cjose-0:0.6.1-2.module+el8+2454+f890a43a.x86_64
+    - cjose-debuginfo-0:0.6.1-2.module+el8+2454+f890a43a.x86_64
+    - cjose-debugsource-0:0.6.1-2.module+el8+2454+f890a43a.x86_64
+    - cjose-devel-0:0.6.1-2.module+el8+2454+f890a43a.x86_64
+    - mod_auth_openidc-0:2.4.9.4-1.module+el8.7.0+14797+4085fcb6.x86_64
+    - mod_auth_openidc-debuginfo-0:2.4.9.4-1.module+el8.7.0+14797+4085fcb6.x86_64
+    - mod_auth_openidc-debugsource-0:2.4.9.4-1.module+el8.7.0+14797+4085fcb6.x86_64
+...
