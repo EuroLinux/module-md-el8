@@ -49568,3 +49568,69 @@ data:
     - php-xmlrpc-0:7.4.19-4.module+el8.6.0+16316+906f6c6d.aarch64
     - php-xmlrpc-debuginfo-0:7.4.19-4.module+el8.6.0+16316+906f6c6d.aarch64
 ...
+---
+document: modulemd
+version: 2
+data:
+  name: squid
+  stream: '4'
+  version: '8060020220928033422'
+  context: ad008a3a
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - BSD
+    - GPLv2+ and (LGPLv2+ and MIT and BSD and Public Domain)
+  summary: Squid - Optimising Web Delivery
+  description: an initial version of the squid caching proxy module
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.6.0.z
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      libecap:
+        rationale: library needed by Squid
+        ref: stream-1.0-rhel-8.6.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      squid:
+        rationale: squid caching proxy
+        ref: stream-4-rhel-8.6.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - squid
+  references:
+    documentation: http://www.squid-cache.org/Doc/
+    tracker: https://bugs.squid-cache.org/index.cgi
+  profiles:
+    common:
+      rpms:
+      - squid
+  artifacts:
+    rpms:
+    - libecap-0:1.0.1-2.module+el8.1.0+4044+36416a77.aarch64
+    - libecap-debuginfo-0:1.0.1-2.module+el8.1.0+4044+36416a77.aarch64
+    - libecap-debugsource-0:1.0.1-2.module+el8.1.0+4044+36416a77.aarch64
+    - libecap-devel-0:1.0.1-2.module+el8.1.0+4044+36416a77.aarch64
+    - squid-7:4.15-3.module+el8.6.0+16749+7b6feaf0.2.aarch64
+    - squid-debuginfo-7:4.15-3.module+el8.6.0+16749+7b6feaf0.2.aarch64
+    - squid-debugsource-7:4.15-3.module+el8.6.0+16749+7b6feaf0.2.aarch64
+...
