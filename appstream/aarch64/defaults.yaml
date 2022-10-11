@@ -148,6 +148,15 @@ data:
 document: modulemd-defaults
 version: 1
 data:
+  module: mod_auth_openidc
+  stream: "2.3"
+  profiles:
+    2.3: [default]
+...
+---
+document: modulemd-defaults
+version: 1
+data:
   module: inkscape
   stream: "0.92.3"
   profiles:
@@ -209,6 +218,7 @@ data:
   profiles:
     3.5: [common]
     3.6: [common]
+    3.8: [common]
 ...
 ---
 document: modulemd-defaults
@@ -230,6 +240,7 @@ data:
     2.6: [common]
     2.7: [common]
     3.0: [common]
+    3.1: [common]
 ...
 ---
 document: modulemd-defaults
@@ -278,6 +289,7 @@ data:
   stream: "4.8"
   profiles:
     4.8: [common]
+    6.2: [common]
 ...
 ---
 document: modulemd-defaults
@@ -300,6 +312,7 @@ data:
     12: [common]
     14: [common]
     16: [common]
+    18: [common]
 ...
 ---
 document: modulemd-defaults
