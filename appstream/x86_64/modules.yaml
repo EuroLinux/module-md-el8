@@ -62948,3 +62948,61 @@ data:
     - toolbox-tests-0:0.0.99.3-0.6.module+el8.6.0+16771+28dfca77.x86_64
     - udica-0:0.2.6-4.module+el8.6.0+16771+28dfca77.noarch
 ...
+---
+document: modulemd
+version: 2
+data:
+  name: 389-ds
+  stream: '1.4'
+  version: '8060020221011200628'
+  context: 824efc52
+  arch: x86_64
+  license:
+    module:
+    - MIT
+    content:
+    - GPLv3+
+  summary: 389 Directory Server (base)
+  description: 389 Directory Server is an LDAPv3 compliant server.  The base package
+    includes the LDAP server and command line utilities for server administration.
+  dependencies:
+  - buildrequires:
+      llvm-toolset:
+      - rhel8
+      nodejs:
+      - '10'
+      platform:
+      - el8.6.0.z
+      rust-toolset:
+      - rhel8
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      389-ds-base:
+        rationale: Package in api
+        ref: stream-1.4-rhel-8.6.0
+        arches:
+        - aarch64
+        - ppc64le
+        - s390x
+        - x86_64
+  filter:
+    rpms:
+    - cockpit-389-ds
+  artifacts:
+    rpms:
+    - 389-ds-base-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.x86_64
+    - 389-ds-base-debuginfo-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.x86_64
+    - 389-ds-base-debugsource-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.x86_64
+    - 389-ds-base-devel-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.x86_64
+    - 389-ds-base-legacy-tools-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.x86_64
+    - 389-ds-base-legacy-tools-debuginfo-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.x86_64
+    - 389-ds-base-libs-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.x86_64
+    - 389-ds-base-libs-debuginfo-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.x86_64
+    - 389-ds-base-snmp-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.x86_64
+    - 389-ds-base-snmp-debuginfo-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.x86_64
+    - cockpit-389-ds-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.noarch
+    - python3-lib389-0:1.4.3.28-8.module+el8.6.0+16880+945f9b53.noarch
+...
