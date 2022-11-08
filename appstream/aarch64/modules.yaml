@@ -50234,3 +50234,3519 @@ data:
     - toolbox-tests-0:0.0.99.3-0.6.module+el8.6.0+15917+093ca6f8.aarch64
     - udica-0:0.2.6-4.module+el8.6.0+15917+093ca6f8.noarch
 ...
+---
+document: modulemd
+version: 2
+data:
+  name: ruby
+  stream: '3.1'
+  version: '8070020220503104335'
+  context: 3b9f49c4
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - (BSD or Ruby) and PostgreSQL
+    - (Ruby or BSD) and (Ruby or BSD or Python) and (Ruby or BSD or LGPLv2+)
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+    - (Ruby or GPLv2) and UCD
+    - BSD
+    - GPLv2 and Ruby and MIT and OFL
+    - MIT
+    - Ruby or BSD
+    - Ruby or MIT
+  summary: An interpreter of object-oriented scripting language
+  description: Ruby is the interpreted scripting language for quick and easy object-oriented
+    programming.  It has many features to process text files and to do system management
+    tasks (as in Perl).  It is simple, straight-forward, and extensible.
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      ruby:
+        rationale: An interpreter of object-oriented scripting language
+        ref: stream-ruby-3.1-rhel-8.7.0
+        buildorder: '101'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+      rubygem-abrt:
+        rationale: ABRT support for Ruby
+        ref: stream-ruby-3.1-rhel-8.7.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rubygem-mysql2:
+        rationale: A simple, fast Mysql library for Ruby, binding to libmysql
+        ref: stream-ruby-3.1-rhel-8.7.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      rubygem-pg:
+        rationale: A Ruby interface to the PostgreSQL RDBMS
+        ref: stream-ruby-3.1-rhel-8.7.0
+        buildorder: '102'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - ruby
+    - ruby-bundled-gems
+    - ruby-default-gems
+    - ruby-devel
+    - ruby-libs
+    - rubygem-abrt
+    - rubygem-bigdecimal
+    - rubygem-bundler
+    - rubygem-io-console
+    - rubygem-irb
+    - rubygem-json
+    - rubygem-minitest
+    - rubygem-mysql2
+    - rubygem-pg
+    - rubygem-power_assert
+    - rubygem-psych
+    - rubygem-rake
+    - rubygem-rdoc
+    - rubygem-test-unit
+    - rubygems
+    - rubygems-devel
+  references:
+    community: http://ruby-lang.org/
+    documentation: https://www.ruby-lang.org/en/documentation/
+    tracker: https://bugs.ruby-lang.org/
+  profiles:
+    common:
+      rpms:
+      - ruby
+  artifacts:
+    rpms:
+    - ruby-0:3.1.2-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - ruby-devel-0:3.1.2-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - ruby-libs-0:3.1.2-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygems-0:3.3.7-141.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygems-devel-0:3.3.7-141.module+el8.7.0+15051+29b42f0c.noarch
+    - ruby-default-gems-0:3.1.2-141.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygem-irb-0:1.4.1-141.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygem-rdoc-0:6.4.0-141.module+el8.7.0+15051+29b42f0c.noarch
+    - ruby-doc-0:3.1.2-141.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygem-bigdecimal-0:3.1.1-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-io-console-0:0.5.11-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-json-0:2.6.1-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-psych-0:4.0.3-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-bundler-0:2.3.7-141.module+el8.7.0+15051+29b42f0c.noarch
+    - ruby-bundled-gems-0:3.1.2-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-minitest-0:5.15.0-141.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygem-power_assert-0:2.0.1-141.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygem-rake-0:13.0.6-141.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygem-rbs-0:2.1.0-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-test-unit-0:3.5.3-141.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygem-rexml-0:3.2.5-141.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygem-rss-0:0.2.9-141.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygem-typeprof-0:0.21.2-141.module+el8.7.0+15051+29b42f0c.noarch
+    - ruby-debugsource-0:3.1.2-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - ruby-debuginfo-0:3.1.2-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - ruby-libs-debuginfo-0:3.1.2-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-bigdecimal-debuginfo-0:3.1.1-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-io-console-debuginfo-0:0.5.11-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-json-debuginfo-0:2.6.1-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-psych-debuginfo-0:4.0.3-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - ruby-bundled-gems-debuginfo-0:3.1.2-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-rbs-debuginfo-0:2.1.0-141.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-pg-0:1.3.2-1.module+el8.7.0+15125+b11ff321.aarch64
+    - rubygem-pg-doc-0:1.3.2-1.module+el8.7.0+15125+b11ff321.noarch
+    - rubygem-pg-debugsource-0:1.3.2-1.module+el8.7.0+15125+b11ff321.aarch64
+    - rubygem-pg-debuginfo-0:1.3.2-1.module+el8.7.0+15125+b11ff321.aarch64
+    - rubygem-mysql2-0:0.5.3-2.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-mysql2-doc-0:0.5.3-2.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygem-mysql2-debugsource-0:0.5.3-2.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-mysql2-debuginfo-0:0.5.3-2.module+el8.7.0+15051+29b42f0c.aarch64
+    - rubygem-abrt-0:0.4.0-1.module+el8.7.0+15051+29b42f0c.noarch
+    - rubygem-abrt-doc-0:0.4.0-1.module+el8.7.0+15051+29b42f0c.noarch
+...
+---
+document: modulemd
+version: 2
+data:
+  name: mercurial
+  stream: '6.2'
+  version: '8070020220729131051'
+  context: 3dbb8329
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - GPLv2+
+  summary: Mercurial -- a distributed SCM
+  description: Mercurial is a fast, lightweight source control management system designed
+    for efficient handling of very large distributed projects.
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0
+      python36:
+      - '3.6'
+    requires:
+      platform:
+      - el8
+      python36:
+      - '3.6'
+  components:
+    rpms:
+      mercurial:
+        rationale: Mercurial -- a distributed SCM
+        ref: stream-mercurial-6.2-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - mercurial
+    - mercurial-chg
+    - mercurial-hgk
+  references:
+    community: https://www.mercurial-scm.org/
+    documentation: https://www.mercurial-scm.org/guide
+    tracker: https://www.mercurial-scm.org/wiki/BugTracker
+  profiles:
+    common:
+      rpms:
+      - mercurial
+  artifacts:
+    rpms:
+    - mercurial-0:6.2-1.module+el8.7.0+16197+6fb5eee8.aarch64
+    - mercurial-hgk-0:6.2-1.module+el8.7.0+16197+6fb5eee8.aarch64
+    - mercurial-chg-0:6.2-1.module+el8.7.0+16197+6fb5eee8.aarch64
+    - mercurial-debugsource-0:6.2-1.module+el8.7.0+16197+6fb5eee8.aarch64
+    - mercurial-debuginfo-0:6.2-1.module+el8.7.0+16197+6fb5eee8.aarch64
+    - mercurial-chg-debuginfo-0:6.2-1.module+el8.7.0+16197+6fb5eee8.aarch64
+...
+---
+document: modulemd
+version: 2
+data:
+  name: httpd
+  stream: '2.4'
+  version: '8070020220725152258'
+  context: 3b9f49c4
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 2.0
+  summary: Apache HTTP Server
+  description: Apache httpd is a powerful, efficient, and extensible HTTP server.
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      httpd:
+        rationale: Apache httpd
+        ref: stream-2.4-rhel-8.7.0
+        buildorder: '10'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      mod_http2:
+        rationale: HTTP/2 support for Apache httpd
+        ref: stream-2.4-rhel-8.7.0
+        buildorder: '20'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      mod_md:
+        rationale: Certificate provisioning using ACME for Apache httpd
+        ref: stream-2.4-rhel-8.7.0
+        buildorder: '20'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - httpd
+    - httpd-devel
+    - httpd-filesystem
+    - mod_ssl
+  references:
+    documentation: https://httpd.apache.org/docs/2.4/
+    tracker: https://bz.apache.org/bugzilla/
+  profiles:
+    common:
+      rpms:
+      - httpd
+      - httpd-filesystem
+      - httpd-tools
+      - mod_http2
+      - mod_ssl
+    devel:
+      rpms:
+      - httpd
+      - httpd-devel
+      - httpd-filesystem
+      - httpd-tools
+    minimal:
+      rpms:
+      - httpd
+  artifacts:
+    rpms:
+    - httpd-0:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - httpd-debuginfo-0:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - httpd-debugsource-0:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - httpd-devel-0:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - httpd-filesystem-0:2.4.37-51.module+el8.7.0+16050+02173b8e.noarch
+    - httpd-manual-0:2.4.37-51.module+el8.7.0+16050+02173b8e.noarch
+    - httpd-tools-0:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - httpd-tools-debuginfo-0:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - mod_http2-0:1.15.7-5.module+el8.6.0+13996+01710940.aarch64
+    - mod_http2-debuginfo-0:1.15.7-5.module+el8.6.0+13996+01710940.aarch64
+    - mod_http2-debugsource-0:1.15.7-5.module+el8.6.0+13996+01710940.aarch64
+    - mod_ldap-0:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - mod_ldap-debuginfo-0:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - mod_md-1:2.0.8-8.module+el8.3.0+6814+67d1e611.aarch64
+    - mod_md-debuginfo-1:2.0.8-8.module+el8.3.0+6814+67d1e611.aarch64
+    - mod_md-debugsource-1:2.0.8-8.module+el8.3.0+6814+67d1e611.aarch64
+    - mod_proxy_html-1:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - mod_proxy_html-debuginfo-1:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - mod_session-0:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - mod_session-debuginfo-0:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - mod_ssl-1:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+    - mod_ssl-debuginfo-1:2.4.37-51.module+el8.7.0+16050+02173b8e.aarch64
+...
+---
+document: modulemd
+version: 2
+data:
+  name: rust-toolset
+  stream: rhel8
+  version: '8070020220719221411'
+  context: 0135b554
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - (ASL 2.0 or MIT) and (BSD and MIT)
+  summary: Rust
+  description: Rust Toolset
+  dependencies:
+  - buildrequires:
+      llvm-toolset:
+      - rhel8
+      platform:
+      - el8.7.0
+      rust-toolset:
+      - rhel8
+    requires:
+      llvm-toolset:
+      - rhel8
+      platform:
+      - el8
+  components:
+    rpms:
+      rust:
+        rationale: Rust compiler and tools
+        ref: stream-rhel-8-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - cargo
+    - cargo-doc
+    - clippy
+    - rls
+    - rust
+    - rust-analysis
+    - rust-doc
+    - rust-gdb
+    - rust-lldb
+    - rust-src
+    - rust-std-static
+    - rust-toolset
+    - rustfmt
+  profiles:
+    common:
+      rpms:
+      - rust-toolset
+  artifacts:
+    rpms:
+    - cargo-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - cargo-debuginfo-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - cargo-doc-0:1.62.1-1.module+el8.7.0+16002+ac58477b.noarch
+    - clippy-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - clippy-debuginfo-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rls-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rls-debuginfo-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rust-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rust-analysis-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rust-debugger-common-0:1.62.1-1.module+el8.7.0+16002+ac58477b.noarch
+    - rust-debuginfo-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rust-debugsource-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rust-doc-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rust-gdb-0:1.62.1-1.module+el8.7.0+16002+ac58477b.noarch
+    - rust-lldb-0:1.62.1-1.module+el8.7.0+16002+ac58477b.noarch
+    - rust-src-0:1.62.1-1.module+el8.7.0+16002+ac58477b.noarch
+    - rust-std-static-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rust-std-static-wasm32-unknown-unknown-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rust-std-static-wasm32-wasi-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rust-toolset-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rustfmt-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rustfmt-debuginfo-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+...
+---
+document: modulemd
+version: 2
+data:
+  name: pki-deps
+  stream: '10.6'
+  version: '8070020220624201252'
+  context: 3b9f49c4
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 1.1 and ASL 2.0
+    - ASL 2.0
+    - ASL 2.0 and (ASL 2.0 or LGPLv2+)
+    - ASL 2.0 and LGPLv2+
+    - ASL 2.0 and W3C
+    - ASL 2.0 and W3C and Public Domain
+    - BSD
+    - CDDL or GPLv2 with exception
+    - CDDL-1.0 or GPLv2 with exceptions
+    - CDDL-1.1 and GPLv2 with exceptions
+    - CDDL-1.1 or GPLv2
+    - CDDL-1.1 or GPLv2 with exceptions
+    - MIT and ASL 2.0
+    - MPLv1.1 or LGPLv2+ or ASL 2.0
+    - MPLv2.0 or GPLv2+ or LGPLv2+
+  summary: PKI Dependencies module for PKI 10.6 or later
+  description: A module to contain dependencies for PKI version 10.6 or later.
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      apache-commons-collections:
+        rationale: Apache Commons Collections packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      apache-commons-lang:
+        rationale: Apache Commons Lang packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      apache-commons-net:
+        rationale: Apache Commons Net packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      bea-stax:
+        rationale: BEA StAX packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      fasterxml-oss-parent:
+        rationale: FasterXML parent pom BuildRequired by jackson-parent.
+        ref: stream-rhel-8.1.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      glassfish-fastinfoset:
+        rationale: Fast XML Information Set package Requires xmlstreambuffer, xsom.
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '4'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      glassfish-jax-rs-api:
+        rationale: GlassFish JAX-RS API packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      glassfish-jaxb:
+        rationale: JAXB Reference Implementation BuildRequires istack-commons. Requires
+          glassfish-fastinfoset, glassfish-jaxb-api.
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '5'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      glassfish-jaxb-api:
+        rationale: GlassFish JAXB API packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      jackson-annotations:
+        rationale: Jackson Annotations packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '13'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      jackson-bom:
+        rationale: Jackson Bill-of-Materials POM packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '11'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      jackson-core:
+        rationale: Jackson Core packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '12'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      jackson-databind:
+        rationale: Jackson Data-binding packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '14'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      jackson-jaxrs-providers:
+        rationale: Jackson JAX-RS Providers packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '16'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      jackson-module-jaxb-annotations:
+        rationale: Jackson JAXB Annotations packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '15'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      jackson-parent:
+        rationale: Jackson Parent POM packages BuildRequires fasterxml-oss-parent.
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '10'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      jakarta-commons-httpclient:
+        rationale: Jakarta Commons HTTPClient packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      javassist:
+        rationale: Javassist packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      msv:
+        rationale: Multi-Schema Validator Requires relaxngDatatype.
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      pki-servlet-engine:
+        rationale: PKI Servlet Engine packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-nss:
+        rationale: Python binding for NSS Provides python-nss for pki-base-java.
+        ref: stream-pki-10.6-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      relaxngDatatype:
+        rationale: RELAX NG packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      relaxngcc:
+        rationale: RELAX NG Compiler Compiler Requires msv.
+        ref: stream-rhel-8.0.0-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      resteasy:
+        rationale: RESTEasy packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '17'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      slf4j:
+        rationale: Simple Logging Facade for Java Provides slf4j and slf4j-jdk14 for
+          pki-base-java.
+        ref: stream-maven-3.5-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      stax-ex:
+        rationale: StAX API extensions Requires bea-stax.
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      velocity:
+        rationale: Velocity packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      xalan-j2:
+        rationale: Xalan packages Provides xalan-j2 for pki-base-java.
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      xerces-j2:
+        rationale: Xerces packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      xml-commons-apis:
+        rationale: XML Commons APIs packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      xml-commons-resolver:
+        rationale: XML Commons Resolver packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      xml-stylebook:
+        rationale: XML Stylebook packages
+        ref: stream-javapackages-tools-201801-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      xmlstreambuffer:
+        rationale: XML Stream Buffer package Requires stax-ex.
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      xsom:
+        rationale: XML Schema Object Model (XSOM) Requires relaxngcc.
+        ref: stream-rhel-8.0.0-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  buildopts:
+    rpms:
+      macros: '%_with_xmvn_javadoc 1
+
+        %_without_asciidoc 1
+
+        %_without_avalon 1
+
+        %_without_bouncycastle 1
+
+        %_without_cython 1
+
+        %_without_dafsa 1
+
+        %_without_desktop 1
+
+        %_without_doxygen 1
+
+        %_without_dtd 1
+
+        %_without_eclipse 1
+
+        %_without_ehcache 1
+
+        %_without_emacs 1
+
+        %_without_equinox 1
+
+        %_without_fop 1
+
+        %_without_ftp 1
+
+        %_without_gradle 1
+
+        %_without_groovy 1
+
+        %_without_hadoop 1
+
+        %_without_hsqldb 1
+
+        %_without_itext 1
+
+        %_without_jackson 1
+
+        %_without_jmh 1
+
+        %_without_jna 1
+
+        %_without_jpa 1
+
+        %_without_junit5 1
+
+        %_without_logback 1
+
+        %_without_markdown 1
+
+        %_without_memcached 1
+
+        %_without_memoryfilesystem 1
+
+        %_without_obr 1
+
+        %_without_python 1
+
+        %_without_reporting 1
+
+        %_without_scm 1
+
+        %_without_snappy 1
+
+        %_without_spring 1
+
+        %_without_ssh 1
+
+        %_without_testlib 1
+
+        '
+  references:
+    community: http://www.dogtagpki.org
+    documentation: http://www.dogtagpki.org
+    tracker: https://pagure.io/dogtagpki/issues
+  filter:
+    rpms:
+    - apache-commons-collections-javadoc
+    - apache-commons-collections-testframework
+    - apache-commons-lang-javadoc
+    - apache-commons-net-javadoc
+    - bea-stax
+    - bea-stax-javadoc
+    - fasterxml-oss-parent
+    - glassfish-fastinfoset-javadoc
+    - glassfish-jax-rs-api
+    - glassfish-jax-rs-api-javadoc
+    - glassfish-jaxb
+    - glassfish-jaxb-api-javadoc
+    - glassfish-jaxb-bom
+    - glassfish-jaxb-bom-ext
+    - glassfish-jaxb-codemodel
+    - glassfish-jaxb-codemodel-annotation-compiler
+    - glassfish-jaxb-codemodel-parent
+    - glassfish-jaxb-external-parent
+    - glassfish-jaxb-parent
+    - glassfish-jaxb-rngom
+    - glassfish-jaxb-runtime-parent
+    - glassfish-jaxb-txw-parent
+    - jackson-annotations-javadoc
+    - jackson-bom
+    - jackson-core-javadoc
+    - jackson-databind-javadoc
+    - jackson-jaxrs-providers-datatypes
+    - jackson-jaxrs-providers-javadoc
+    - jackson-jaxrs-providers-parent
+    - jackson-module-jaxb-annotations-javadoc
+    - jackson-parent
+    - jakarta-commons-httpclient-demo
+    - jakarta-commons-httpclient-javadoc
+    - jakarta-commons-httpclient-manual
+    - jcl-over-slf4j
+    - jul-to-slf4j
+    - log4j-over-slf4j
+    - msv-demo
+    - msv-javadoc
+    - msv-manual
+    - msv-msv
+    - msv-rngconv
+    - msv-xmlgen
+    - msv-xsdlib
+    - relaxngDatatype-javadoc
+    - relaxngcc
+    - relaxngcc-javadoc
+    - resteasy-javadoc
+    - slf4j-ext
+    - slf4j-javadoc
+    - slf4j-jcl
+    - slf4j-log4j12
+    - slf4j-manual
+    - slf4j-sources
+    - stax-ex-javadoc
+    - velocity-demo
+    - velocity-javadoc
+    - velocity-manual
+    - xalan-j2-demo
+    - xalan-j2-javadoc
+    - xalan-j2-manual
+    - xalan-j2-xsltc
+    - xerces-j2-demo
+    - xerces-j2-javadoc
+    - xml-commons-apis-javadoc
+    - xml-commons-apis-manual
+    - xml-commons-resolver-javadoc
+    - xml-stylebook
+    - xml-stylebook-demo
+    - xml-stylebook-javadoc
+    - xmlstreambuffer-javadoc
+    - xsom-javadoc
+  artifacts:
+    rpms:
+    - apache-commons-collections-0:3.2.2-10.module+el8.1.0+3366+6dfb954c.noarch
+    - apache-commons-collections-javadoc-0:3.2.2-10.module+el8.1.0+3366+6dfb954c.noarch
+    - apache-commons-collections-testframework-0:3.2.2-10.module+el8.1.0+3366+6dfb954c.noarch
+    - apache-commons-lang-0:2.6-21.module+el8.1.0+3366+6dfb954c.noarch
+    - apache-commons-lang-javadoc-0:2.6-21.module+el8.1.0+3366+6dfb954c.noarch
+    - apache-commons-net-0:3.6-3.module+el8.3.0+6805+72837426.noarch
+    - apache-commons-net-javadoc-0:3.6-3.module+el8.3.0+6805+72837426.noarch
+    - bea-stax-0:1.2.0-16.module+el8.1.0+3366+6dfb954c.noarch
+    - bea-stax-api-0:1.2.0-16.module+el8.1.0+3366+6dfb954c.noarch
+    - bea-stax-javadoc-0:1.2.0-16.module+el8.1.0+3366+6dfb954c.noarch
+    - fasterxml-oss-parent-0:26-6.module+el8.3.0+6805+72837426.noarch
+    - glassfish-fastinfoset-0:1.2.13-9.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-fastinfoset-javadoc-0:1.2.13-9.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jax-rs-api-0:2.0.1-6.module+el8.3.0+6805+72837426.noarch
+    - glassfish-jax-rs-api-javadoc-0:2.0.1-6.module+el8.3.0+6805+72837426.noarch
+    - glassfish-jaxb-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-api-0:2.2.12-8.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-api-javadoc-0:2.2.12-8.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-bom-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-bom-ext-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-codemodel-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-codemodel-annotation-compiler-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-codemodel-parent-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-core-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-external-parent-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-parent-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-rngom-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-runtime-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-runtime-parent-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-txw-parent-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - glassfish-jaxb-txw2-0:2.2.11-11.module+el8.1.0+3366+6dfb954c.noarch
+    - jackson-annotations-0:2.10.0-1.module+el8.2.0+5059+3eb3af25.noarch
+    - jackson-annotations-javadoc-0:2.10.0-1.module+el8.2.0+5059+3eb3af25.noarch
+    - jackson-bom-0:2.10.0-1.module+el8.3.0+6805+72837426.noarch
+    - jackson-core-0:2.10.0-1.module+el8.2.0+5059+3eb3af25.noarch
+    - jackson-core-javadoc-0:2.10.0-1.module+el8.2.0+5059+3eb3af25.noarch
+    - jackson-databind-0:2.10.0-1.module+el8.2.0+5059+3eb3af25.noarch
+    - jackson-databind-javadoc-0:2.10.0-1.module+el8.2.0+5059+3eb3af25.noarch
+    - jackson-jaxrs-json-provider-0:2.9.9-1.module+el8.1.0+3832+9784644d.noarch
+    - jackson-jaxrs-providers-0:2.9.9-1.module+el8.1.0+3832+9784644d.noarch
+    - jackson-jaxrs-providers-datatypes-0:2.9.9-1.module+el8.1.0+3832+9784644d.noarch
+    - jackson-jaxrs-providers-javadoc-0:2.9.9-1.module+el8.1.0+3832+9784644d.noarch
+    - jackson-jaxrs-providers-parent-0:2.9.9-1.module+el8.1.0+3832+9784644d.noarch
+    - jackson-module-jaxb-annotations-0:2.7.6-4.module+el8.1.0+3366+6dfb954c.noarch
+    - jackson-module-jaxb-annotations-javadoc-0:2.7.6-4.module+el8.1.0+3366+6dfb954c.noarch
+    - jackson-parent-0:2.10-1.module+el8.3.0+6805+72837426.noarch
+    - jakarta-commons-httpclient-1:3.1-28.module+el8.1.0+3366+6dfb954c.noarch
+    - jakarta-commons-httpclient-demo-1:3.1-28.module+el8.1.0+3366+6dfb954c.noarch
+    - jakarta-commons-httpclient-javadoc-1:3.1-28.module+el8.1.0+3366+6dfb954c.noarch
+    - jakarta-commons-httpclient-manual-1:3.1-28.module+el8.1.0+3366+6dfb954c.noarch
+    - javassist-0:3.18.1-8.module+el8.1.0+3366+6dfb954c.noarch
+    - javassist-javadoc-0:3.18.1-8.module+el8.1.0+3366+6dfb954c.noarch
+    - jcl-over-slf4j-0:1.7.25-4.module+el8.1.0+3366+6dfb954c.noarch
+    - jul-to-slf4j-0:1.7.25-4.module+el8.1.0+3366+6dfb954c.noarch
+    - log4j-over-slf4j-0:1.7.25-4.module+el8.1.0+3366+6dfb954c.noarch
+    - msv-demo-1:2013.6.1-11.module+el8.3.0+6805+72837426.noarch
+    - msv-javadoc-1:2013.6.1-11.module+el8.3.0+6805+72837426.noarch
+    - msv-manual-1:2013.6.1-11.module+el8.3.0+6805+72837426.noarch
+    - msv-msv-1:2013.6.1-11.module+el8.3.0+6805+72837426.noarch
+    - msv-rngconv-1:2013.6.1-11.module+el8.3.0+6805+72837426.noarch
+    - msv-xmlgen-1:2013.6.1-11.module+el8.3.0+6805+72837426.noarch
+    - msv-xsdlib-1:2013.6.1-11.module+el8.3.0+6805+72837426.noarch
+    - pki-servlet-4.0-api-1:9.0.50-1.module+el8.7.0+15761+f86c9a56.noarch
+    - pki-servlet-engine-1:9.0.50-1.module+el8.7.0+15761+f86c9a56.noarch
+    - python-nss-debugsource-0:1.0.1-10.module+el8.1.0+3366+6dfb954c.aarch64
+    - python-nss-doc-0:1.0.1-10.module+el8.1.0+3366+6dfb954c.aarch64
+    - python3-nss-0:1.0.1-10.module+el8.1.0+3366+6dfb954c.aarch64
+    - python3-nss-debuginfo-0:1.0.1-10.module+el8.1.0+3366+6dfb954c.aarch64
+    - relaxngDatatype-0:2011.1-7.module+el8.1.0+3366+6dfb954c.noarch
+    - relaxngDatatype-javadoc-0:2011.1-7.module+el8.1.0+3366+6dfb954c.noarch
+    - relaxngcc-0:1.12-14.module+el8.3.0+6805+72837426.noarch
+    - relaxngcc-javadoc-0:1.12-14.module+el8.3.0+6805+72837426.noarch
+    - resteasy-0:3.0.26-6.module+el8.4.0+8891+bb8828ef.noarch
+    - resteasy-javadoc-0:3.0.26-6.module+el8.4.0+8891+bb8828ef.noarch
+    - slf4j-0:1.7.25-4.module+el8.1.0+3366+6dfb954c.noarch
+    - slf4j-ext-0:1.7.25-4.module+el8.1.0+3366+6dfb954c.noarch
+    - slf4j-javadoc-0:1.7.25-4.module+el8.1.0+3366+6dfb954c.noarch
+    - slf4j-jcl-0:1.7.25-4.module+el8.1.0+3366+6dfb954c.noarch
+    - slf4j-jdk14-0:1.7.25-4.module+el8.1.0+3366+6dfb954c.noarch
+    - slf4j-log4j12-0:1.7.25-4.module+el8.1.0+3366+6dfb954c.noarch
+    - slf4j-manual-0:1.7.25-4.module+el8.1.0+3366+6dfb954c.noarch
+    - slf4j-sources-0:1.7.25-4.module+el8.1.0+3366+6dfb954c.noarch
+    - stax-ex-0:1.7.7-8.module+el8.2.0+5723+4574fbff.noarch
+    - stax-ex-javadoc-0:1.7.7-8.module+el8.2.0+5723+4574fbff.noarch
+    - velocity-0:1.7-24.module+el8.1.0+3366+6dfb954c.noarch
+    - velocity-demo-0:1.7-24.module+el8.1.0+3366+6dfb954c.noarch
+    - velocity-javadoc-0:1.7-24.module+el8.1.0+3366+6dfb954c.noarch
+    - velocity-manual-0:1.7-24.module+el8.1.0+3366+6dfb954c.noarch
+    - xalan-j2-0:2.7.1-38.module+el8.1.0+3366+6dfb954c.noarch
+    - xalan-j2-demo-0:2.7.1-38.module+el8.1.0+3366+6dfb954c.noarch
+    - xalan-j2-javadoc-0:2.7.1-38.module+el8.1.0+3366+6dfb954c.noarch
+    - xalan-j2-manual-0:2.7.1-38.module+el8.1.0+3366+6dfb954c.noarch
+    - xalan-j2-xsltc-0:2.7.1-38.module+el8.1.0+3366+6dfb954c.noarch
+    - xerces-j2-0:2.11.0-34.module+el8.1.0+3366+6dfb954c.noarch
+    - xerces-j2-demo-0:2.11.0-34.module+el8.1.0+3366+6dfb954c.noarch
+    - xerces-j2-javadoc-0:2.11.0-34.module+el8.1.0+3366+6dfb954c.noarch
+    - xml-commons-apis-0:1.4.01-25.module+el8.1.0+3366+6dfb954c.noarch
+    - xml-commons-apis-javadoc-0:1.4.01-25.module+el8.1.0+3366+6dfb954c.noarch
+    - xml-commons-apis-manual-0:1.4.01-25.module+el8.1.0+3366+6dfb954c.noarch
+    - xml-commons-resolver-0:1.2-26.module+el8.1.0+3366+6dfb954c.noarch
+    - xml-commons-resolver-javadoc-0:1.2-26.module+el8.1.0+3366+6dfb954c.noarch
+    - xml-stylebook-0:1.0-0.25.b3_xalan2.svn313293.module+el8.3.0+6805+72837426.noarch
+    - xml-stylebook-demo-0:1.0-0.25.b3_xalan2.svn313293.module+el8.3.0+6805+72837426.noarch
+    - xml-stylebook-javadoc-0:1.0-0.25.b3_xalan2.svn313293.module+el8.3.0+6805+72837426.noarch
+    - xmlstreambuffer-0:1.5.4-8.module+el8.2.0+5723+4574fbff.noarch
+    - xmlstreambuffer-javadoc-0:1.5.4-8.module+el8.2.0+5723+4574fbff.noarch
+    - xsom-0:0-19.20110809svn.module+el8.1.0+3366+6dfb954c.noarch
+    - xsom-javadoc-0:0-19.20110809svn.module+el8.1.0+3366+6dfb954c.noarch
+...
+---
+document: modulemd
+version: 2
+data:
+  name: go-toolset
+  stream: rhel8
+  version: '8070020220720230209'
+  context: 347cc21f
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - BSD and Public Domain
+    - MIT
+  summary: Go
+  description: Go Tools and libraries
+  dependencies:
+  - buildrequires:
+      go-toolset:
+      - rhel8
+      platform:
+      - el8.7.0
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      delve:
+        rationale: A debugger for the Go programming language
+        ref: stream-rhel-8-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      go-toolset:
+        rationale: Meta package for go-toolset providing scl enable scripts.
+        ref: stream-rhel-8-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      golang:
+        rationale: Package providing the Go compiler toolchain.
+        ref: stream-rhel-8-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - golang
+  buildopts:
+    rpms:
+      whitelist:
+      - delve
+      - go-toolset
+      - go-toolset-1.10
+      - go-toolset-1.10-golang
+      - go-toolset-golang
+      - golang
+  profiles:
+    common:
+      rpms:
+      - go-toolset
+  artifacts:
+    rpms:
+    - go-toolset-0:1.18.4-1.module+el8.7.0+16015+724888d8.aarch64
+    - golang-0:1.18.4-1.module+el8.7.0+16015+724888d8.aarch64
+    - golang-bin-0:1.18.4-1.module+el8.7.0+16015+724888d8.aarch64
+    - golang-docs-0:1.18.4-1.module+el8.7.0+16015+724888d8.noarch
+    - golang-misc-0:1.18.4-1.module+el8.7.0+16015+724888d8.noarch
+    - golang-src-0:1.18.4-1.module+el8.7.0+16015+724888d8.noarch
+    - golang-tests-0:1.18.4-1.module+el8.7.0+16015+724888d8.noarch
+...
+---
+document: modulemd
+version: 2
+data:
+  name: python27
+  stream: '2.7'
+  version: '8070020220617114255'
+  context: 056aacbc
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 2.0
+    - ASL 2.0 and MIT
+    - ASL 2.0 and MIT and (MIT or GPL)
+    - BSD
+    - BSD and Boost and Public Domain
+    - BSD and Python
+    - BSD and Python and Unicode
+    - LGPLv2
+    - LGPLv2+ and Public Domain
+    - LGPLv3+ with exceptions
+    - MIT
+    - MIT and Public Domain
+    - MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0
+      or BSD)
+    - Public Domain
+    - Public Domain and BSD and Python and GPLv3+
+    - Python
+  summary: Python programming language, version 2.7
+  description: 'This module provides the Python 2.7 interpreter and additional Python
+
+    packages the users might need.'
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0
+      python27:
+      - '2.7'
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      Cython:
+        rationale: Language for writing Python extension modules. Build dependency
+          of numpy and PyYAML
+        ref: stream-0.28.1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      PyYAML:
+        rationale: YAML parser and emitter for Python
+        ref: stream-3.12-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      babel:
+        rationale: Tools for internationalizing Python applications
+        ref: stream-2.5.1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      numpy:
+        rationale: A fast multidimensional array facility for Python
+        ref: stream-1.14.2-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      pytest:
+        rationale: Simple powerful testing with Python
+        ref: stream-3.4.2-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-PyMySQL:
+        rationale: Python adapter for the MySQL/MariaDB databases
+        ref: stream-0.8.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-attrs:
+        rationale: Python attributes without boilerplate
+        ref: stream-17.4.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-backports:
+        rationale: Namespace for backported Python features
+        ref: stream-1.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-backports-ssl_match_hostname:
+        rationale: The ssl.match_hostname() function from Python 3. Dependency of
+          urllib3/requests.
+        ref: stream-3.5.0.1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-chardet:
+        rationale: Character encoding auto-detection in Python. Dependency of requests.
+        ref: stream-3.0.4-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-coverage:
+        rationale: Code coverage testing module for Python
+        ref: stream-4.5.1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-dns:
+        rationale: DNS toolkit for Python. Useful package for IPA and mailman.
+        ref: stream-1.15.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-docs:
+        rationale: Documentation for Python
+        ref: stream-2.7-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-docutils:
+        rationale: System for processing plaintext documentation
+        ref: stream-0.14-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-funcsigs:
+        rationale: Python function signatures from PEP362 for Python 2.6, 2.7 and
+          3.2+. Dependency of Pytest and mock.
+        ref: stream-1.0.2-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-idna:
+        rationale: Internationalized Domain Names in Applications (IDNA). Dependency
+          of requests.
+        ref: stream-2.5-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-ipaddress:
+        rationale: Port of the python 3.3+ ipaddress module to 2.6+. Dependency of
+          urllib3/requests.
+        ref: stream-1.0.18-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-jinja2:
+        rationale: General purpose template engine
+        ref: stream-2.10-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-lxml:
+        rationale: XML processing library
+        ref: stream-4.2.3-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-markupsafe:
+        rationale: Implements a XML/HTML/XHTML Markup safe string for Python
+        ref: stream-0.23-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-mock:
+        rationale: A Python Mocking and Patching Library for Testing
+        ref: stream-2.0.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-nose:
+        rationale: Discovery-based unit test extension for Python
+        ref: stream-1.3.7-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-pluggy:
+        rationale: The plugin manager stripped of pytest specific details
+        ref: stream-0.6.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-psycopg2:
+        rationale: Python adapter for the PostgreSQL database
+        ref: stream-2.7.4-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-py:
+        rationale: Library with cross-python path, ini-parsing, io, code, log facilities
+        ref: stream-1.5.3-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-pygments:
+        rationale: Syntax highlighting engine written in Python
+        ref: stream-2.2.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-pymongo:
+        rationale: Python driver for MongoDB
+        ref: stream-3.6.1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-pysocks:
+        rationale: A Python SOCKS client module. Dependency of urllib3/requests.
+        ref: stream-1.6.8-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-pytest-mock:
+        rationale: Thin-wrapper around the mock package for easier use with py.test.
+          Build dependency of requests.
+        ref: stream-1.9.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-requests:
+        rationale: HTTP library, written in Python, for human beings
+        ref: stream-2.20.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-setuptools_scm:
+        rationale: Blessed package to manage your versions by scm tags. Build dependency
+          of pytest and pytest-mock.
+        ref: stream-1.15.7-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-sqlalchemy:
+        rationale: Modular and flexible ORM library for python
+        ref: stream-1.3.2-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-urllib3:
+        rationale: Python HTTP library with thread-safe connection pooling and file
+          post. Dependency of requests.
+        ref: stream-1.23-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-virtualenv:
+        rationale: Tool to create isolated Python environments
+        ref: stream-15.1.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-wheel:
+        rationale: Used for unbundling of pip and setuptools
+        ref: stream-0.30.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python2:
+        rationale: Main Python language interpreter
+        ref: stream-2.7-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python2-pip:
+        rationale: Python Packaging ecosystem
+        ref: stream-9.0.3-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python2-rpm-macros:
+        rationale: Python 2 RPM macros - dependency of python2-devel
+        ref: stream-python27-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python2-setuptools:
+        rationale: Python Packaging ecosystem
+        ref: stream-39.0.1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python2-six:
+        rationale: Python 2 and 3 compatibility utilities
+        ref: stream-1.11.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      pytz:
+        rationale: Runtime requires of babel, and python2-babel
+        ref: stream-2017.2-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      scipy:
+        rationale: Scientific Tools for Python
+        ref: stream-1.0.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - babel
+    - python-sqlalchemy-doc
+    - python2
+    - python2-Cython
+    - python2-PyMySQL
+    - python2-attrs
+    - python2-babel
+    - python2-backports
+    - python2-backports-ssl_match_hostname
+    - python2-bson
+    - python2-chardet
+    - python2-coverage
+    - python2-debug
+    - python2-devel
+    - python2-dns
+    - python2-docs
+    - python2-docs-info
+    - python2-docutils
+    - python2-funcsigs
+    - python2-idna
+    - python2-ipaddress
+    - python2-jinja2
+    - python2-libs
+    - python2-lxml
+    - python2-markupsafe
+    - python2-mock
+    - python2-nose
+    - python2-numpy
+    - python2-numpy-doc
+    - python2-numpy-f2py
+    - python2-pip
+    - python2-pluggy
+    - python2-psycopg2
+    - python2-psycopg2-debug
+    - python2-psycopg2-tests
+    - python2-py
+    - python2-pygments
+    - python2-pymongo
+    - python2-pymongo-gridfs
+    - python2-pysocks
+    - python2-pytest
+    - python2-pytest-mock
+    - python2-pytz
+    - python2-pyyaml
+    - python2-requests
+    - python2-rpm-macros
+    - python2-scipy
+    - python2-setuptools
+    - python2-setuptools_scm
+    - python2-six
+    - python2-sqlalchemy
+    - python2-test
+    - python2-tkinter
+    - python2-tools
+    - python2-urllib3
+    - python2-virtualenv
+    - python2-wheel
+  buildopts:
+    rpms:
+      macros: '# Note that we cannot disable building of all Python 3 subpackages,
+
+        # because python2-devel (needed to build all Python 2 packages)
+
+        # has a runtime dependency on python3-rpm-generators, and that
+
+        # package requires python3-setuptools at runtime. By rebuilding
+
+        # python-setuptools SRPM with only python2, we overshadow the
+
+        # already built python3 subpackage and it is no longer
+
+        # available for python3-rpm-generators when building python-pip
+
+        # (or any other Python package).
+
+        # We can disable Python 3 in all packages but ...
+
+        %_without_python3 1
+
+        # ... we have to have a way to enable some of them as described
+
+        # above. With this macro, we can add some module-specific
+
+        # conditions for python3-* subpackages and other special cases.
+
+        # %_with_python27_module 1
+
+
+        # for: python-jinja2
+
+        %_with_python2 1
+
+
+        # to solve circular dependency between pytest and [attrs, pluggy]
+
+        # %_without_tests 1
+
+        '
+  references:
+    community: https://www.python.org/
+    documentation: https://docs.python.org/2.7/
+  profiles:
+    common:
+      rpms:
+      - python2
+      - python2-libs
+      - python2-pip
+      - python2-setuptools
+  filter:
+    rpms:
+    - python3-Cython
+    - python3-PyMySQL
+    - python3-PyYAML
+    - python3-attrs
+    - python3-babel
+    - python3-bson
+    - python3-chardet
+    - python3-coverage
+    - python3-docutils
+    - python3-idna
+    - python3-jinja2
+    - python3-markupsafe
+    - python3-mock
+    - python3-nose
+    - python3-numpy
+    - python3-numpy-doc
+    - python3-numpy-f2py
+    - python3-pluggy
+    - python3-psycopg2
+    - python3-psycopg2-debug
+    - python3-psycopg2-tests
+    - python3-py
+    - python3-pygments
+    - python3-pymongo
+    - python3-pymongo-gridfs
+    - python3-pysocks
+    - python3-pytest
+    - python3-pytest-mock
+    - python3-pytz
+    - python3-requests
+    - python3-scipy
+    - python3-setuptools_scm
+    - python3-six
+    - python3-sqlalchemy
+    - python3-urllib3
+    - python3-virtualenv
+  artifacts:
+    rpms:
+    - Cython-debugsource-0:0.28.1-7.module+el8.1.0+3111+de3f2d8e.aarch64
+    - PyYAML-debugsource-0:3.12-16.module+el8.1.0+3111+de3f2d8e.aarch64
+    - babel-0:2.5.1-10.module+el8.5.0+11014+88fc0d0b.noarch
+    - numpy-debugsource-1:1.14.2-16.module+el8.4.0+9406+221a4565.aarch64
+    - python-coverage-debugsource-0:4.5.1-4.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python-lxml-debugsource-0:4.2.3-6.module+el8.6.0+13959+8e368262.aarch64
+    - python-nose-docs-0:1.3.7-31.module+el8.5.0+12203+77770ab7.noarch
+    - python-psycopg2-debuginfo-0:2.7.5-7.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python-psycopg2-debugsource-0:2.7.5-7.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python-psycopg2-doc-0:2.7.5-7.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python-pymongo-debuginfo-0:3.7.0-1.module+el8.5.0+10264+e5753a40.aarch64
+    - python-pymongo-debugsource-0:3.7.0-1.module+el8.5.0+10264+e5753a40.aarch64
+    - python-sqlalchemy-doc-0:1.3.2-2.module+el8.3.0+6647+8d010749.noarch
+    - python2-0:2.7.18-11.module+el8.7.0+15681+7a92afba.aarch64
+    - python2-Cython-0:0.28.1-7.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-Cython-debuginfo-0:0.28.1-7.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-PyMySQL-0:0.8.0-10.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-attrs-0:17.4.0-10.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-babel-0:2.5.1-10.module+el8.5.0+11014+88fc0d0b.noarch
+    - python2-backports-0:1.0-16.module+el8.4.0+9193+f3daf6ef.aarch64
+    - python2-backports-ssl_match_hostname-0:3.5.0.1-12.module+el8.4.0+9193+f3daf6ef.noarch
+    - python2-bson-0:3.7.0-1.module+el8.5.0+10264+e5753a40.aarch64
+    - python2-bson-debuginfo-0:3.7.0-1.module+el8.5.0+10264+e5753a40.aarch64
+    - python2-chardet-0:3.0.4-10.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-coverage-0:4.5.1-4.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-coverage-debuginfo-0:4.5.1-4.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-debug-0:2.7.18-11.module+el8.7.0+15681+7a92afba.aarch64
+    - python2-debuginfo-0:2.7.18-11.module+el8.7.0+15681+7a92afba.aarch64
+    - python2-debugsource-0:2.7.18-11.module+el8.7.0+15681+7a92afba.aarch64
+    - python2-devel-0:2.7.18-11.module+el8.7.0+15681+7a92afba.aarch64
+    - python2-dns-0:1.15.0-10.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-docs-0:2.7.16-2.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-docs-info-0:2.7.16-2.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-docutils-0:0.14-12.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-funcsigs-0:1.0.2-13.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-idna-0:2.5-7.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-ipaddress-0:1.0.18-6.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-jinja2-0:2.10-9.module+el8.5.0+10541+706bb066.noarch
+    - python2-libs-0:2.7.18-11.module+el8.7.0+15681+7a92afba.aarch64
+    - python2-lxml-0:4.2.3-6.module+el8.6.0+13959+8e368262.aarch64
+    - python2-lxml-debuginfo-0:4.2.3-6.module+el8.6.0+13959+8e368262.aarch64
+    - python2-markupsafe-0:0.23-19.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-mock-0:2.0.0-13.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-nose-0:1.3.7-31.module+el8.5.0+12203+77770ab7.noarch
+    - python2-numpy-1:1.14.2-16.module+el8.4.0+9406+221a4565.aarch64
+    - python2-numpy-debuginfo-1:1.14.2-16.module+el8.4.0+9406+221a4565.aarch64
+    - python2-numpy-doc-1:1.14.2-16.module+el8.4.0+9406+221a4565.noarch
+    - python2-numpy-f2py-1:1.14.2-16.module+el8.4.0+9406+221a4565.aarch64
+    - python2-pip-0:9.0.3-19.module+el8.6.0+13001+ad200bd9.noarch
+    - python2-pip-wheel-0:9.0.3-19.module+el8.6.0+13001+ad200bd9.noarch
+    - python2-pluggy-0:0.6.0-8.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-psycopg2-0:2.7.5-7.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-psycopg2-debug-0:2.7.5-7.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-psycopg2-debug-debuginfo-0:2.7.5-7.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-psycopg2-debuginfo-0:2.7.5-7.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-psycopg2-tests-0:2.7.5-7.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-py-0:1.5.3-6.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-pygments-0:2.2.0-22.module+el8.5.0+10788+a4cea9e0.noarch
+    - python2-pymongo-0:3.7.0-1.module+el8.5.0+10264+e5753a40.aarch64
+    - python2-pymongo-debuginfo-0:3.7.0-1.module+el8.5.0+10264+e5753a40.aarch64
+    - python2-pymongo-gridfs-0:3.7.0-1.module+el8.5.0+10264+e5753a40.aarch64
+    - python2-pysocks-0:1.6.8-6.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-pytest-0:3.4.2-13.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-pytest-mock-0:1.9.0-4.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-pytz-0:2017.2-12.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-pyyaml-0:3.12-16.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-pyyaml-debuginfo-0:3.12-16.module+el8.1.0+3111+de3f2d8e.aarch64
+    - python2-requests-0:2.20.0-3.module+el8.2.0+4577+feefd9b8.noarch
+    - python2-rpm-macros-0:3-38.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-scipy-0:1.0.0-21.module+el8.5.0+10858+05337455.aarch64
+    - python2-scipy-debuginfo-0:1.0.0-21.module+el8.5.0+10858+05337455.aarch64
+    - python2-setuptools-0:39.0.1-13.module+el8.4.0+9442+27d0e81c.noarch
+    - python2-setuptools-wheel-0:39.0.1-13.module+el8.4.0+9442+27d0e81c.noarch
+    - python2-setuptools_scm-0:1.15.7-6.module+el8.1.0+3111+de3f2d8e.noarch
+    - python2-six-0:1.11.0-6.module+el8.4.0+9287+299307c7.noarch
+    - python2-sqlalchemy-0:1.3.2-2.module+el8.3.0+6647+8d010749.aarch64
+    - python2-test-0:2.7.18-11.module+el8.7.0+15681+7a92afba.aarch64
+    - python2-tkinter-0:2.7.18-11.module+el8.7.0+15681+7a92afba.aarch64
+    - python2-tools-0:2.7.18-11.module+el8.7.0+15681+7a92afba.aarch64
+    - python2-urllib3-0:1.24.2-3.module+el8.4.0+9193+f3daf6ef.noarch
+    - python2-virtualenv-0:15.1.0-21.module+el8.5.0+12203+77770ab7.noarch
+    - python2-wheel-1:0.31.1-3.module+el8.5.0+12203+77770ab7.noarch
+    - python2-wheel-wheel-1:0.31.1-3.module+el8.5.0+12203+77770ab7.noarch
+    - scipy-debugsource-0:1.0.0-21.module+el8.5.0+10858+05337455.aarch64
+...
+---
+document: modulemd
+version: 2
+data:
+  name: container-tools
+  stream: '3.0'
+  version: '8070020220802115906'
+  context: '39077419'
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 2.0
+    - ASL 2.0 and GPLv3+
+    - BSD and MIT
+    - GPLv2
+    - GPLv2+
+    - GPLv3+
+    - LGPLv2+
+  summary: Stable versions of podman 3.0, buildah 1.19, skopeo 1.2, runc, conmon,
+    CRIU, Udica, etc as well as dependencies such as container-selinux built and tested
+    together, and supported as documented on the Application Stream lifecycle page.
+  description: 'Stable versions of podman 3.0, buildah 1.19, skopeo 1.2, runc, conmon,
+    CRIU, Udica, etc as well as dependencies such as container-selinux built and tested
+    together. Released with RHEL 8.4 and supported for 24 months. During the support
+    lifecycle, back ports of important, critical vulnerabilities (CVEs, RHSAs) and
+    bug fixes (RHBAs) are provided to this stream, and versions do not move forward.
+    For more information see: https://access.redhat.com/support/policy/updates/containertools'
+  dependencies:
+  - buildrequires:
+      go-toolset:
+      - rhel8
+      golang-ecosystem:
+      - '1.0'
+      platform:
+      - el8.7.0
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      buildah:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      cockpit-podman:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      conmon:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      container-selinux:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      containernetworking-plugins:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      criu:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      crun:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      fuse-overlayfs:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      libslirp:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        buildorder: '-1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      oci-seccomp-bpf-hook:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      podman:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      runc:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      skopeo:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      slirp4netns:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      toolbox:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      udica:
+        rationale: Primary component of this module
+        ref: stream-container-tools-3.0-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - buildah
+    - conmon
+    - container-selinux
+    - containernetworking-plugins
+    - containers-common
+    - fuse-overlayfs
+    - libslirp
+    - podman
+    - podman-docker
+    - podman-manpages
+    - podman-remote
+    - runc
+    - skopeo
+    - slirp4netns
+  buildopts:
+    rpms:
+      macros: '%_with_ignore_tests 1
+
+        '
+  references:
+    community: https://github.com/projectatomic
+    documentation: https://projectatomic.io
+    tracker: https://github.com/projectatomic
+  profiles:
+    common:
+      rpms:
+      - buildah
+      - cockpit-podman
+      - conmon
+      - container-selinux
+      - containernetworking-plugins
+      - criu
+      - crun
+      - fuse-overlayfs
+      - libslirp
+      - podman
+      - runc
+      - skopeo
+      - slirp4netns
+      - toolbox
+      - udica
+  artifacts:
+    rpms:
+    - buildah-0:1.19.9-6.module+el8.7.0+16212+65e1b35f.aarch64
+    - buildah-debuginfo-0:1.19.9-6.module+el8.7.0+16212+65e1b35f.aarch64
+    - buildah-debugsource-0:1.19.9-6.module+el8.7.0+16212+65e1b35f.aarch64
+    - buildah-tests-0:1.19.9-6.module+el8.7.0+16212+65e1b35f.aarch64
+    - buildah-tests-debuginfo-0:1.19.9-6.module+el8.7.0+16212+65e1b35f.aarch64
+    - cockpit-podman-0:29-2.module+el8.7.0+16212+65e1b35f.noarch
+    - conmon-2:2.0.26-3.module+el8.7.0+16212+65e1b35f.aarch64
+    - conmon-debuginfo-2:2.0.26-3.module+el8.7.0+16212+65e1b35f.aarch64
+    - conmon-debugsource-2:2.0.26-3.module+el8.7.0+16212+65e1b35f.aarch64
+    - container-selinux-2:2.189.0-1.module+el8.7.0+16212+65e1b35f.noarch
+    - containernetworking-plugins-0:0.9.1-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - containernetworking-plugins-debuginfo-0:0.9.1-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - containernetworking-plugins-debugsource-0:0.9.1-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - containers-common-1:1.2.4-2.module+el8.7.0+16212+65e1b35f.aarch64
+    - crit-0:3.15-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - criu-0:3.15-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - criu-debuginfo-0:3.15-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - criu-debugsource-0:3.15-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - crun-0:0.18-3.module+el8.7.0+16212+65e1b35f.aarch64
+    - crun-debuginfo-0:0.18-3.module+el8.7.0+16212+65e1b35f.aarch64
+    - crun-debugsource-0:0.18-3.module+el8.7.0+16212+65e1b35f.aarch64
+    - fuse-overlayfs-0:1.4.0-2.module+el8.7.0+16212+65e1b35f.aarch64
+    - fuse-overlayfs-debuginfo-0:1.4.0-2.module+el8.7.0+16212+65e1b35f.aarch64
+    - fuse-overlayfs-debugsource-0:1.4.0-2.module+el8.7.0+16212+65e1b35f.aarch64
+    - libslirp-0:4.3.1-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - libslirp-debuginfo-0:4.3.1-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - libslirp-debugsource-0:4.3.1-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - libslirp-devel-0:4.3.1-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - oci-seccomp-bpf-hook-0:1.2.0-3.module+el8.7.0+16212+65e1b35f.aarch64
+    - oci-seccomp-bpf-hook-debuginfo-0:1.2.0-3.module+el8.7.0+16212+65e1b35f.aarch64
+    - oci-seccomp-bpf-hook-debugsource-0:1.2.0-3.module+el8.7.0+16212+65e1b35f.aarch64
+    - podman-0:3.0.1-13.module+el8.7.0+16212+65e1b35f.aarch64
+    - podman-catatonit-0:3.0.1-13.module+el8.7.0+16212+65e1b35f.aarch64
+    - podman-catatonit-debuginfo-0:3.0.1-13.module+el8.7.0+16212+65e1b35f.aarch64
+    - podman-debuginfo-0:3.0.1-13.module+el8.7.0+16212+65e1b35f.aarch64
+    - podman-debugsource-0:3.0.1-13.module+el8.7.0+16212+65e1b35f.aarch64
+    - podman-docker-0:3.0.1-13.module+el8.7.0+16212+65e1b35f.noarch
+    - podman-plugins-0:3.0.1-13.module+el8.7.0+16212+65e1b35f.aarch64
+    - podman-plugins-debuginfo-0:3.0.1-13.module+el8.7.0+16212+65e1b35f.aarch64
+    - podman-remote-0:3.0.1-13.module+el8.7.0+16212+65e1b35f.aarch64
+    - podman-remote-debuginfo-0:3.0.1-13.module+el8.7.0+16212+65e1b35f.aarch64
+    - podman-tests-0:3.0.1-13.module+el8.7.0+16212+65e1b35f.aarch64
+    - python3-criu-0:3.15-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - runc-0:1.0.0-73.rc95.module+el8.7.0+16212+65e1b35f.aarch64
+    - runc-debuginfo-0:1.0.0-73.rc95.module+el8.7.0+16212+65e1b35f.aarch64
+    - runc-debugsource-0:1.0.0-73.rc95.module+el8.7.0+16212+65e1b35f.aarch64
+    - skopeo-1:1.2.4-2.module+el8.7.0+16212+65e1b35f.aarch64
+    - skopeo-debuginfo-1:1.2.4-2.module+el8.7.0+16212+65e1b35f.aarch64
+    - skopeo-debugsource-1:1.2.4-2.module+el8.7.0+16212+65e1b35f.aarch64
+    - skopeo-tests-1:1.2.4-2.module+el8.7.0+16212+65e1b35f.aarch64
+    - slirp4netns-0:1.1.8-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - slirp4netns-debuginfo-0:1.1.8-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - slirp4netns-debugsource-0:1.1.8-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - toolbox-0:0.0.99.3-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - toolbox-debuginfo-0:0.0.99.3-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - toolbox-debugsource-0:0.0.99.3-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - toolbox-tests-0:0.0.99.3-1.module+el8.7.0+16212+65e1b35f.aarch64
+    - udica-0:0.2.4-1.module+el8.7.0+16212+65e1b35f.noarch
+...
+---
+document: modulemd
+version: 2
+data:
+  name: mod_auth_openidc
+  stream: '2.3'
+  version: '8070020220413132751'
+  context: 3b9f49c4
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 2.0
+    - MIT
+  summary: Apache module suporting OpenID Connect authentication
+  description: This module enables an Apache 2.x web server to operate as an OpenID
+    Connect Relying Party and/or OAuth 2.0 Resource Server.
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      cjose:
+        rationale: Provides JOSE support
+        ref: stream-mod_auth_open_idc-2.3-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      mod_auth_openidc:
+        rationale: Provides the core functionality.
+        ref: stream-mod_auth_open_idc-2.3-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  references:
+    community: https://github.com/zmartzone/mod_auth_openidc
+    documentation: https://github.com/zmartzone/mod_auth_openidc/wiki
+    tracker: https://github.com/zmartzone/mod_auth_openidc/issues
+  profiles:
+    default:
+      description: Default mod_auth_openidc module installation
+      rpms:
+      - cjose
+      - mod_auth_openidc
+  artifacts:
+    rpms:
+    - cjose-0:0.6.1-2.module+el8+2454+f890a43a.aarch64
+    - cjose-debuginfo-0:0.6.1-2.module+el8+2454+f890a43a.aarch64
+    - cjose-debugsource-0:0.6.1-2.module+el8+2454+f890a43a.aarch64
+    - cjose-devel-0:0.6.1-2.module+el8+2454+f890a43a.aarch64
+    - mod_auth_openidc-0:2.4.9.4-1.module+el8.7.0+14797+4085fcb6.aarch64
+    - mod_auth_openidc-debuginfo-0:2.4.9.4-1.module+el8.7.0+14797+4085fcb6.aarch64
+    - mod_auth_openidc-debugsource-0:2.4.9.4-1.module+el8.7.0+14797+4085fcb6.aarch64
+...
+---
+document: modulemd
+version: 2
+data:
+  name: php
+  stream: '7.4'
+  version: '8070020220707122009'
+  context: afd00e68
+  arch: aarch64
+  license:
+    module:
+    - GPLv2+
+    content:
+    - BSD
+    - BSD and LGPLv3+
+    - PHP
+    - PHP and BSD
+    - PHP and LGPLv2 and OpenLDAP
+    - PHP and LGPLv2+
+    - PHP and Zend and BSD and MIT and ASL 1.0 and NCSA
+    - PHP and Zend and BSD and MIT and ASL 1.0 and NCSA and PostgreSQL
+  summary: PHP scripting language
+  description: php 7.4 module
+  dependencies:
+  - buildrequires:
+      httpd:
+      - '2.4'
+      nginx:
+      - '1.14'
+      platform:
+      - el8.7.0
+    requires:
+      httpd:
+      - '2.4'
+      nginx: []
+      platform:
+      - el8
+  components:
+    rpms:
+      libzip:
+        rationale: ZIP library
+        ref: stream-php-7.4-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php:
+        rationale: Module API.
+        ref: stream-7.4-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php-pear:
+        rationale: Extension management
+        ref: stream-php-7.4-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php-pecl-apcu:
+        rationale: APCu extension
+        ref: stream-php-7.4-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php-pecl-rrd:
+        rationale: RRD extension
+        ref: stream-php-7.4-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php-pecl-xdebug:
+        rationale: Xdebug extension
+        ref: stream-php-7.4-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php-pecl-zip:
+        rationale: ZIP extension
+        ref: stream-php-7.4-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - php-fpm
+  references:
+    documentation: http://php.net/
+    tracker: https://bugs.php.net/
+  profiles:
+    common:
+      rpms:
+      - php-cli
+      - php-common
+      - php-fpm
+      - php-json
+      - php-mbstring
+      - php-xml
+    devel:
+      rpms:
+      - libzip
+      - php-cli
+      - php-common
+      - php-devel
+      - php-fpm
+      - php-json
+      - php-mbstring
+      - php-pear
+      - php-pecl-zip
+      - php-process
+      - php-xml
+    minimal:
+      rpms:
+      - php-cli
+      - php-common
+  artifacts:
+    rpms:
+    - apcu-panel-0:5.1.18-1.module+el8.3.0+6678+b09f589e.noarch
+    - libzip-0:1.6.1-1.module+el8.3.0+6678+b09f589e.aarch64
+    - libzip-debuginfo-0:1.6.1-1.module+el8.3.0+6678+b09f589e.aarch64
+    - libzip-debugsource-0:1.6.1-1.module+el8.3.0+6678+b09f589e.aarch64
+    - libzip-devel-0:1.6.1-1.module+el8.3.0+6678+b09f589e.aarch64
+    - libzip-tools-0:1.6.1-1.module+el8.3.0+6678+b09f589e.aarch64
+    - libzip-tools-debuginfo-0:1.6.1-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-bcmath-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-bcmath-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-cli-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-cli-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-common-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-common-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-dba-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-dba-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-dbg-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-dbg-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-debugsource-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-devel-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-embedded-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-embedded-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-enchant-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-enchant-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-ffi-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-ffi-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-fpm-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-fpm-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-gd-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-gd-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-gmp-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-gmp-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-intl-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-intl-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-json-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-json-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-ldap-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-ldap-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-mbstring-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-mbstring-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-mysqlnd-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-mysqlnd-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-odbc-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-odbc-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-opcache-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-opcache-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-pdo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-pdo-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-pear-1:1.10.13-1.module+el8.7.0+15127+a450a8db.noarch
+    - php-pecl-apcu-0:5.1.18-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-apcu-debuginfo-0:5.1.18-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-apcu-debugsource-0:5.1.18-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-apcu-devel-0:5.1.18-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-rrd-0:2.0.1-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-rrd-debuginfo-0:2.0.1-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-rrd-debugsource-0:2.0.1-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-xdebug-0:2.9.5-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-xdebug-debuginfo-0:2.9.5-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-xdebug-debugsource-0:2.9.5-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-zip-0:1.18.2-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-zip-debuginfo-0:1.18.2-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pecl-zip-debugsource-0:1.18.2-1.module+el8.3.0+6678+b09f589e.aarch64
+    - php-pgsql-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-pgsql-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-process-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-process-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-snmp-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-snmp-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-soap-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-soap-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-xml-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-xml-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-xmlrpc-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+    - php-xmlrpc-debuginfo-0:7.4.30-1.module+el8.7.0+15886+8e29b882.aarch64
+...
+---
+document: modulemd
+version: 2
+data:
+  name: idm
+  stream: DL1
+  version: '8070020220819185306'
+  context: 339b348d
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - BSD
+    - GPLv2+
+    - GPLv3
+    - GPLv3+
+    - LGPLv3+
+    - MIT
+  summary: The Red Hat Enterprise Linux Identity Management system module
+  description: RHEL IdM is an integrated solution to provide centrally managed Identity
+    (users, hosts, services), Authentication (SSO, 2FA), and Authorization (host access
+    control, SELinux user roles, services). The solution provides features for further
+    integration with Linux based clients (SUDO, automount) and integration with Active
+    Directory based infrastructures (Trusts).
+  dependencies:
+  - buildrequires:
+      389-ds:
+      - '1.4'
+      httpd:
+      - '2.4'
+      pki-core:
+      - '10.6'
+      platform:
+      - el8.7.0
+    requires:
+      389-ds:
+      - '1.4'
+      httpd:
+      - '2.4'
+      pki-core:
+      - '10.6'
+      platform:
+      - el8
+  components:
+    rpms:
+      bind-dyndb-ldap:
+        rationale: Driver for BIND to store DNS information in LDAP
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      custodia:
+        rationale: Remote access to secrets and credentials in IdM topology
+        ref: stream-idm-DL1-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      ipa:
+        rationale: Module API
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      ipa-healthcheck:
+        rationale: A tool to detect issues in IdM clusters
+        ref: stream-DL1-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      opendnssec:
+        rationale: An implementation of DNSSEC support for IdM integrated DNS server
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-jwcrypto:
+        rationale: JSON Web Cryptographic Tokens used by Custodia
+        ref: stream-idm-DL1-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-kdcproxy:
+        rationale: MS-KKDCP (kerberos proxy) WSGI module
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-qrcode:
+        rationale: QR code generator for IdM two-factor authentication
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-yubico:
+        rationale: Support for Yubikey-based tokens for IdM two-factor authentication
+        ref: stream-idm-DL1-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      pyusb:
+        rationale: Python USB support to access USB tokens for IdM two-factor authentication
+        ref: stream-idm-DL1-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      slapi-nis:
+        rationale: Compatibility plugin to serve legacy clients
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - ppc64le
+        - s390x
+        - x86_64
+      softhsm:
+        rationale: Software version of a PKCS#11 Hardware Security Module
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  references:
+    community: https://www.freeipa.org/
+    documentation: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/linux_domain_identity_authentication_and_policy_guide/index
+    tracker: https://pagure.io/freeipa/issues
+  profiles:
+    adtrust:
+      description: RHEL IdM Server Integration with Active Directory
+      rpms:
+      - ipa-healthcheck
+      - ipa-healthcheck-core
+      - ipa-server-trust-ad
+    client:
+      description: RHEL IdM Client
+      rpms:
+      - ipa-client
+    common:
+      description: A default profile for RHEL IdM client
+      rpms:
+      - ipa-client
+    dns:
+      description: RHEL IdM with integrated DNS server and integrated CA
+      rpms:
+      - ipa-healthcheck
+      - ipa-healthcheck-core
+      - ipa-server
+      - ipa-server-dns
+    server:
+      description: Base RHEL IdM Server with integrated CA and no integrated DNS
+      rpms:
+      - ipa-healthcheck
+      - ipa-healthcheck-core
+      - ipa-server
+  artifacts:
+    rpms:
+    - bind-dyndb-ldap-0:11.6-3.module+el8.6.0+13728+d9324aaf.aarch64
+    - bind-dyndb-ldap-debuginfo-0:11.6-3.module+el8.6.0+13728+d9324aaf.aarch64
+    - bind-dyndb-ldap-debugsource-0:11.6-3.module+el8.6.0+13728+d9324aaf.aarch64
+    - custodia-0:0.6.0-3.module+el8.1.0+4098+f286395e.noarch
+    - ipa-client-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.aarch64
+    - ipa-client-common-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.noarch
+    - ipa-client-debuginfo-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.aarch64
+    - ipa-client-epn-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.aarch64
+    - ipa-client-samba-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.aarch64
+    - ipa-common-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.noarch
+    - ipa-debuginfo-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.aarch64
+    - ipa-debugsource-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.aarch64
+    - ipa-healthcheck-0:0.7-14.module+el8.7.0+15352+88b578e5.noarch
+    - ipa-healthcheck-core-0:0.7-14.module+el8.7.0+15352+88b578e5.noarch
+    - ipa-python-compat-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.noarch
+    - ipa-selinux-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.noarch
+    - ipa-server-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.aarch64
+    - ipa-server-common-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.noarch
+    - ipa-server-debuginfo-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.aarch64
+    - ipa-server-dns-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.noarch
+    - ipa-server-trust-ad-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.aarch64
+    - ipa-server-trust-ad-debuginfo-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.aarch64
+    - opendnssec-0:2.1.7-1.module+el8.4.0+9007+5084bdd8.aarch64
+    - opendnssec-debuginfo-0:2.1.7-1.module+el8.4.0+9007+5084bdd8.aarch64
+    - opendnssec-debugsource-0:2.1.7-1.module+el8.4.0+9007+5084bdd8.aarch64
+    - python3-custodia-0:0.6.0-3.module+el8.1.0+4098+f286395e.noarch
+    - python3-ipaclient-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.noarch
+    - python3-ipalib-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.noarch
+    - python3-ipaserver-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.noarch
+    - python3-ipatests-0:4.9.10-6.module+el8.7.0+16405+581a7c1e.noarch
+    - python3-jwcrypto-0:0.5.0-1.1.module+el8.7.0+15842+306cbc83.noarch
+    - python3-kdcproxy-0:0.4-5.module+el8.2.0+4691+a05b2456.noarch
+    - python3-pyusb-0:1.0.0-9.1.module+el8.7.0+15691+2b2c1dd5.noarch
+    - python3-qrcode-0:5.1-12.module+el8.1.0+4098+f286395e.noarch
+    - python3-qrcode-core-0:5.1-12.module+el8.1.0+4098+f286395e.noarch
+    - python3-yubico-0:1.3.2-9.1.module+el8.7.0+15691+2b2c1dd5.noarch
+    - slapi-nis-0:0.60.0-1.module+el8.7.0+16405+581a7c1e.aarch64
+    - slapi-nis-debuginfo-0:0.60.0-1.module+el8.7.0+16405+581a7c1e.aarch64
+    - slapi-nis-debugsource-0:0.60.0-1.module+el8.7.0+16405+581a7c1e.aarch64
+    - softhsm-0:2.6.0-5.module+el8.4.0+10227+076cd560.aarch64
+    - softhsm-debuginfo-0:2.6.0-5.module+el8.4.0+10227+076cd560.aarch64
+    - softhsm-debugsource-0:2.6.0-5.module+el8.4.0+10227+076cd560.aarch64
+    - softhsm-devel-0:2.6.0-5.module+el8.4.0+10227+076cd560.aarch64
+...
+---
+document: modulemd
+version: 2
+data:
+  name: 389-ds
+  stream: '1.4'
+  version: '8070020220818160455'
+  context: 507c48dc
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - GPLv3+ and MIT and (ASL 2.0 or MIT) and (ASL 2.0 or Boost) and MPLv2.0 and ASL
+      2.0 and BSD and (ASL 2.0 with exceptions or ASL 2.0 or MIT) and (Unlicense or
+      MIT)
+  summary: 389 Directory Server (base)
+  description: 389 Directory Server is an LDAPv3 compliant server.  The base package
+    includes the LDAP server and command line utilities for server administration.
+  dependencies:
+  - buildrequires:
+      llvm-toolset:
+      - rhel8
+      nodejs:
+      - '10'
+      platform:
+      - el8.7.0
+      rust-toolset:
+      - rhel8
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      389-ds-base:
+        rationale: Package in api
+        ref: stream-1.4-rhel-8.7.0
+        arches:
+        - aarch64
+        - ppc64le
+        - s390x
+        - x86_64
+  filter:
+    rpms:
+    - cockpit-389-ds
+  artifacts:
+    rpms:
+    - 389-ds-base-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.aarch64
+    - 389-ds-base-debuginfo-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.aarch64
+    - 389-ds-base-debugsource-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.aarch64
+    - 389-ds-base-devel-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.aarch64
+    - 389-ds-base-legacy-tools-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.aarch64
+    - 389-ds-base-legacy-tools-debuginfo-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.aarch64
+    - 389-ds-base-libs-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.aarch64
+    - 389-ds-base-libs-debuginfo-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.aarch64
+    - 389-ds-base-snmp-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.aarch64
+    - 389-ds-base-snmp-debuginfo-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.aarch64
+    - cockpit-389-ds-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.noarch
+    - python3-lib389-0:1.4.3.30-6.module+el8.7.0+16373+1a59bba2.noarch
+...
+---
+document: modulemd
+version: 2
+data:
+  name: pki-core
+  stream: '10.6'
+  version: '8070020220726172732'
+  context: 6e5cea50
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - GPLv2 and LGPLv2
+    - LGPLv2+
+    - MPLv1.1 or GPLv2+ or LGPLv2+
+  summary: PKI Core module for PKI 10.6 or later
+  description: A module for PKI Core packages for PKI version 10.6 or later.
+  dependencies:
+  - buildrequires:
+      golang-ecosystem:
+      - '1.0'
+      pki-deps:
+      - '10.6'
+      platform:
+      - el8.7.0
+    requires:
+      pki-deps:
+      - '10.6'
+      platform:
+      - el8
+  components:
+    rpms:
+      jss:
+        rationale: JSS packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      ldapjdk:
+        rationale: LDAP JDK packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      pki-core:
+        rationale: PKI Core packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      tomcatjss:
+        rationale: TomcatJSS packages
+        ref: stream-pki-10.6-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  references:
+    community: https://www.dogtagpki.org
+    documentation: https://www.dogtagpki.org
+    tracker: https://github.com/dogtagpki/pki/issues
+  artifacts:
+    rpms:
+    - idm-pki-acme-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-base-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-base-java-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-ca-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-kra-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-server-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - idm-pki-symkey-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - idm-pki-symkey-debuginfo-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - idm-pki-tools-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - idm-pki-tools-debuginfo-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - jss-0:4.9.4-1.module+el8.7.0+15532+95bac9ee.aarch64
+    - jss-debuginfo-0:4.9.4-1.module+el8.7.0+15532+95bac9ee.aarch64
+    - jss-debugsource-0:4.9.4-1.module+el8.7.0+15532+95bac9ee.aarch64
+    - jss-javadoc-0:4.9.4-1.module+el8.7.0+15532+95bac9ee.aarch64
+    - ldapjdk-0:4.23.0-1.module+el8.5.0+11983+6ba118b4.noarch
+    - ldapjdk-javadoc-0:4.23.0-1.module+el8.5.0+11983+6ba118b4.noarch
+    - pki-acme-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-base-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-base-java-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-ca-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-core-debuginfo-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - pki-core-debugsource-0:10.12.0-4.module+el8.7.0+16126+c5918a27.aarch64
+    - pki-kra-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-server-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-symkey-0:10.12.0-2.module+el8.6.0+14115+8b467244.aarch64
+    - pki-symkey-debuginfo-0:10.12.0-2.module+el8.6.0+14115+8b467244.aarch64
+    - pki-tools-0:10.12.0-2.module+el8.6.0+14115+8b467244.aarch64
+    - pki-tools-debuginfo-0:10.12.0-2.module+el8.6.0+14115+8b467244.aarch64
+    - python3-idm-pki-0:10.12.0-4.module+el8.7.0+16126+c5918a27.noarch
+    - python3-pki-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - tomcatjss-0:7.7.1-1.module+el8.6.0+13291+248751b1.noarch
+...
+---
+document: modulemd
+version: 2
+data:
+  name: redis
+  stream: '6'
+  version: '8070020220509142426'
+  context: 3b9f49c4
+  arch: aarch64
+  license:
+    module:
+    - GPLv2+
+    content:
+    - BSD and MIT
+    - CC-BY-SA
+  summary: Redis persistent key-value database
+  description: redis 6 module
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      redis:
+        rationale: Module API.
+        ref: stream-6-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - redis
+  references:
+    documentation: https://redis.io/documentation
+    tracker: https://github.com/antirez/redis/issues
+  profiles:
+    common:
+      rpms:
+      - redis
+  artifacts:
+    rpms:
+    - redis-0:6.2.7-1.module+el8.7.0+15197+cc495aeb.aarch64
+    - redis-debuginfo-0:6.2.7-1.module+el8.7.0+15197+cc495aeb.aarch64
+    - redis-debugsource-0:6.2.7-1.module+el8.7.0+15197+cc495aeb.aarch64
+    - redis-devel-0:6.2.7-1.module+el8.7.0+15197+cc495aeb.aarch64
+    - redis-doc-0:6.2.7-1.module+el8.7.0+15197+cc495aeb.noarch
+...
+---
+document: modulemd
+version: 2
+data:
+  name: idm
+  stream: client
+  version: '8070020220707141547'
+  context: fca53008
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - BSD
+    - GPLv3
+    - GPLv3+
+    - LGPLv3+
+  summary: RHEL IdM long term support client module
+  description: 'RHEL IdM is an integrated solution to provide centrally managed Identity
+    (users, hosts, services), Authentication (SSO, 2FA), and Authorization (host access
+    control, SELinux user roles, services). The solution provides features for further
+    integration with Linux based clients (SUDO, automount) and integration with Active
+    Directory based infrastructures (Trusts).
+
+    This module stream supports only client side of RHEL IdM solution'
+  dependencies:
+  - buildrequires:
+      389-ds:
+      - '1.4'
+      httpd:
+      - '2.4'
+      pki-core:
+      - '10.6'
+      platform:
+      - el8.7.0
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      bind-dyndb-ldap:
+        rationale: Driver for BIND to store DNS information in LDAP
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      custodia:
+        rationale: Remote access to secrets and credentials in IdM topology
+        ref: stream-idm-DL1-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      ipa:
+        rationale: Module API
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      ipa-healthcheck:
+        rationale: A tool to detect issues in IdM clusters
+        ref: stream-DL1-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      opendnssec:
+        rationale: An implementation of DNSSEC support for IdM integrated DNS server
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-jwcrypto:
+        rationale: JSON Web Cryptographic Tokens used by Custodia
+        ref: stream-idm-DL1-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-qrcode:
+        rationale: QR code generator for IdM two-factor authentication
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      python-yubico:
+        rationale: Support for Yubikey-based tokens for IdM two-factor authentication
+        ref: stream-idm-DL1-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      pyusb:
+        rationale: Python USB support to access USB tokens for IdM two-factor authentication
+        ref: stream-idm-DL1-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      slapi-nis:
+        rationale: Compatibility plugin to serve legacy clients
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - ppc64le
+        - s390x
+        - x86_64
+      softhsm:
+        rationale: Software version of a PKCS#11 Hardware Security Module
+        ref: stream-idm-DL1-rhel-8.7.0
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - ipa-client
+    - ipa-client-common
+    - ipa-client-debuginfo
+    - ipa-common
+    - ipa-debuginfo
+    - ipa-debugsource
+    - ipa-healthcheck-core
+    - ipa-python-compat
+    - python3-ipaclient
+    - python3-ipalib
+    - python3-jwcrypto
+    - python3-pyusb
+    - python3-qrcode
+    - python3-qrcode-core
+    - python3-yubico
+  references:
+    community: https://www.freeipa.org/
+    documentation: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/linux_domain_identity_authentication_and_policy_guide/index
+    tracker: https://pagure.io/freeipa/issues
+  profiles:
+    common:
+      description: A default profile for RHEL IdM client
+      rpms:
+      - ipa-client
+  filter:
+    rpms:
+    - bind-dyndb-ldap
+    - bind-dyndb-ldap-debuginfo
+    - bind-dyndb-ldap-debugsource
+    - custodia
+    - ipa-healthcheck
+    - ipa-server
+    - ipa-server-common
+    - ipa-server-debuginfo
+    - ipa-server-dns
+    - ipa-server-trust-ad
+    - ipa-server-trust-ad-debuginfo
+    - opendnssec
+    - opendnssec-debuginfo
+    - opendnssec-debugsource
+    - python3-custodia
+    - python3-ipaserver
+    - python3-ipatests
+    - slapi-nis
+    - slapi-nis-debuginfo
+    - slapi-nis-debugsource
+    - softhsm
+    - softhsm-debuginfo
+    - softhsm-debugsource
+    - softhsm-devel
+  artifacts:
+    rpms:
+    - ipa-client-0:4.9.10-3.module+el8.7.0+15888+685a878f.aarch64
+    - ipa-client-common-0:4.9.10-3.module+el8.7.0+15888+685a878f.noarch
+    - ipa-client-debuginfo-0:4.9.10-3.module+el8.7.0+15888+685a878f.aarch64
+    - ipa-client-epn-0:4.9.10-3.module+el8.7.0+15888+685a878f.aarch64
+    - ipa-client-samba-0:4.9.10-3.module+el8.7.0+15888+685a878f.aarch64
+    - ipa-common-0:4.9.10-3.module+el8.7.0+15888+685a878f.noarch
+    - ipa-debuginfo-0:4.9.10-3.module+el8.7.0+15888+685a878f.aarch64
+    - ipa-debugsource-0:4.9.10-3.module+el8.7.0+15888+685a878f.aarch64
+    - ipa-healthcheck-0:0.7-14.module+el8.7.0+15690+c8d45780.noarch
+    - ipa-healthcheck-core-0:0.7-14.module+el8.7.0+15690+c8d45780.noarch
+    - ipa-python-compat-0:4.9.10-3.module+el8.7.0+15888+685a878f.noarch
+    - ipa-selinux-0:4.9.10-3.module+el8.7.0+15888+685a878f.noarch
+    - ipa-server-0:4.9.10-3.module+el8.7.0+15888+685a878f.aarch64
+    - ipa-server-common-0:4.9.10-3.module+el8.7.0+15888+685a878f.noarch
+    - ipa-server-debuginfo-0:4.9.10-3.module+el8.7.0+15888+685a878f.aarch64
+    - ipa-server-dns-0:4.9.10-3.module+el8.7.0+15888+685a878f.noarch
+    - ipa-server-trust-ad-0:4.9.10-3.module+el8.7.0+15888+685a878f.aarch64
+    - ipa-server-trust-ad-debuginfo-0:4.9.10-3.module+el8.7.0+15888+685a878f.aarch64
+    - python3-ipaclient-0:4.9.10-3.module+el8.7.0+15888+685a878f.noarch
+    - python3-ipalib-0:4.9.10-3.module+el8.7.0+15888+685a878f.noarch
+    - python3-ipaserver-0:4.9.10-3.module+el8.7.0+15888+685a878f.noarch
+    - python3-ipatests-0:4.9.10-3.module+el8.7.0+15888+685a878f.noarch
+    - python3-jwcrypto-0:0.5.0-1.1.module+el8.7.0+15888+685a878f.noarch
+    - python3-pyusb-0:1.0.0-9.1.module+el8.7.0+15690+c8d45780.noarch
+    - python3-qrcode-0:5.1-12.module+el8.1.0+4107+4a66eb87.noarch
+    - python3-qrcode-core-0:5.1-12.module+el8.1.0+4107+4a66eb87.noarch
+    - python3-yubico-0:1.3.2-9.1.module+el8.7.0+15690+c8d45780.noarch
+...
+---
+document: modulemd
+version: 2
+data:
+  name: subversion
+  stream: '1.10'
+  version: '8070020220701055908'
+  context: '78111232'
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 2.0
+    - Unicode and MIT
+  summary: Apache Subversion
+  description: Apache Subversion, a Modern Version Control System
+  dependencies:
+  - buildrequires:
+      httpd:
+      - '2.4'
+      platform:
+      - el8.7.0
+      swig:
+      - '3.0'
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      libserf:
+        rationale: Build dependency.
+        ref: stream-v1-rhel-8.7.0
+        buildorder: '10'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      subversion:
+        rationale: Module API.
+        ref: stream-1.10-rhel-8.7.0
+        buildorder: '20'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      utf8proc:
+        rationale: Build dependency.
+        ref: stream-v2-rhel-8.7.0
+        buildorder: '10'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - mod_dav_svn
+    - subversion
+    - subversion-devel
+    - subversion-libs
+  buildopts:
+    rpms:
+      macros: '%_without_kwallet 1
+
+        %_without_python2 1
+
+        %_with_python3 1
+
+        %_without_bdb 1
+
+        %_without_pyswig 1
+
+        '
+  references:
+    documentation: http://subversion.apache.org/docs/
+    tracker: https://issues.apache.org/jira/projects/SVN
+  profiles:
+    common:
+      rpms:
+      - subversion
+      - subversion-libs
+      - subversion-tools
+    server:
+      rpms:
+      - mod_dav_svn
+      - subversion
+      - subversion-libs
+      - subversion-tools
+  filter:
+    rpms:
+    - libserf-devel
+    - python3-subversion
+    - subversion-ruby
+    - utf8proc-devel
+  artifacts:
+    rpms:
+    - libserf-0:1.3.9-9.module+el8.3.0+6671+2675c974.aarch64
+    - libserf-debuginfo-0:1.3.9-9.module+el8.3.0+6671+2675c974.aarch64
+    - libserf-debugsource-0:1.3.9-9.module+el8.3.0+6671+2675c974.aarch64
+    - libserf-devel-0:1.3.9-9.module+el8.3.0+6671+2675c974.aarch64
+    - mod_dav_svn-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - mod_dav_svn-debuginfo-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-debuginfo-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-debugsource-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-devel-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-devel-debuginfo-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-gnome-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-gnome-debuginfo-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-javahl-0:1.10.2-5.module+el8.6.0+15157+188c9801.noarch
+    - subversion-libs-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-libs-debuginfo-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-perl-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-perl-debuginfo-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-ruby-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-ruby-debuginfo-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-tools-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - subversion-tools-debuginfo-0:1.10.2-5.module+el8.6.0+15157+188c9801.aarch64
+    - utf8proc-0:2.6.1-3.module+el8.7.0+15837+7cfc8c53.aarch64
+    - utf8proc-debuginfo-0:2.6.1-3.module+el8.7.0+15837+7cfc8c53.aarch64
+    - utf8proc-debugsource-0:2.6.1-3.module+el8.7.0+15837+7cfc8c53.aarch64
+    - utf8proc-devel-0:2.6.1-3.module+el8.7.0+15837+7cfc8c53.aarch64
+...
+---
+document: modulemd
+version: 2
+data:
+  name: php
+  stream: '8.0'
+  version: '8070020220801083134'
+  context: afd00e68
+  arch: aarch64
+  license:
+    module:
+    - GPLv2+
+    content:
+    - BSD
+    - BSD and LGPLv3+
+    - PHP
+    - PHP and BSD
+    - PHP and LGPLv2 and OpenLDAP
+    - PHP and LGPLv2+
+    - PHP and Zend and BSD and MIT and ASL 1.0 and NCSA
+    - PHP and Zend and BSD and MIT and ASL 1.0 and NCSA and PostgreSQL
+  summary: PHP scripting language
+  description: php 8.0 module
+  dependencies:
+  - buildrequires:
+      httpd:
+      - '2.4'
+      nginx:
+      - '1.14'
+      platform:
+      - el8.7.0
+    requires:
+      httpd:
+      - '2.4'
+      nginx: []
+      platform:
+      - el8
+  components:
+    rpms:
+      libzip:
+        rationale: ZIP library
+        ref: stream-php-8.0-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php:
+        rationale: Module API.
+        ref: stream-php-8.0-rhel-8.7.0
+        buildorder: '1'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php-pear:
+        rationale: Extension management
+        ref: stream-php-8.0-rhel-8.7.0
+        buildorder: '2'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php-pecl-apcu:
+        rationale: APCu extension
+        ref: stream-php-8.0-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php-pecl-rrd:
+        rationale: RRD extension
+        ref: stream-php-8.0-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php-pecl-xdebug3:
+        rationale: Xdebug extension
+        ref: stream-php-8.0-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      php-pecl-zip:
+        rationale: ZIP extension
+        ref: stream-php-8.0-rhel-8.7.0
+        buildorder: '3'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - php-fpm
+  references:
+    documentation: http://php.net/
+    tracker: https://bugs.php.net/
+  profiles:
+    common:
+      rpms:
+      - php-cli
+      - php-common
+      - php-fpm
+      - php-mbstring
+      - php-xml
+    devel:
+      rpms:
+      - libzip
+      - php-cli
+      - php-common
+      - php-devel
+      - php-fpm
+      - php-mbstring
+      - php-pear
+      - php-pecl-zip
+      - php-process
+      - php-xml
+    minimal:
+      rpms:
+      - php-cli
+      - php-common
+  artifacts:
+    rpms:
+    - apcu-panel-0:5.1.20-1.module+el8.6.0+13671+84712317.noarch
+    - libzip-0:1.7.3-1.module+el8.6.0+13671+84712317.aarch64
+    - libzip-debuginfo-0:1.7.3-1.module+el8.6.0+13671+84712317.aarch64
+    - libzip-debugsource-0:1.7.3-1.module+el8.6.0+13671+84712317.aarch64
+    - libzip-devel-0:1.7.3-1.module+el8.6.0+13671+84712317.aarch64
+    - libzip-tools-0:1.7.3-1.module+el8.6.0+13671+84712317.aarch64
+    - libzip-tools-debuginfo-0:1.7.3-1.module+el8.6.0+13671+84712317.aarch64
+    - php-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-bcmath-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-bcmath-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-cli-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-cli-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-common-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-common-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-dba-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-dba-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-dbg-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-dbg-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-debugsource-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-devel-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-embedded-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-embedded-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-enchant-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-enchant-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-ffi-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-ffi-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-fpm-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-fpm-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-gd-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-gd-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-gmp-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-gmp-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-intl-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-intl-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-ldap-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-ldap-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-mbstring-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-mbstring-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-mysqlnd-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-mysqlnd-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-odbc-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-odbc-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-opcache-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-opcache-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-pdo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-pdo-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-pear-1:1.10.13-1.module+el8.6.0+13671+84712317.noarch
+    - php-pecl-apcu-0:5.1.20-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-apcu-debuginfo-0:5.1.20-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-apcu-debugsource-0:5.1.20-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-apcu-devel-0:5.1.20-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-rrd-0:2.0.3-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-rrd-debuginfo-0:2.0.3-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-rrd-debugsource-0:2.0.3-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-xdebug3-0:3.1.2-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-xdebug3-debuginfo-0:3.1.2-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-xdebug3-debugsource-0:3.1.2-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-zip-0:1.19.2-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-zip-debuginfo-0:1.19.2-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pecl-zip-debugsource-0:1.19.2-1.module+el8.6.0+13671+84712317.aarch64
+    - php-pgsql-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-pgsql-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-process-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-process-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-snmp-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-snmp-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-soap-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-soap-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-xml-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+    - php-xml-debuginfo-0:8.0.20-2.module+el8.7.0+16187+bb5ab920.aarch64
+...
+---
+document: modulemd
+version: 2
+data:
+  name: subversion
+  stream: '1.14'
+  version: '8070020220701055624'
+  context: a74460ab
+  arch: aarch64
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 2.0
+    - Unicode and MIT
+  summary: Apache Subversion
+  description: Apache Subversion, a Modern Version Control System
+  dependencies:
+  - buildrequires:
+      httpd:
+      - '2.4'
+      platform:
+      - el8.7.0
+      swig:
+      - '4.0'
+    requires:
+      platform:
+      - el8
+  components:
+    rpms:
+      libserf:
+        rationale: Build dependency.
+        ref: stream-v1-rhel-8.7.0
+        buildorder: '10'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      subversion:
+        rationale: Module API.
+        ref: stream-1.14-rhel-8.7.0
+        buildorder: '20'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+      utf8proc:
+        rationale: Build dependency.
+        ref: stream-v2-rhel-8.7.0
+        buildorder: '10'
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+  api:
+    rpms:
+    - mod_dav_svn
+    - subversion
+    - subversion-devel
+    - subversion-libs
+  buildopts:
+    rpms:
+      macros: '%_without_kwallet 1
+
+        %_without_python2 1
+
+        %_with_python3 1
+
+        %_without_bdb 1
+
+        %_with_pyswig 1
+
+        '
+  references:
+    documentation: http://subversion.apache.org/docs/
+    tracker: https://issues.apache.org/jira/projects/SVN
+  profiles:
+    common:
+      rpms:
+      - subversion
+      - subversion-libs
+      - subversion-tools
+    server:
+      rpms:
+      - mod_dav_svn
+      - subversion
+      - subversion-libs
+      - subversion-tools
+  filter:
+    rpms:
+    - libserf-devel
+    - subversion-ruby
+    - utf8proc-devel
+  artifacts:
+    rpms:
+    - libserf-0:1.3.9-9.module+el8.4.0+8637+d3bad2c2.aarch64
+    - libserf-debuginfo-0:1.3.9-9.module+el8.4.0+8637+d3bad2c2.aarch64
+    - libserf-debugsource-0:1.3.9-9.module+el8.4.0+8637+d3bad2c2.aarch64
+    - libserf-devel-0:1.3.9-9.module+el8.4.0+8637+d3bad2c2.aarch64
+    - mod_dav_svn-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - mod_dav_svn-debuginfo-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - python3-subversion-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - python3-subversion-debuginfo-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-debuginfo-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-debugsource-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-devel-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-devel-debuginfo-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-gnome-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-gnome-debuginfo-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-javahl-0:1.14.1-2.module+el8.7.0+15203+76baa818.noarch
+    - subversion-libs-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-libs-debuginfo-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-perl-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-perl-debuginfo-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-ruby-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-ruby-debuginfo-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-tools-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - subversion-tools-debuginfo-0:1.14.1-2.module+el8.7.0+15203+76baa818.aarch64
+    - utf8proc-0:2.6.1-3.module+el8.7.0+15836+939fe0ca.aarch64
+    - utf8proc-debuginfo-0:2.6.1-3.module+el8.7.0+15836+939fe0ca.aarch64
+    - utf8proc-debugsource-0:2.6.1-3.module+el8.7.0+15836+939fe0ca.aarch64
+    - utf8proc-devel-0:2.6.1-3.module+el8.7.0+15836+939fe0ca.aarch64
+...
