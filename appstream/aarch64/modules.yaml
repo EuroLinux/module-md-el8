@@ -53936,3 +53936,107 @@ data:
     - python3-lit-0:14.0.6-1.module+el8.7.0+15816+ec020e8f.noarch
     - python3-lldb-0:14.0.6-1.module+el8.7.0+15816+ec020e8f.aarch64
 ...
+---
+data:
+  api:
+    rpms:
+    - nodejs
+    - nodejs-devel
+    - npm
+  arch: aarch64
+  artifacts:
+    rpms:
+    - nodejs-packaging-0:2021.06-4.module+el8.7.0+15582+19c314fa.noarch
+    - nodejs-packaging-bundler-0:2021.06-4.module+el8.7.0+15582+19c314fa.noarch
+    - nodejs-1:18.9.1-1.module+el8.7.0+16806+4109802b.aarch64
+    - nodejs-devel-1:18.9.1-1.module+el8.7.0+16806+4109802b.aarch64
+    - nodejs-full-i18n-1:18.9.1-1.module+el8.7.0+16806+4109802b.aarch64
+    - npm-1:8.19.1-1.18.9.1.1.module+el8.7.0+16806+4109802b.aarch64
+    - nodejs-docs-1:18.9.1-1.module+el8.7.0+16806+4109802b.noarch
+    - nodejs-debugsource-1:18.9.1-1.module+el8.7.0+16806+4109802b.aarch64
+    - nodejs-debuginfo-1:18.9.1-1.module+el8.7.0+16806+4109802b.aarch64
+    - nodejs-nodemon-0:2.0.19-1.module+el8.7.0+16061+0a247725.noarch
+  buildopts:
+    rpms:
+      macros: '%_with_bundled 1
+
+        '
+  components:
+    rpms:
+      nodejs:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '100'
+        rationale: Javascript runtime and npm package manager.
+        ref: stream-nodejs-18-rhel-8.7.0
+      nodejs-nodemon:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '200'
+        rationale: Simple monitor script for use during development of a node.js app
+        ref: stream-nodejs-18-rhel-8.7.0
+      nodejs-packaging:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: RPM Macros and Utilities for Node.js Packaging
+        ref: stream-nodejs-18-rhel-8.7.0
+  context: bd1311ed
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0.z
+    requires:
+      platform:
+      - el8
+  description: Node.js is a platform built on Chrome's JavaScript runtime for easily
+    building fast, scalable network applications. Node.js uses an event-driven, non-blocking
+    I/O model that makes it lightweight and efficient, perfect for data-intensive
+    real-time applications that run across distributed devices.
+  license:
+    content:
+    - MIT
+    - MIT and ASL 2.0 and ISC and BSD
+    module:
+    - MIT
+  name: nodejs
+  profiles:
+    common:
+      rpms:
+      - nodejs
+      - npm
+    development:
+      rpms:
+      - nodejs
+      - nodejs-devel
+      - npm
+    minimal:
+      rpms:
+      - nodejs
+    s2i:
+      rpms:
+      - nodejs
+      - nodejs-nodemon
+      - npm
+  references:
+    community: http://nodejs.org
+    documentation: http://nodejs.org/en/docs
+    tracker: https://github.com/nodejs/node/issues
+  stream: '18'
+  summary: Javascript runtime
+  version: '8070020221004121421'
+document: modulemd
+version: 2
+...
