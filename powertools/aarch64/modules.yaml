@@ -6091,3 +6091,243 @@ data:
 document: modulemd
 version: '2'
 ...
+---
+data:
+  arch: aarch64
+  artifacts:
+    rpms:
+    - SLOF-0:20210217-1.module+el8.6.0+14480+c0a3aa0f.src
+    - ocaml-hivex-0:1.3.18-23.module+el8.7.0+16689+53d59bc2.aarch64
+    - ocaml-hivex-debuginfo-0:1.3.18-23.module+el8.7.0+16689+53d59bc2.aarch64
+    - ocaml-hivex-devel-0:1.3.18-23.module+el8.7.0+16689+53d59bc2.aarch64
+    - ocaml-libguestfs-1:1.44.0-9.module+el8.7.0+16689+53d59bc2.aarch64
+    - ocaml-libguestfs-debuginfo-1:1.44.0-9.module+el8.7.0+16689+53d59bc2.aarch64
+    - ocaml-libguestfs-devel-1:1.44.0-9.module+el8.7.0+16689+53d59bc2.aarch64
+    - ocaml-libnbd-0:1.6.0-5.module+el8.7.0+16689+53d59bc2.aarch64
+    - ocaml-libnbd-debuginfo-0:1.6.0-5.module+el8.7.0+16689+53d59bc2.aarch64
+    - ocaml-libnbd-devel-0:1.6.0-5.module+el8.7.0+16689+53d59bc2.aarch64
+    - qemu-kvm-tests-15:6.2.0-20.module+el8.7.0+16689+53d59bc2.1.aarch64
+    - seabios-0:1.15.0-2.module+el8.6.0+14757+c25ee005.src
+    - sgabios-1:0.20170427git-3.module+el8.6.0+14480+c0a3aa0f.src
+    - virt-v2v-1:1.42.0-19.module+el8.6.0+15577+2ffd6ffa.src
+  components:
+    rpms:
+      SLOF:
+        arches:
+        - ppc64le
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.7.0
+      hivex:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: libguestfs dep
+        ref: stream-rhel-rhel-8.7.0
+      libguestfs:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.7.0
+      libguestfs-winsupport:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '5'
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.7.0
+      libiscsi:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.7.0
+      libnbd:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.7.0
+      libtpms:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.7.0
+      libvirt:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '3'
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.7.0
+      libvirt-dbus:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: libvirt-dbus is part of the virtualization module
+        ref: stream-rhel-rhel-8.7.0
+      libvirt-python:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.7.0
+      nbdkit:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '5'
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.7.0
+      netcf:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: libvirt dep
+        ref: stream-rhel-rhel-8.7.0
+      perl-Sys-Virt:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.7.0
+      qemu-kvm:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.7.0
+      seabios:
+        arches:
+        - ppc64le
+        - x86_64
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.7.0
+      sgabios:
+        arches:
+        - ppc64le
+        - x86_64
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-rhel-rhel-8.7.0
+      supermin:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: libguestfs dep
+        ref: stream-rhel-rhel-8.7.0
+      swtpm:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.7.0
+      virt-v2v:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '6'
+        rationale: Primary module content
+        ref: stream-rhel-rhel-8.7.0
+  context: 3b9f49c4
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0
+    requires:
+      platform:
+      - el8
+      virt:
+      - rhel
+  description: A virtualization module
+  filter:
+    rpms:
+    - ocaml-hivex
+    - ocaml-hivex-debuginfo
+    - ocaml-hivex-devel
+    - ocaml-libguestfs
+    - ocaml-libguestfs-debuginfo
+    - ocaml-libguestfs-devel
+    - ocaml-libnbd
+    - ocaml-libnbd-debuginfo
+    - ocaml-libnbd-devel
+    - qemu-kvm-tests
+    - qemu-kvm-tests-debuginfo
+  license:
+    content:
+    - GPLv2 and GPLv2+ and CC-BY
+    - LGPLv2
+    - LGPLv2+
+    module:
+    - MIT
+  name: virt-devel
+  stream: rhel
+  summary: Virtualization module
+  version: '8070020220921004438'
+  xmd: {}
+document: modulemd
+version: '2'
+...
