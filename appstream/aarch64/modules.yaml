@@ -55518,9 +55518,6 @@ data:
     - python39-chardet-0:3.0.4-19.module+el8.4.0+9822+20bf1249.noarch
     - python39-cryptography-0:3.3.1-2.module+el8.4.0+9822+20bf1249.aarch64
     - python39-cryptography-debuginfo-0:3.3.1-2.module+el8.4.0+9822+20bf1249.aarch64
-    - python39-debug-0:3.9.13-1.module+el8.7.0+15656+ffd4a257.aarch64
-    - python39-debuginfo-0:3.9.13-1.module+el8.7.0+15656+ffd4a257.aarch64
-    - python39-debugsource-0:3.9.13-1.module+el8.7.0+15656+ffd4a257.aarch64
     - python39-devel-0:3.9.13-1.module+el8.7.0+15656+ffd4a257.aarch64
     - python39-idle-0:3.9.13-1.module+el8.7.0+15656+ffd4a257.aarch64
     - python39-idna-0:2.10-3.module+el8.4.0+9822+20bf1249.noarch
