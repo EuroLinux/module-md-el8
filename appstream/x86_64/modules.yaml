@@ -73810,3 +73810,75 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - varnish
+    - varnish-modules
+  arch: x86_64
+  artifacts:
+    rpms:
+    - varnish-0:6.0.8-2.module+el8.7.0+17239+94d153bd.1.x86_64
+    - varnish-devel-0:6.0.8-2.module+el8.7.0+17239+94d153bd.1.x86_64
+    - varnish-docs-0:6.0.8-2.module+el8.7.0+17239+94d153bd.1.x86_64
+    - varnish-modules-0:0.15.0-6.module+el8.5.0+11976+0b4af72d.x86_64
+    - varnish-modules-debuginfo-0:0.15.0-6.module+el8.5.0+11976+0b4af72d.x86_64
+    - varnish-modules-debugsource-0:0.15.0-6.module+el8.5.0+11976+0b4af72d.x86_64
+  buildopts:
+    rpms:
+      macros: '%_without_python2 1
+
+        %_with_python3 1
+
+        '
+  components:
+    rpms:
+      varnish:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Module API.
+        ref: stream-6-rhel-8.7.0
+      varnish-modules:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Extension modules.
+        ref: stream-6-rhel-8.7.0
+  context: bd1311ed
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.7.0.z
+    requires:
+      platform:
+      - el8
+  description: Varnish Cache web application accelerator
+  license:
+    content:
+    - BSD
+    module:
+    - MIT
+  name: varnish
+  profiles:
+    common:
+      rpms:
+      - varnish
+      - varnish-modules
+  references:
+    documentation: http://varnish-cache.org/docs/
+    tracker: https://github.com/varnishcache/varnish-cache/issues
+  stream: '6'
+  summary: Varnish HTTP cache
+  version: '8070020221114151716'
+document: modulemd
+version: 2
+...
