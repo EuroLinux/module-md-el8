@@ -75544,3 +75544,90 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - golang
+  arch: x86_64
+  artifacts:
+    rpms:
+    - delve-0:1.8.3-1.module+el8.7.0+15126+0e0a42d9.x86_64
+    - delve-debuginfo-0:1.8.3-1.module+el8.7.0+15126+0e0a42d9.x86_64
+    - delve-debugsource-0:1.8.3-1.module+el8.7.0+15126+0e0a42d9.x86_64
+    - go-toolset-0:1.18.9-1.module+el8.7.0+17845+708ebe87.x86_64
+    - golang-0:1.18.9-1.module+el8.7.0+17640+84246675.x86_64
+    - golang-bin-0:1.18.9-1.module+el8.7.0+17640+84246675.x86_64
+    - golang-docs-0:1.18.9-1.module+el8.7.0+17640+84246675.noarch
+    - golang-misc-0:1.18.9-1.module+el8.7.0+17640+84246675.noarch
+    - golang-race-0:1.18.9-1.module+el8.7.0+17640+84246675.x86_64
+    - golang-src-0:1.18.9-1.module+el8.7.0+17640+84246675.noarch
+    - golang-tests-0:1.18.9-1.module+el8.7.0+17640+84246675.noarch
+  buildopts:
+    rpms:
+      whitelist:
+      - delve
+      - go-toolset
+      - go-toolset-1.10
+      - go-toolset-1.10-golang
+      - go-toolset-golang
+      - golang
+  components:
+    rpms:
+      delve:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: A debugger for the Go programming language
+        ref: stream-rhel-8-rhel-8.7.0
+      go-toolset:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Meta package for go-toolset providing scl enable scripts.
+        ref: stream-rhel-8-rhel-8.7.0
+      golang:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Package providing the Go compiler toolchain.
+        ref: stream-rhel-8-rhel-8.7.0
+  context: ded9a3e2
+  dependencies:
+  - buildrequires:
+      go-toolset:
+      - rhel8
+      platform:
+      - el8.7.0.z
+    requires:
+      platform:
+      - el8
+  description: Go Tools and libraries
+  license:
+    content:
+    - BSD and Public Domain
+    - MIT
+    module:
+    - MIT
+  name: go-toolset
+  profiles:
+    common:
+      rpms:
+      - go-toolset
+  stream: rhel8
+  summary: Go
+  version: '8070020230116141618'
+document: modulemd
+version: 2
+...
