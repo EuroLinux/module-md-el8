@@ -10735,7 +10735,8 @@ data:
     - perl-IO-Tty-0:1.12-11.module+el8.3.0+6446+594cad75.x86_64
     - perl-IO-Tty-debugsource-0:1.12-11.module+el8.3.0+6446+594cad75.x86_64
     - perl-IO-Tty-debuginfo-0:1.12-11.module+el8.3.0+6446+594cad75.x86_64
-    - perl-Devel-StackTrace-1:2.03-2.module+el8.3.0+6446+594cad75.noarch
+# filtering does not work as expected when there are modular and not modular packages
+#    - perl-Devel-StackTrace-1:2.03-2.module+el8.3.0+6446+594cad75.noarch
     - perl-Test-NoWarnings-0:1.04-15.module+el8.3.0+6446+594cad75.noarch
     - perl-IPC-Run-0:0.99-1.module+el8.3.0+6446+594cad75.noarch
     - perl-Net-IDN-Encode-0:2.500-2.module+el8.3.0+6446+594cad75.x86_64
@@ -13789,7 +13790,9 @@ data:
     - perl-IO-Socket-SSL-0:2.066-4.module+el8.3.0+6452+449fe210.noarch
     - perl-Net-IDN-Encode-debuginfo-0:2.500-2.module+el8.3.0+6452+449fe210.x86_64
     - perl-IO-Socket-INET6-0:2.72-12.module+el8.3.0+6452+449fe210.noarch
-    - perl-Devel-StackTrace-1:2.03-2.module+el8.3.0+6452+449fe210.noarch
+
+# filtering does not work as expected when there are modular and not modular packages
+#    - perl-Devel-StackTrace-1:2.03-2.module+el8.3.0+6452+449fe210.noarch
     - perl-Net-LibIDN-0:0.12-35.module+el8.3.0+6452+449fe210.x86_64
     - perl-Net-SSLeay-debugsource-0:1.88-1.module+el8.3.0+6452+449fe210.x86_64
     - perl-Net-LibIDN-debuginfo-0:0.12-35.module+el8.3.0+6452+449fe210.x86_64
@@ -16391,7 +16394,8 @@ data:
     - perl-IO-Socket-SSL-0:2.066-4.module+el8.3.0+6446+37a50855.noarch
     - perl-Net-IDN-Encode-debuginfo-0:2.500-2.module+el8.3.0+6446+37a50855.x86_64
     - perl-Net-SSLeay-0:1.88-1.module+el8.3.0+6446+37a50855.x86_64
-    - perl-Devel-StackTrace-1:2.03-2.module+el8.3.0+6446+37a50855.noarch
+# filtering does not work as expected when there are modular and not modular packages
+#    - perl-Devel-StackTrace-1:2.03-2.module+el8.3.0+6446+37a50855.noarch
     - perl-Test-NoWarnings-0:1.04-15.module+el8.3.0+6446+37a50855.noarch
     - perl-IO-Tty-debugsource-0:1.12-11.module+el8.3.0+6446+37a50855.x86_64
 ...
