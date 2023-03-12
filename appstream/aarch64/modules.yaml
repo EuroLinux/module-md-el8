@@ -35253,10 +35253,30 @@ data:
     rpms:
     - perl-IO-Socket-SSL-0:2.066-4.module+el8.3.0+6446+594cad75.noarch
     - perl-IO-Socket-SSL-0:2.066-4.module+el8.3.0+6446+594cad75.src
+    - perl-IO-Tty-0:1.12-11.module+el8.3.0+6446+594cad75.aarch64
+    - perl-IO-Tty-debuginfo-0:1.12-11.module+el8.3.0+6446+594cad75.aarch64
+    - perl-IO-Tty-debugsource-0:1.12-11.module+el8.3.0+6446+594cad75.aarch64
+    - perl-IPC-Run-0:0.99-1.module+el8.3.0+6446+594cad75.noarch
+    - perl-Net-IDN-Encode-0:2.500-2.module+el8.3.0+6446+594cad75.aarch64
+    - perl-Net-IDN-Encode-debuginfo-0:2.500-2.module+el8.3.0+6446+594cad75.aarch64
+    - perl-Net-IDN-Encode-debugsource-0:2.500-2.module+el8.3.0+6446+594cad75.aarch64
+    - perl-Net-LibIDN-0:0.12-35.module+el8.3.0+6446+594cad75.aarch64
+    - perl-Net-LibIDN-debuginfo-0:0.12-35.module+el8.3.0+6446+594cad75.aarch64
+    - perl-Net-LibIDN-debugsource-0:0.12-35.module+el8.3.0+6446+594cad75.aarch64
     - perl-Net-SSLeay-0:1.88-1.module+el8.3.0+6446+594cad75.aarch64
     - perl-Net-SSLeay-0:1.88-1.module+el8.3.0+6446+594cad75.src
+    - perl-Net-SSLeay-0:1.88-1.module+el8.3.0+6446+594cad75.aarch64
+    - perl-Net-SSLeay-debuginfo-0:1.88-1.module+el8.3.0+6446+594cad75.aarch64
     - perl-Net-SSLeay-debuginfo-0:1.88-1.module+el8.3.0+6446+594cad75.aarch64
     - perl-Net-SSLeay-debugsource-0:1.88-1.module+el8.3.0+6446+594cad75.aarch64
+    - perl-Net-SSLeay-debugsource-0:1.88-1.module+el8.3.0+6446+594cad75.aarch64
+    - perl-Test-NoWarnings-0:1.04-15.module+el8.3.0+6446+594cad75.noarch
+#    - perl-Devel-StackTrace-1:2.03-2.module+el8.3.0+6446+594cad75.noarch
+#    - perl-IO-Socket-INET6-0:2.72-12.module+el8.3.0+6446+594cad75.noarch
+#    - perl-Socket6-0:0.28-6.module+el8.3.0+6446+594cad75.aarch64
+#    - perl-Socket6-debuginfo-0:0.28-6.module+el8.3.0+6446+594cad75.aarch64
+#    - perl-Socket6-debugsource-0:0.28-6.module+el8.3.0+6446+594cad75.aarch64
+# filtering does not work as expected when there are modular and not modular packages
 ...
 ---
 document: modulemd
