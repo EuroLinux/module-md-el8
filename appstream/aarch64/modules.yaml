@@ -60324,3 +60324,324 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - buildah
+    - conmon
+    - container-selinux
+    - containernetworking-plugins
+    - containers-common
+    - fuse-overlayfs
+    - libslirp
+    - podman
+    - podman-docker
+    - podman-manpages
+    - podman-remote
+    - python3-podman
+    - runc
+    - skopeo
+    - slirp4netns
+  arch: aarch64
+  artifacts:
+    rpms:
+    - aardvark-dns-2:1.0.1-35.module+el8.7.0+16520+2db5507d.aarch64
+    - buildah-1:1.24.5-2.module+el8.7.0+16520+2db5507d.aarch64
+    - buildah-debuginfo-1:1.24.5-2.module+el8.7.0+16520+2db5507d.aarch64
+    - buildah-debugsource-1:1.24.5-2.module+el8.7.0+16520+2db5507d.aarch64
+    - buildah-tests-1:1.24.5-2.module+el8.7.0+16520+2db5507d.aarch64
+    - buildah-tests-debuginfo-1:1.24.5-2.module+el8.7.0+16520+2db5507d.aarch64
+    - cockpit-podman-0:46-1.module+el8.7.0+16520+2db5507d.noarch
+    - conmon-2:2.1.4-1.module+el8.7.0+16520+2db5507d.aarch64
+    - conmon-debuginfo-2:2.1.4-1.module+el8.7.0+16520+2db5507d.aarch64
+    - conmon-debugsource-2:2.1.4-1.module+el8.7.0+16520+2db5507d.aarch64
+    - container-selinux-2:2.189.0-1.module+el8.7.0+16520+2db5507d.noarch
+    - containernetworking-plugins-1:1.1.1-2.module+el8.7.0+16520+2db5507d.aarch64
+    - containernetworking-plugins-debuginfo-1:1.1.1-2.module+el8.7.0+16520+2db5507d.aarch64
+    - containernetworking-plugins-debugsource-1:1.1.1-2.module+el8.7.0+16520+2db5507d.aarch64
+    - containers-common-2:1-35.module+el8.7.0+16520+2db5507d.aarch64
+    - crit-0:3.15-3.module+el8.7.0+16520+2db5507d.aarch64
+    - criu-0:3.15-3.module+el8.7.0+16520+2db5507d.aarch64
+    - criu-debuginfo-0:3.15-3.module+el8.7.0+16520+2db5507d.aarch64
+    - criu-debugsource-0:3.15-3.module+el8.7.0+16520+2db5507d.aarch64
+    - criu-devel-0:3.15-3.module+el8.7.0+16520+2db5507d.aarch64
+    - criu-libs-0:3.15-3.module+el8.7.0+16520+2db5507d.aarch64
+    - criu-libs-debuginfo-0:3.15-3.module+el8.7.0+16520+2db5507d.aarch64
+    - crun-0:1.5-1.module+el8.7.0+16520+2db5507d.aarch64
+    - crun-debuginfo-0:1.5-1.module+el8.7.0+16520+2db5507d.aarch64
+    - crun-debugsource-0:1.5-1.module+el8.7.0+16520+2db5507d.aarch64
+    - fuse-overlayfs-0:1.9-1.module+el8.7.0+16520+2db5507d.aarch64
+    - fuse-overlayfs-debuginfo-0:1.9-1.module+el8.7.0+16520+2db5507d.aarch64
+    - fuse-overlayfs-debugsource-0:1.9-1.module+el8.7.0+16520+2db5507d.aarch64
+    - libslirp-0:4.4.0-1.module+el8.7.0+16520+2db5507d.aarch64
+    - libslirp-debuginfo-0:4.4.0-1.module+el8.7.0+16520+2db5507d.aarch64
+    - libslirp-debugsource-0:4.4.0-1.module+el8.7.0+16520+2db5507d.aarch64
+    - libslirp-devel-0:4.4.0-1.module+el8.7.0+16520+2db5507d.aarch64
+    - netavark-2:1.0.1-35.module+el8.7.0+16520+2db5507d.aarch64
+    - oci-seccomp-bpf-hook-0:1.2.5-1.module+el8.7.0+16520+2db5507d.aarch64
+    - oci-seccomp-bpf-hook-debuginfo-0:1.2.5-1.module+el8.7.0+16520+2db5507d.aarch64
+    - oci-seccomp-bpf-hook-debugsource-0:1.2.5-1.module+el8.7.0+16520+2db5507d.aarch64
+    - podman-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - podman-catatonit-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - podman-catatonit-debuginfo-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - podman-debuginfo-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - podman-debugsource-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - podman-docker-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.noarch
+    - podman-gvproxy-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - podman-gvproxy-debuginfo-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - podman-plugins-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - podman-plugins-debuginfo-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - podman-remote-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - podman-remote-debuginfo-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - podman-tests-2:4.0.2-9.module+el8.7.0+18128+0ba3165d.aarch64
+    - python3-criu-0:3.15-3.module+el8.7.0+16520+2db5507d.aarch64
+    - python3-podman-0:4.0.0-1.module+el8.7.0+16520+2db5507d.noarch
+    - runc-1:1.1.4-1.module+el8.7.0+16520+2db5507d.aarch64
+    - runc-debuginfo-1:1.1.4-1.module+el8.7.0+16520+2db5507d.aarch64
+    - runc-debugsource-1:1.1.4-1.module+el8.7.0+16520+2db5507d.aarch64
+    - skopeo-2:1.6.2-5.module+el8.7.0+16520+2db5507d.aarch64
+    - skopeo-debuginfo-2:1.6.2-5.module+el8.7.0+16520+2db5507d.aarch64
+    - skopeo-debugsource-2:1.6.2-5.module+el8.7.0+16520+2db5507d.aarch64
+    - skopeo-tests-2:1.6.2-5.module+el8.7.0+16520+2db5507d.aarch64
+    - slirp4netns-0:1.1.8-2.module+el8.7.0+16520+2db5507d.aarch64
+    - slirp4netns-debuginfo-0:1.1.8-2.module+el8.7.0+16520+2db5507d.aarch64
+    - slirp4netns-debugsource-0:1.1.8-2.module+el8.7.0+16520+2db5507d.aarch64
+    - toolbox-0:0.0.99.3-0.5.module+el8.7.0+16520+2db5507d.aarch64
+    - toolbox-debuginfo-0:0.0.99.3-0.5.module+el8.7.0+16520+2db5507d.aarch64
+    - toolbox-debugsource-0:0.0.99.3-0.5.module+el8.7.0+16520+2db5507d.aarch64
+    - toolbox-tests-0:0.0.99.3-0.5.module+el8.7.0+16520+2db5507d.aarch64
+    - udica-0:0.2.6-3.module+el8.7.0+16520+2db5507d.noarch
+  buildopts:
+    rpms:
+      macros: '%_with_ignore_tests 1
+
+        '
+  components:
+    rpms:
+      buildah:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      cockpit-podman:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      conmon:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      container-selinux:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      containernetworking-plugins:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      containers-common:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      criu:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      crun:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      fuse-overlayfs:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      libslirp:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '-1'
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      oci-seccomp-bpf-hook:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      podman:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      python-podman:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      runc:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      skopeo:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      slirp4netns:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      toolbox:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+      udica:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Primary component of this module
+        ref: stream-container-tools-4.0-rhel-8.7.0
+  context: 489fc8e9
+  dependencies:
+  - buildrequires:
+      go-toolset:
+      - rhel8
+      golang-ecosystem:
+      - '1.0'
+      platform:
+      - el8.7.0.z
+    requires:
+      platform:
+      - el8
+  description: 'Stable versions of podman 4.0, buildah 1.24, skopeo 1.6, runc, conmon,
+    CRIU, Udica, etc as well as dependencies such as container-selinux built and tested
+    together. Released with RHEL 8.6 and supported for 24 months. During the support
+    lifecycle, back ports of important, critical vulnerabilities (CVEs, RHSAs) and
+    bug fixes (RHBAs) are provided to this stream, and versions do not move forward.
+    For more information see: https://access.redhat.com/support/policy/updates/containertools'
+  license:
+    content:
+    - ASL 2.0
+    - ASL 2.0 and BSD and MIT
+    - ASL 2.0 and GPLv3+
+    - BSD and MIT
+    - GPLv2
+    - GPLv2+
+    - GPLv3+
+    - LGPLv2+
+    module:
+    - MIT
+  name: container-tools
+  profiles:
+    common:
+      rpms:
+      - buildah
+      - cockpit-podman
+      - conmon
+      - container-selinux
+      - containernetworking-plugins
+      - containers-common
+      - criu
+      - crun
+      - fuse-overlayfs
+      - libslirp
+      - podman
+      - python3-podman
+      - runc
+      - skopeo
+      - slirp4netns
+      - toolbox
+      - udica
+  references:
+    community: https://github.com/projectatomic
+    documentation: https://projectatomic.io
+    tracker: https://github.com/projectatomic
+  stream: '4.0'
+  summary: Stable versions of podman 4.0, buildah 1.24, skopeo 1.6, runc, conmon,
+    CRIU, Udica, etc as well as dependencies such as container-selinux built and tested
+    together, and supported as documented on the Application Stream lifecycle page.
+  version: '8070020230209105812'
+document: modulemd
+version: 2
+...
