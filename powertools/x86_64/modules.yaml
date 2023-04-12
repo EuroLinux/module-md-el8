@@ -7476,7 +7476,7 @@ data:
     - python3-libnbd-debuginfo-0:1.6.0-5.module+el8.7.0+16689+53d59bc2.i686
     - python3-libvirt-0:8.0.0-2.module+el8.7.0+16689+53d59bc2.i686
     - python3-libvirt-debuginfo-0:8.0.0-2.module+el8.7.0+16689+53d59bc2.i686
-    - qemu-kvm-tests-15:6.2.0-20.module+el8.7.0+16689+53d59bc2.1.x86_64
+    - qemu-kvm-tests-15:6.2.0-22.module+el8.7.0+18170+646069c1.2.x86_64
     - ruby-hivex-0:1.3.18-23.module+el8.7.0+16689+53d59bc2.i686
     - ruby-hivex-debuginfo-0:1.3.18-23.module+el8.7.0+16689+53d59bc2.i686
     - sgabios-1:0.20170427git-3.module+el8.7.0+16689+53d59bc2.i686
