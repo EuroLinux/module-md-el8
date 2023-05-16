@@ -2,11 +2,21 @@
 document: modulemd-defaults
 version: 1
 data:
+  module: jaxb
+  stream: "4"
+  profiles:
+    4: [common]
+...
+---
+document: modulemd-defaults
+version: 1
+data:
   module: swig
   stream: "3.0"
   profiles:
     3.0: [common]
     4.0: [common]
+    4.1: [common]
 ...
 ---
 document: modulemd-defaults
@@ -103,6 +113,7 @@ data:
     1.16: [common]
     1.18: [common]
     1.20: [common]
+    1.22: [common]
 ...
 ---
 document: modulemd-defaults
@@ -133,6 +144,7 @@ data:
     10: [server]
     12: [server]
     13: [server]
+    15: [server]
     9.6: [server]
 ...
 ---
