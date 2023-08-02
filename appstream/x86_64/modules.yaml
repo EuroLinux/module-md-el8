@@ -91803,3 +91803,70 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  arch: x86_64
+  artifacts:
+    rpms:
+    - cjose-0:0.6.1-3.module+el8.8.0+19464+578f4546.x86_64
+    - cjose-debuginfo-0:0.6.1-3.module+el8.8.0+19464+578f4546.x86_64
+    - cjose-debugsource-0:0.6.1-3.module+el8.8.0+19464+578f4546.x86_64
+    - cjose-devel-0:0.6.1-3.module+el8.8.0+19464+578f4546.x86_64
+    - mod_auth_openidc-0:2.4.9.4-1.module+el8.7.0+14797+4085fcb6.x86_64
+    - mod_auth_openidc-debuginfo-0:2.4.9.4-1.module+el8.7.0+14797+4085fcb6.x86_64
+    - mod_auth_openidc-debugsource-0:2.4.9.4-1.module+el8.7.0+14797+4085fcb6.x86_64
+  components:
+    rpms:
+      cjose:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Provides JOSE support
+        ref: stream-mod_auth_open_idc-2.3-rhel-8.8.0
+      mod_auth_openidc:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: Provides the core functionality.
+        ref: stream-mod_auth_open_idc-2.3-rhel-8.8.0
+  context: 63b34585
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.8.0.z
+    requires:
+      platform:
+      - el8
+  description: This module enables an Apache 2.x web server to operate as an OpenID
+    Connect Relying Party and/or OAuth 2.0 Resource Server.
+  license:
+    content:
+    - ASL 2.0
+    - MIT
+    module:
+    - MIT
+  name: mod_auth_openidc
+  profiles:
+    default:
+      description: Default mod_auth_openidc module installation
+      rpms:
+      - cjose
+      - mod_auth_openidc
+  references:
+    community: https://github.com/zmartzone/mod_auth_openidc
+    documentation: https://github.com/zmartzone/mod_auth_openidc/wiki
+    tracker: https://github.com/zmartzone/mod_auth_openidc/issues
+  stream: '2.3'
+  summary: Apache module suporting OpenID Connect authentication
+  version: '8080020230720161126'
+document: modulemd
+version: 2
+...
