@@ -74672,7 +74672,8 @@ data:
   version: '8080020230531142208'
 document: modulemd
 version: 2
-...---
+...
+---
 data:
   arch: aarch64
   artifacts:
