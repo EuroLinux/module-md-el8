@@ -6750,9 +6750,9 @@ data:
     - ocaml-libguestfs-1:1.44.0-9.module+el8.8.0+16781+9f4724c2.aarch64
     - ocaml-libguestfs-debuginfo-1:1.44.0-9.module+el8.8.0+16781+9f4724c2.aarch64
     - ocaml-libguestfs-devel-1:1.44.0-9.module+el8.8.0+16781+9f4724c2.aarch64
-    - ocaml-libnbd-0:1.6.0-5.module+el8.8.0+16781+9f4724c2.aarch64.rpm
-    - ocaml-libnbd-debuginfo-0:1.6.0-5.module+el8.8.0+16781+9f4724c2.aarch64.rpm
-    - ocaml-libnbd-devel-0:1.6.0-5.module+el8.8.0+16781+9f4724c2.aarch64.rpm
+    - ocaml-libnbd-0:1.6.0-5.module+el8.8.0+16781+9f4724c2.aarch64
+    - ocaml-libnbd-debuginfo-0:1.6.0-5.module+el8.8.0+16781+9f4724c2.aarch64
+    - ocaml-libnbd-devel-0:1.6.0-5.module+el8.8.0+16781+9f4724c2.aarch64
     - qemu-guest-agent-15:6.2.0-22.module+el8.7.0+18170+646069c1.2.aarch64
     - qemu-guest-agent-debuginfo-15:6.2.0-22.module+el8.7.0+18170+646069c1.2.aarch64
     - qemu-img-15:6.2.0-22.module+el8.7.0+18170+646069c1.2.aarch64
