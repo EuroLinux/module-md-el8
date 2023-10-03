@@ -78430,3 +78430,61 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - mailman
+  arch: aarch64
+  artifacts:
+    rpms:
+    - mailman-3:2.1.30-1.module+el8.9.0+19511+cc1b14d9.aarch64
+    - mailman-debuginfo-3:2.1.30-1.module+el8.9.0+19511+cc1b14d9.aarch64
+    - mailman-debugsource-3:2.1.30-1.module+el8.9.0+19511+cc1b14d9.aarch64
+  components:
+    rpms:
+      mailman:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Module API.
+        ref: stream-mailman-2.1-rhel-8.9.0
+  context: 0ef2f6ef
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0
+      python27:
+      - '2.7'
+    requires:
+      platform:
+      - el8
+      python27:
+      - '2.7'
+  description: An initial version of the mailman mailing list management software
+  filter:
+    rpms:
+    - python3-dns
+  license:
+    content:
+    - GPLv2+
+    module:
+    - MIT
+  name: mailman
+  profiles:
+    common:
+      rpms:
+      - mailman
+  references:
+    documentation: https://launchpad.net/mailman
+    tracker: https://bugs.launchpad.net/mailman
+  stream: '2.1'
+  summary: Electronic mail discussion and e-newsletter lists managing software
+  version: '8090020230727085757'
+document: modulemd
+version: 2
+...
