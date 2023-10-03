@@ -9782,3 +9782,70 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  arch: i686
+  artifacts:
+    rpms:
+    - cjose-0:0.6.1-4.module+el8.9.0+19469+5b493da9.i686
+    - cjose-devel-0:0.6.1-4.module+el8.9.0+19469+5b493da9.i686
+    - cjose-debugsource-0:0.6.1-4.module+el8.9.0+19469+5b493da9.i686
+    - cjose-debuginfo-0:0.6.1-4.module+el8.9.0+19469+5b493da9.i686
+    - mod_auth_openidc-0:2.4.9.4-5.module+el8.9.0+18723+672ccf5d.i686
+    - mod_auth_openidc-debugsource-0:2.4.9.4-5.module+el8.9.0+18723+672ccf5d.i686
+    - mod_auth_openidc-debuginfo-0:2.4.9.4-5.module+el8.9.0+18723+672ccf5d.i686
+  components:
+    rpms:
+      cjose:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Provides JOSE support
+        ref: stream-mod_auth_openidc-2.3-rhel-8.9.0
+      mod_auth_openidc:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: Provides the core functionality.
+        ref: stream-mod_auth_openidc-2.3-rhel-8.9.0
+  context: b46abd14
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0
+    requires:
+      platform:
+      - el8
+  description: This module enables an Apache 2.x web server to operate as an OpenID
+    Connect Relying Party and/or OAuth 2.0 Resource Server.
+  license:
+    content:
+    - ASL 2.0
+    - MIT
+    module:
+    - MIT
+  name: mod_auth_openidc
+  profiles:
+    default:
+      description: Default mod_auth_openidc module installation
+      rpms:
+      - cjose
+      - mod_auth_openidc
+  references:
+    community: https://github.com/zmartzone/mod_auth_openidc
+    documentation: https://github.com/zmartzone/mod_auth_openidc/wiki
+    tracker: https://github.com/zmartzone/mod_auth_openidc/issues
+  stream: '2.3'
+  summary: Apache module suporting OpenID Connect authentication
+  version: '8090020230721123832'
+document: modulemd
+version: 2
+...
