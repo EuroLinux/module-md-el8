@@ -80710,7 +80710,7 @@ data:
     - libguestfs-tools-1:1.44.0-9.module+el8.9.0+18724+20190c23.noarch
     - libguestfs-tools-c-1:1.44.0-9.module+el8.9.0+18724+20190c23.aarch64
     - libguestfs-tools-c-debuginfo-1:1.44.0-9.module+el8.9.0+18724+20190c23.aarch64
-    - libguestfs-winsupport-0:8.9-1.module+el8.9.0+19848+64bb061f.aarch64
+    - libguestfs-winsupport-0:8.9-1.module+el8.9.0+19846+58c50e4e.aarch64
     - libguestfs-xfs-1:1.44.0-9.module+el8.9.0+18724+20190c23.aarch64
     - libiscsi-0:1.18.0-8.module+el8.9.0+18724+20190c23.aarch64
     - libiscsi-debuginfo-0:1.18.0-8.module+el8.9.0+18724+20190c23.aarch64
