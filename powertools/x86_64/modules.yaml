@@ -9278,7 +9278,7 @@ data:
     - python39-debug-0:3.9.16-1.module+el8.8.0+18968+3d7b19f0.1.x86_64
     - python39-debuginfo-0:3.9.16-1.module+el8.8.0+18968+3d7b19f0.1.x86_64
     - python39-debugsource-0:3.9.16-1.module+el8.8.0+18968+3d7b19f0.1.x86_64
-    - python39-debug-3.9.16-1.module+el8.8.0+20025+f2100191.2.x86_64.rpm
+    - python39-debug-0:3.9.16-1.module+el8.8.0+20025+f2100191.2.x86_64.rpm
     - python39-idle-0:3.9.16-1.module+el8.8.0+18968+3d7b19f0.1.x86_64
     - python39-iniconfig-0:1.1.1-2.module+el8.4.0+9822+20bf1249.noarch
     - python39-libs-0:3.9.16-1.module+el8.8.0+18968+3d7b19f0.1.x86_64
