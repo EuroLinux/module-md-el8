@@ -8064,7 +8064,7 @@ data:
     documentation: https://docs.python.org/3.9/
   stream: '3.9'
   summary: Python programming language, version 3.9
-  version: '8080020230531142208'
+  version: '8080020230922214114'
   xmd: {}
 document: modulemd
 version: '2'
