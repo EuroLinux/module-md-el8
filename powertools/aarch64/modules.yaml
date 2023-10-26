@@ -7668,7 +7668,7 @@ data:
     rpms:
     - Cython-0:0.29.21-5.module+el8.4.0+9822+20bf1249.src
     - Cython-debugsource-0:0.29.21-5.module+el8.4.0+9822+20bf1249.aarch64
-    - pybind11-0:2.6.1-2.module+el8.4.0+9822+20bf1249.src
+    - pybind11-0:2.7.1-1.module+el8.6.0+12838+640e6226.src
     - pytest-0:6.0.2-2.module+el8.4.0+9822+20bf1249.src
     - python-attrs-0:20.3.0-2.module+el8.4.0+9822+20bf1249.src
     - python-iniconfig-0:1.1.1-2.module+el8.4.0+9822+20bf1249.src
@@ -7680,7 +7680,7 @@ data:
     - python39-Cython-0:0.29.21-5.module+el8.4.0+9822+20bf1249.aarch64
     - python39-Cython-debuginfo-0:0.29.21-5.module+el8.4.0+9822+20bf1249.aarch64
     - python39-attrs-0:20.3.0-2.module+el8.4.0+9822+20bf1249.noarch
-    - python39-debug-0:3.9.16-1.module+el8.8.0+20025+f2100191.2.aarch64.rpm
+    - python39-debug-0:3.9.16-1.module+el8.8.0+20025+f2100191.2.aarch64
     - python39-iniconfig-0:1.1.1-2.module+el8.4.0+9822+20bf1249.noarch
     - python39-more-itertools-0:8.5.0-2.module+el8.4.0+9822+20bf1249.noarch
     - python39-packaging-0:20.4-4.module+el8.4.0+9822+20bf1249.noarch

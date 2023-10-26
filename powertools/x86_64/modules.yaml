@@ -9260,6 +9260,7 @@ data:
   arch: x86_64
   artifacts:
     rpms:
+
     - Cython-0:0.29.21-5.module+el8.4.0+9822+20bf1249.src
     - Cython-debugsource-0:0.29.21-5.module+el8.4.0+9822+20bf1249.x86_64
     - pybind11-0:2.7.1-1.module+el8.6.0+12838+640e6226.src
@@ -9271,14 +9272,11 @@ data:
     - python-pluggy-0:0.13.1-3.module+el8.4.0+9822+20bf1249.src
     - python-py-0:1.10.0-1.module+el8.4.0+9822+20bf1249.src
     - python-wcwidth-0:0.2.5-3.module+el8.4.0+9822+20bf1249.src
-    - python39-0:3.9.16-1.module+el8.8.0+18968+3d7b19f0.1.x86_64
     - python39-Cython-0:0.29.21-5.module+el8.4.0+9822+20bf1249.x86_64
     - python39-Cython-debuginfo-0:0.29.21-5.module+el8.4.0+9822+20bf1249.x86_64
     - python39-attrs-0:20.3.0-2.module+el8.4.0+9822+20bf1249.noarch
-    - python39-debug-0:3.9.16-1.module+el8.8.0+20025+f2100191.2.x86_64.rpm
-    - python39-idle-0:3.9.16-1.module+el8.8.0+18968+3d7b19f0.1.x86_64
+    - python39-debug-0:3.9.16-1.module+el8.8.0+20025+f2100191.2.x86_64
     - python39-iniconfig-0:1.1.1-2.module+el8.4.0+9822+20bf1249.noarch
-    - python39-libs-0:3.9.16-1.module+el8.8.0+18968+3d7b19f0.1.x86_64
     - python39-more-itertools-0:8.5.0-2.module+el8.4.0+9822+20bf1249.noarch
     - python39-packaging-0:20.4-4.module+el8.4.0+9822+20bf1249.noarch
     - python39-pluggy-0:0.13.1-3.module+el8.4.0+9822+20bf1249.noarch
@@ -9287,9 +9285,6 @@ data:
     - python39-pybind11-devel-0:2.7.1-1.module+el8.6.0+12838+640e6226.x86_64
     - python39-pyparsing-0:2.4.7-5.module+el8.4.0+9822+20bf1249.noarch
     - python39-pytest-0:6.0.2-2.module+el8.4.0+9822+20bf1249.noarch
-    - python39-rpm-macros-0:3.9.16-1.module+el8.8.0+18968+3d7b19f0.1.noarch
-    - python39-test-0:3.9.16-1.module+el8.8.0+18968+3d7b19f0.1.x86_64
-    - python39-tkinter-0:3.9.16-1.module+el8.8.0+18968+3d7b19f0.1.x86_64
     - python39-wcwidth-0:0.2.5-3.module+el8.4.0+9822+20bf1249.noarch
     - python3x-pyparsing-0:2.4.7-5.module+el8.4.0+9822+20bf1249.src
   buildopts:
