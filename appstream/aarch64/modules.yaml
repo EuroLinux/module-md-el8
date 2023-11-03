@@ -79460,3 +79460,69 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - squid
+  arch: aarch64
+  artifacts:
+    rpms:
+    - libecap-0:1.0.1-2.module+el8.1.0+4044+36416a77.aarch64
+    - libecap-debuginfo-0:1.0.1-2.module+el8.1.0+4044+36416a77.aarch64
+    - libecap-debugsource-0:1.0.1-2.module+el8.1.0+4044+36416a77.aarch64
+    - libecap-devel-0:1.0.1-2.module+el8.1.0+4044+36416a77.aarch64
+    - squid-7:4.15-6.module+el8.8.0+20569+26050b0f.1.aarch64
+    - squid-debuginfo-7:4.15-6.module+el8.8.0+20569+26050b0f.1.aarch64
+    - squid-debugsource-7:4.15-6.module+el8.8.0+20569+26050b0f.1.aarch64
+  components:
+    rpms:
+      libecap:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: library needed by Squid
+        ref: stream-1.0-rhel-8.8.0
+      squid:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: squid caching proxy
+        ref: stream-4-rhel-8.8.0
+  context: 63b34585
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.8.0.z
+    requires:
+      platform:
+      - el8
+  description: an initial version of the squid caching proxy module
+  license:
+    content:
+    - BSD
+    - GPLv2+ and (LGPLv2+ and MIT and BSD and Public Domain)
+    module:
+    - MIT
+  name: squid
+  profiles:
+    common:
+      rpms:
+      - squid
+  references:
+    documentation: http://www.squid-cache.org/Doc/
+    tracker: https://bugs.squid-cache.org/index.cgi
+  stream: '4'
+  summary: Squid - Optimising Web Delivery
+  version: '8080020231030214932'
+document: modulemd
+version: 2
+...
