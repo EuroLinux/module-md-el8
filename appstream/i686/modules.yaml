@@ -9782,3 +9782,1628 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  arch: i686
+  artifacts:
+    rpms:
+    - cjose-0:0.6.1-4.module+el8.9.0+19469+5b493da9.i686
+    - cjose-devel-0:0.6.1-4.module+el8.9.0+19469+5b493da9.i686
+    - cjose-debugsource-0:0.6.1-4.module+el8.9.0+19469+5b493da9.i686
+    - cjose-debuginfo-0:0.6.1-4.module+el8.9.0+19469+5b493da9.i686
+    - mod_auth_openidc-0:2.4.9.4-5.module+el8.9.0+18723+672ccf5d.i686
+    - mod_auth_openidc-debugsource-0:2.4.9.4-5.module+el8.9.0+18723+672ccf5d.i686
+    - mod_auth_openidc-debuginfo-0:2.4.9.4-5.module+el8.9.0+18723+672ccf5d.i686
+  components:
+    rpms:
+      cjose:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Provides JOSE support
+        ref: stream-mod_auth_openidc-2.3-rhel-8.9.0
+      mod_auth_openidc:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: Provides the core functionality.
+        ref: stream-mod_auth_openidc-2.3-rhel-8.9.0
+  context: b46abd14
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0
+    requires:
+      platform:
+      - el8
+  description: This module enables an Apache 2.x web server to operate as an OpenID
+    Connect Relying Party and/or OAuth 2.0 Resource Server.
+  license:
+    content:
+    - ASL 2.0
+    - MIT
+    module:
+    - MIT
+  name: mod_auth_openidc
+  profiles:
+    default:
+      description: Default mod_auth_openidc module installation
+      rpms:
+      - cjose
+      - mod_auth_openidc
+  references:
+    community: https://github.com/zmartzone/mod_auth_openidc
+    documentation: https://github.com/zmartzone/mod_auth_openidc/wiki
+    tracker: https://github.com/zmartzone/mod_auth_openidc/issues
+  stream: '2.3'
+  summary: Apache module suporting OpenID Connect authentication
+  version: '8090020230721123832'
+document: modulemd
+version: 2
+...
+---
+data:
+  api:
+    rpms:
+    - mailman
+  arch: i686
+  artifacts:
+    rpms:
+    - mailman-3:2.1.30-1.module+el8.9.0+19511+cc1b14d9.i686
+    - mailman-debugsource-3:2.1.30-1.module+el8.9.0+19511+cc1b14d9.i686
+    - mailman-debuginfo-3:2.1.30-1.module+el8.9.0+19511+cc1b14d9.i686
+  components:
+    rpms:
+      mailman:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Module API.
+        ref: stream-mailman-2.1-rhel-8.9.0
+  context: 0ef2f6ef
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0
+      python27:
+      - '2.7'
+    requires:
+      platform:
+      - el8
+      python27:
+      - '2.7'
+  description: An initial version of the mailman mailing list management software
+  filter:
+    rpms:
+    - python3-dns
+  license:
+    content:
+    - GPLv2+
+    module:
+    - MIT
+  name: mailman
+  profiles:
+    common:
+      rpms:
+      - mailman
+  references:
+    documentation: https://launchpad.net/mailman
+    tracker: https://bugs.launchpad.net/mailman
+  stream: '2.1'
+  summary: Electronic mail discussion and e-newsletter lists managing software
+  version: '8090020230727085757'
+document: modulemd
+version: 2
+...
+---
+data:
+  api:
+    rpms:
+    - babel
+    - python-sqlalchemy-doc
+    - python2
+    - python2-Cython
+    - python2-PyMySQL
+    - python2-attrs
+    - python2-babel
+    - python2-backports
+    - python2-backports-ssl_match_hostname
+    - python2-bson
+    - python2-chardet
+    - python2-coverage
+    - python2-debug
+    - python2-devel
+    - python2-dns
+    - python2-docs
+    - python2-docs-info
+    - python2-docutils
+    - python2-funcsigs
+    - python2-idna
+    - python2-ipaddress
+    - python2-jinja2
+    - python2-libs
+    - python2-lxml
+    - python2-markupsafe
+    - python2-mock
+    - python2-nose
+    - python2-numpy
+    - python2-numpy-doc
+    - python2-numpy-f2py
+    - python2-pip
+    - python2-pluggy
+    - python2-psycopg2
+    - python2-psycopg2-debug
+    - python2-psycopg2-tests
+    - python2-py
+    - python2-pygments
+    - python2-pymongo
+    - python2-pymongo-gridfs
+    - python2-pysocks
+    - python2-pytest
+    - python2-pytest-mock
+    - python2-pytz
+    - python2-pyyaml
+    - python2-requests
+    - python2-rpm-macros
+    - python2-scipy
+    - python2-setuptools
+    - python2-setuptools_scm
+    - python2-six
+    - python2-sqlalchemy
+    - python2-test
+    - python2-tkinter
+    - python2-tools
+    - python2-urllib3
+    - python2-virtualenv
+    - python2-wheel
+  arch: i686
+  artifacts:
+    rpms:
+    - Cython-debugsource-0:0.28.1-7.module+el8.9.0+19487+7dc18407.i686
+    - PyYAML-debugsource-0:3.12-16.module+el8.9.0+19487+7dc18407.i686
+    - babel-0:2.5.1-10.module+el8.9.0+19487+7dc18407.noarch
+    - numpy-debugsource-1:1.14.2-16.module+el8.9.0+19487+7dc18407.i686
+    - python-coverage-debugsource-0:4.5.1-5.module+el8.9.0+19487+7dc18407.i686
+    - python-lxml-debugsource-0:4.2.3-6.module+el8.9.0+19487+7dc18407.i686
+    - python-nose-docs-0:1.3.7-31.module+el8.9.0+19487+7dc18407.noarch
+    - python-sqlalchemy-doc-0:1.3.2-2.module+el8.9.0+19487+7dc18407.noarch
+    - python2-0:2.7.18-14.module+el8.9.0+19487+7dc18407.i686
+    - python2-Cython-0:0.28.1-7.module+el8.9.0+19487+7dc18407.i686
+    - python2-Cython-debuginfo-0:0.28.1-7.module+el8.9.0+19487+7dc18407.i686
+    - python2-PyMySQL-0:0.8.0-10.module+el8.9.0+19487+7dc18407.noarch
+    - python2-attrs-0:17.4.0-10.module+el8.9.0+19487+7dc18407.noarch
+    - python2-babel-0:2.5.1-10.module+el8.9.0+19487+7dc18407.noarch
+    - python2-backports-0:1.0-16.module+el8.9.0+18326+1b5baeee.i686
+    - python2-backports-ssl_match_hostname-0:3.5.0.1-12.module+el8.9.0+18326+1b5baeee.noarch
+    - python2-chardet-0:3.0.4-10.module+el8.9.0+19487+7dc18407.noarch
+    - python2-coverage-0:4.5.1-5.module+el8.9.0+19487+7dc18407.i686
+    - python2-coverage-debuginfo-0:4.5.1-5.module+el8.9.0+19487+7dc18407.i686
+    - python2-debug-0:2.7.18-14.module+el8.9.0+19487+7dc18407.i686
+    - python2-debuginfo-0:2.7.18-14.module+el8.9.0+19487+7dc18407.i686
+    - python2-debugsource-0:2.7.18-14.module+el8.9.0+19487+7dc18407.i686
+    - python2-devel-0:2.7.18-14.module+el8.9.0+19487+7dc18407.i686
+    - python2-dns-0:1.15.0-10.module+el8.9.0+19487+7dc18407.noarch
+    - python2-docs-0:2.7.16-2.module+el8.9.0+18326+1b5baeee.noarch
+    - python2-docs-info-0:2.7.16-2.module+el8.9.0+18326+1b5baeee.noarch
+    - python2-docutils-0:0.14-12.module+el8.9.0+19487+7dc18407.noarch
+    - python2-funcsigs-0:1.0.2-13.module+el8.9.0+19487+7dc18407.noarch
+    - python2-idna-0:2.5-7.module+el8.9.0+19487+7dc18407.noarch
+    - python2-ipaddress-0:1.0.18-6.module+el8.9.0+18326+1b5baeee.noarch
+    - python2-jinja2-0:2.10-9.module+el8.9.0+19487+7dc18407.noarch
+    - python2-libs-0:2.7.18-14.module+el8.9.0+19487+7dc18407.i686
+    - python2-lxml-0:4.2.3-6.module+el8.9.0+19487+7dc18407.i686
+    - python2-lxml-debuginfo-0:4.2.3-6.module+el8.9.0+19487+7dc18407.i686
+    - python2-markupsafe-0:0.23-19.module+el8.9.0+19487+7dc18407.i686
+    - python2-mock-0:2.0.0-13.module+el8.9.0+19487+7dc18407.noarch
+    - python2-nose-0:1.3.7-31.module+el8.9.0+19487+7dc18407.noarch
+    - python2-numpy-1:1.14.2-16.module+el8.9.0+19487+7dc18407.i686
+    - python2-numpy-debuginfo-1:1.14.2-16.module+el8.9.0+19487+7dc18407.i686
+    - python2-numpy-doc-1:1.14.2-16.module+el8.9.0+19487+7dc18407.noarch
+    - python2-numpy-f2py-1:1.14.2-16.module+el8.9.0+19487+7dc18407.i686
+    - python2-pip-0:9.0.3-19.module+el8.9.0+19487+7dc18407.noarch
+    - python2-pip-wheel-0:9.0.3-19.module+el8.9.0+19487+7dc18407.noarch
+    - python2-pluggy-0:0.6.0-8.module+el8.9.0+19487+7dc18407.noarch
+    - python2-py-0:1.5.3-6.module+el8.9.0+19487+7dc18407.noarch
+    - python2-pygments-0:2.2.0-22.module+el8.9.0+19487+7dc18407.noarch
+    - python2-pysocks-0:1.6.8-6.module+el8.9.0+19487+7dc18407.noarch
+    - python2-pytest-0:3.4.2-13.module+el8.9.0+19487+7dc18407.noarch
+    - python2-pytest-mock-0:1.9.0-4.module+el8.9.0+19487+7dc18407.noarch
+    - python2-pytz-0:2017.2-13.module+el8.9.0+19487+7dc18407.noarch
+    - python2-pyyaml-0:3.12-16.module+el8.9.0+19487+7dc18407.i686
+    - python2-pyyaml-debuginfo-0:3.12-16.module+el8.9.0+19487+7dc18407.i686
+    - python2-requests-0:2.20.0-4.module+el8.9.0+19487+7dc18407.noarch
+    - python2-rpm-macros-0:3-38.module+el8.9.0+19487+7dc18407.noarch
+    - python2-scipy-0:1.0.0-22.module+el8.9.0+19487+7dc18407.i686
+    - python2-scipy-debuginfo-0:1.0.0-22.module+el8.9.0+19487+7dc18407.i686
+    - python2-setuptools-0:39.0.1-13.module+el8.9.0+19487+7dc18407.noarch
+    - python2-setuptools-wheel-0:39.0.1-13.module+el8.9.0+19487+7dc18407.noarch
+    - python2-setuptools_scm-0:1.15.7-6.module+el8.9.0+19487+7dc18407.noarch
+    - python2-six-0:1.11.0-6.module+el8.9.0+18326+1b5baeee.noarch
+    - python2-sqlalchemy-0:1.3.2-2.module+el8.9.0+19487+7dc18407.i686
+    - python2-test-0:2.7.18-14.module+el8.9.0+19487+7dc18407.i686
+    - python2-tkinter-0:2.7.18-14.module+el8.9.0+19487+7dc18407.i686
+    - python2-tools-0:2.7.18-14.module+el8.9.0+19487+7dc18407.i686
+    - python2-urllib3-0:1.24.2-3.module+el8.9.0+19487+7dc18407.noarch
+    - python2-virtualenv-0:15.1.0-22.module+el8.9.0+19487+7dc18407.noarch
+    - python2-wheel-1:0.31.1-3.module+el8.9.0+19487+7dc18407.noarch
+    - python2-wheel-wheel-1:0.31.1-3.module+el8.9.0+19487+7dc18407.noarch
+    - scipy-debugsource-0:1.0.0-22.module+el8.9.0+19487+7dc18407.i686
+  buildopts:
+    rpms:
+      macros: '# Note that we cannot disable building of all Python 3 subpackages,
+
+        # because python2-devel (needed to build all Python 2 packages)
+
+        # has a runtime dependency on python3-rpm-generators, and that
+
+        # package requires python3-setuptools at runtime. By rebuilding
+
+        # python-setuptools SRPM with only python2, we overshadow the
+
+        # already built python3 subpackage and it is no longer
+
+        # available for python3-rpm-generators when building python-pip
+
+        # (or any other Python package).
+
+        # We can disable Python 3 in all packages but ...
+
+        %_without_python3 1
+
+        # ... we have to have a way to enable some of them as described
+
+        # above. With this macro, we can add some module-specific
+
+        # conditions for python3-* subpackages and other special cases.
+
+        # %_with_python27_module 1
+
+
+        # for: python-jinja2
+
+        %_with_python2 1
+
+
+        # to solve circular dependency between pytest and [attrs, pluggy]
+
+        # %_without_tests 1
+
+        '
+  components:
+    rpms:
+      Cython:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Language for writing Python extension modules. Build dependency
+          of numpy and PyYAML
+        ref: stream-python27-2.7-rhel-8.9.0
+      PyYAML:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: YAML parser and emitter for Python
+        ref: stream-python27-2.7-rhel-8.9.0
+      babel:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Tools for internationalizing Python applications
+        ref: stream-python27-2.7-rhel-8.9.0
+      numpy:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: A fast multidimensional array facility for Python
+        ref: stream-python27-2.7-rhel-8.9.0
+      pytest:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Simple powerful testing with Python
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-PyMySQL:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python adapter for the MySQL/MariaDB databases
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-attrs:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python attributes without boilerplate
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-backports:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Namespace for backported Python features
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-backports-ssl_match_hostname:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: The ssl.match_hostname() function from Python 3. Dependency of
+          urllib3/requests.
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-chardet:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Character encoding auto-detection in Python. Dependency of requests.
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-coverage:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Code coverage testing module for Python
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-dns:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: DNS toolkit for Python. Useful package for IPA and mailman.
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-docs:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Documentation for Python
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-docutils:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: System for processing plaintext documentation
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-funcsigs:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python function signatures from PEP362 for Python 2.6, 2.7 and
+          3.2+. Dependency of Pytest and mock.
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-idna:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Internationalized Domain Names in Applications (IDNA). Dependency
+          of requests.
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-ipaddress:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Port of the python 3.3+ ipaddress module to 2.6+. Dependency of
+          urllib3/requests.
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-jinja2:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: General purpose template engine
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-lxml:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: XML processing library
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-markupsafe:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Implements a XML/HTML/XHTML Markup safe string for Python
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-mock:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: A Python Mocking and Patching Library for Testing
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-nose:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Discovery-based unit test extension for Python
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-pluggy:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: The plugin manager stripped of pytest specific details
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-psycopg2:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python adapter for the PostgreSQL database
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-py:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Library with cross-python path, ini-parsing, io, code, log facilities
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-pygments:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Syntax highlighting engine written in Python
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-pymongo:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python driver for MongoDB
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-pysocks:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: A Python SOCKS client module. Dependency of urllib3/requests.
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-pytest-mock:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Thin-wrapper around the mock package for easier use with py.test.
+          Build dependency of requests.
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-requests:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: HTTP library, written in Python, for human beings
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-setuptools_scm:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Blessed package to manage your versions by scm tags. Build dependency
+          of pytest and pytest-mock.
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-sqlalchemy:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Modular and flexible ORM library for python
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-urllib3:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python HTTP library with thread-safe connection pooling and file
+          post. Dependency of requests.
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-virtualenv:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Tool to create isolated Python environments
+        ref: stream-python27-2.7-rhel-8.9.0
+      python-wheel:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Used for unbundling of pip and setuptools
+        ref: stream-python27-2.7-rhel-8.9.0
+      python2:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Main Python language interpreter
+        ref: stream-python27-2.7-rhel-8.9.0
+      python2-pip:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python Packaging ecosystem
+        ref: stream-python27-2.7-rhel-8.9.0
+      python2-rpm-macros:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python 2 RPM macros - dependency of python2-devel
+        ref: stream-python27-2.7-rhel-8.9.0
+      python2-setuptools:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python Packaging ecosystem
+        ref: stream-python27-2.7-rhel-8.9.0
+      python2-six:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python 2 and 3 compatibility utilities
+        ref: stream-python27-2.7-rhel-8.9.0
+      pytz:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Runtime requires of babel, and python2-babel
+        ref: stream-python27-2.7-rhel-8.9.0
+      scipy:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Scientific Tools for Python
+        ref: stream-python27-2.7-rhel-8.9.0
+  context: 449e760b
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0
+      python27:
+      - '2.7'
+    requires:
+      platform:
+      - el8
+  description: 'This module provides the Python 2.7 interpreter and additional Python
+
+    packages the users might need.'
+  filter:
+    rpms:
+    - python3-Cython
+    - python3-PyMySQL
+    - python3-PyYAML
+    - python3-attrs
+    - python3-babel
+    - python3-bson
+    - python3-chardet
+    - python3-coverage
+    - python3-docutils
+    - python3-idna
+    - python3-jinja2
+    - python3-markupsafe
+    - python3-mock
+    - python3-nose
+    - python3-numpy
+    - python3-numpy-doc
+    - python3-numpy-f2py
+    - python3-pluggy
+    - python3-psycopg2
+    - python3-psycopg2-debug
+    - python3-psycopg2-tests
+    - python3-py
+    - python3-pygments
+    - python3-pymongo
+    - python3-pymongo-gridfs
+    - python3-pysocks
+    - python3-pytest
+    - python3-pytest-mock
+    - python3-pytz
+    - python3-requests
+    - python3-scipy
+    - python3-setuptools_scm
+    - python3-six
+    - python3-sqlalchemy
+    - python3-urllib3
+    - python3-virtualenv
+  license:
+    content:
+    - ASL 2.0
+    - ASL 2.0 and MIT
+    - ASL 2.0 and MIT and (MIT or GPLv2)
+    - BSD
+    - BSD and Boost and Public Domain
+    - BSD and Python
+    - BSD and Python and Unicode
+    - LGPLv2
+    - LGPLv2+ and Public Domain
+    - LGPLv3+ with exceptions
+    - MIT
+    - MIT and Public Domain
+    - MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0
+      or BSD)
+    - Public Domain
+    - Public Domain and BSD and Python and GPLv3+
+    - Python
+    module:
+    - MIT
+  name: python27
+  profiles:
+    common:
+      rpms:
+      - python2
+      - python2-libs
+      - python2-pip
+      - python2-setuptools
+  references:
+    community: https://www.python.org/
+    documentation: https://docs.python.org/2.7/
+  stream: '2.7'
+  summary: Python programming language, version 2.7
+  version: '8090020230724122240'
+document: modulemd
+version: 2
+...
+---
+data:
+  api:
+    rpms:
+    - clang
+    - clang-analyzer
+    - clang-devel
+    - clang-libs
+    - clang-tools-extra
+    - git-clang-format
+    - lld
+    - lld-libs
+    - lldb
+    - lldb-devel
+    - llvm
+    - llvm-devel
+    - llvm-libs
+  arch: i686
+  artifacts:
+    rpms:
+    - clang-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - clang-analyzer-0:16.0.6-2.module+el8.9.0+19521+190d7aba.noarch
+    - clang-debuginfo-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - clang-debugsource-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - clang-devel-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - clang-libs-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - clang-libs-debuginfo-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - clang-resource-filesystem-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - clang-tools-extra-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - clang-tools-extra-debuginfo-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - compiler-rt-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+    - compiler-rt-debuginfo-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+    - compiler-rt-debugsource-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+    - git-clang-format-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - libomp-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.i686
+    - libomp-debuginfo-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.i686
+    - libomp-debugsource-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.i686
+    - libomp-devel-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.i686
+    - libomp-test-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-test-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - lld-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.i686
+    - lld-debuginfo-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.i686
+    - lld-debugsource-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.i686
+    - lld-devel-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.i686
+    - lld-libs-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.i686
+    - lld-libs-debuginfo-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.i686
+    - lldb-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+    - lldb-debuginfo-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+    - lldb-debugsource-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+    - lldb-devel-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+    - llvm-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-debuginfo-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-debugsource-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-devel-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-devel-debuginfo-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-doc-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.noarch
+    - llvm-googletest-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-libs-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-libs-debuginfo-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-static-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-test-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-test-debuginfo-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-toolset-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - python3-clang-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - python3-lit-0:16.0.6-1.module+el8.9.0+19220+2631d101.noarch
+    - python3-lldb-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+  components:
+    rpms:
+      clang:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        multilib:
+        - x86_64
+        rationale: clang tools and libraries
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      compiler-rt:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        multilib:
+        - x86_64
+        rationale: LLVM compiler intrinsic and sanitizer libraries
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      libomp:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        multilib:
+        - x86_64
+        rationale: LLVM OpenMP runtime
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      lld:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        multilib:
+        - x86_64
+        rationale: LLVM linker
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      lldb:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        multilib:
+        - x86_64
+        rationale: lldb debugger
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      llvm:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+        rationale: LLVM tools and libraries
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      python-lit:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Lit test runner for LLVM
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+  context: b46abd14
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0
+    requires:
+      platform:
+      - el8
+  description: LLVM Tools and libraries
+  license:
+    content:
+    - Apache-2.0 WITH LLVM-exception OR NCSA
+    - NCSA
+    - NCSA and MIT
+    - NCSA or MIT
+    module:
+    - MIT
+  name: llvm-toolset
+  profiles:
+    common:
+      rpms:
+      - llvm-toolset
+  stream: rhel8
+  summary: LLVM
+  version: '8090020230803191529'
+document: modulemd
+version: 2
+...
+---
+data:
+  api:
+    rpms:
+    - squid
+  arch: i686
+  artifacts:
+    rpms:
+    - libecap-devel-0:1.0.1-2.module+el8.9.0+19703+a1da7223.i686
+    - libecap-0:1.0.1-2.module+el8.9.0+19703+a1da7223.i686
+    - libecap-debugsource-0:1.0.1-2.module+el8.9.0+19703+a1da7223.i686
+    - squid-debuginfo-7:4.15-7.module+el8.9.0+19703+a1da7223.i686
+    - libecap-debuginfo-0:1.0.1-2.module+el8.9.0+19703+a1da7223.i686
+    - squid-7:4.15-7.module+el8.9.0+19703+a1da7223.i686
+    - squid-debugsource-7:4.15-7.module+el8.9.0+19703+a1da7223.i686
+  components:
+    rpms:
+      libecap:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: library needed by Squid
+        ref: stream-squid-4-rhel-8.9.0
+      squid:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: squid caching proxy
+        ref: stream-squid-4-rhel-8.9.0
+  context: b46abd14
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0
+    requires:
+      platform:
+      - el8
+  description: an initial version of the squid caching proxy module
+  license:
+    content:
+    - BSD
+    - GPLv2+ and (LGPLv2+ and MIT and BSD and Public Domain)
+    module:
+    - MIT
+  name: squid
+  profiles:
+    common:
+      rpms:
+      - squid
+  references:
+    documentation: http://www.squid-cache.org/Doc/
+    tracker: https://bugs.squid-cache.org/index.cgi
+  stream: '4'
+  summary: Squid - Optimising Web Delivery
+  version: '8090020230817231530'
+document: modulemd
+version: 2
+...
+---
+data:
+  api:
+    rpms:
+    - cargo
+    - clippy
+    - rust
+    - rust-analyzer
+    - rust-doc
+    - rust-gdb
+    - rust-lldb
+    - rust-src
+    - rust-std-static
+    - rust-toolset
+    - rustfmt
+  arch: i686
+  artifacts:
+    rpms:
+    - cargo-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - cargo-debuginfo-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - cargo-doc-0:1.58.1-1.module+el8.6.0+14021+586eff1a.noarch
+    - clippy-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - clippy-debuginfo-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - rls-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rls-debuginfo-0:1.58.1-1.module+el8.6.0+14021+586eff1a.i686
+    - rust-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - rust-analysis-0:1.66.1-1.module+el8.8.0+17810+1556a031.i686
+    - rust-analyzer-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - rust-analyzer-debuginfo-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - rust-debugger-common-0:1.71.1-1.module+el8.9.0+19676+2215d419.noarch
+    - rust-debuginfo-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - rust-debugsource-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - rust-doc-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - rust-gdb-0:1.71.1-1.module+el8.9.0+19676+2215d419.noarch
+    - rust-lldb-0:1.71.1-1.module+el8.9.0+19676+2215d419.noarch
+    - rust-src-0:1.71.1-1.module+el8.9.0+19676+2215d419.noarch
+    - rust-std-static-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - rust-std-static-wasm32-unknown-unknown-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - rust-std-static-wasm32-wasi-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - rust-toolset-0:1.66.1-1.module+el8.8.0+17810+1556a031.i686
+    - rust-toolset-0:1.71.1-1.module+el8.9.0+19676+2215d419.noarch
+    - rustfmt-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+    - rustfmt-debuginfo-0:1.71.1-1.module+el8.9.0+19676+2215d419.i686
+  components:
+    rpms:
+      rust:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Rust compiler and tools
+        ref: stream-rust-toolset-rhel8-rhel-8.9.0
+  context: 2227d48a
+  dependencies:
+  - buildrequires:
+      llvm-toolset:
+      - rhel8
+      platform:
+      - el8.9.0
+      rust-toolset:
+      - rhel8
+    requires:
+      llvm-toolset:
+      - rhel8
+      platform:
+      - el8
+  description: Rust Toolset
+  license:
+    content:
+    - (ASL 2.0 or MIT) and (BSD and MIT)
+    module:
+    - MIT
+  name: rust-toolset
+  profiles:
+    common:
+      rpms:
+      - rust-toolset
+  stream: rhel8
+  summary: Rust
+  version: '8090020230814191405'
+document: modulemd
+version: 2
+...
+---
+data:
+  arch: i686
+  artifacts:
+    rpms:
+    - hivex-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - hivex-debuginfo-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - hivex-debugsource-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - hivex-devel-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - libguestfs-winsupport-0:8.9-1.module+el8.9.0+19846+58c50e4e.i686
+    - libiscsi-0:1.18.0-8.module+el8.9.0+18724+20190c23.i686
+    - libiscsi-debuginfo-0:1.18.0-8.module+el8.9.0+18724+20190c23.i686
+    - libiscsi-debugsource-0:1.18.0-8.module+el8.9.0+18724+20190c23.i686
+    - libiscsi-devel-0:1.18.0-8.module+el8.9.0+18724+20190c23.i686
+    - libiscsi-utils-0:1.18.0-8.module+el8.9.0+18724+20190c23.i686
+    - libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.9.0+18724+20190c23.i686
+    - libnbd-0:1.6.0-5.module+el8.9.0+18724+20190c23.i686
+    - libnbd-bash-completion-0:1.6.0-5.module+el8.9.0+18724+20190c23.noarch
+    - libnbd-debuginfo-0:1.6.0-5.module+el8.9.0+18724+20190c23.i686
+    - libnbd-debugsource-0:1.6.0-5.module+el8.9.0+18724+20190c23.i686
+    - libnbd-devel-0:1.6.0-5.module+el8.9.0+18724+20190c23.i686
+    - libvirt-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-client-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-client-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-config-network-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-config-nwfilter-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-interface-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-interface-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-network-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-network-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-nodedev-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-nodedev-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-nwfilter-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-nwfilter-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-secret-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-secret-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-core-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-core-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-disk-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-disk-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-iscsi-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-iscsi-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-iscsi-direct-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-iscsi-direct-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-logical-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-logical-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-mpath-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-mpath-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-scsi-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-daemon-driver-storage-scsi-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-dbus-0:1.3.0-2.module+el8.9.0+18724+20190c23.i686
+    - libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.9.0+18724+20190c23.i686
+    - libvirt-dbus-debugsource-0:1.3.0-2.module+el8.9.0+18724+20190c23.i686
+    - libvirt-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-debugsource-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-devel-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-docs-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-libs-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-libs-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-nss-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-nss-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-python-debugsource-0:8.0.0-2.module+el8.9.0+18724+20190c23.i686
+    - libvirt-wireshark-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - libvirt-wireshark-debuginfo-0:8.0.0-22.module+el8.9.0+19544+b3045133.i686
+    - nbdfuse-0:1.6.0-5.module+el8.9.0+18724+20190c23.i686
+    - nbdfuse-debuginfo-0:1.6.0-5.module+el8.9.0+18724+20190c23.i686
+    - netcf-0:0.2.8-12.module+el8.9.0+18724+20190c23.i686
+    - netcf-debuginfo-0:0.2.8-12.module+el8.9.0+18724+20190c23.i686
+    - netcf-debugsource-0:0.2.8-12.module+el8.9.0+18724+20190c23.i686
+    - netcf-devel-0:0.2.8-12.module+el8.9.0+18724+20190c23.i686
+    - netcf-libs-0:0.2.8-12.module+el8.9.0+18724+20190c23.i686
+    - netcf-libs-debuginfo-0:0.2.8-12.module+el8.9.0+18724+20190c23.i686
+    - ocaml-hivex-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - ocaml-hivex-debuginfo-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - ocaml-hivex-devel-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - ocaml-libnbd-0:1.6.0-5.module+el8.9.0+18724+20190c23.i686
+    - ocaml-libnbd-debuginfo-0:1.6.0-5.module+el8.9.0+18724+20190c23.i686
+    - ocaml-libnbd-devel-0:1.6.0-5.module+el8.9.0+18724+20190c23.i686
+    - perl-Sys-Virt-0:8.0.0-1.module+el8.9.0+18724+20190c23.i686
+    - perl-Sys-Virt-debuginfo-0:8.0.0-1.module+el8.9.0+18724+20190c23.i686
+    - perl-Sys-Virt-debugsource-0:8.0.0-1.module+el8.9.0+18724+20190c23.i686
+    - perl-hivex-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - perl-hivex-debuginfo-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - python3-hivex-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - python3-hivex-debuginfo-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - python3-libnbd-0:1.6.0-5.module+el8.9.0+18724+20190c23.i686
+    - python3-libnbd-debuginfo-0:1.6.0-5.module+el8.9.0+18724+20190c23.i686
+    - python3-libvirt-0:8.0.0-2.module+el8.9.0+18724+20190c23.i686
+    - python3-libvirt-debuginfo-0:8.0.0-2.module+el8.9.0+18724+20190c23.i686
+    - ruby-hivex-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - ruby-hivex-debuginfo-0:1.3.18-23.module+el8.9.0+18724+20190c23.i686
+    - sgabios-1:0.20170427git-3.module+el8.9.0+18724+20190c23.i686
+    - sgabios-bin-1:0.20170427git-3.module+el8.9.0+18724+20190c23.noarch
+  components:
+    rpms:
+      SLOF:
+        arches:
+        - ppc64le
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.9.0
+      hivex:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: libguestfs dep
+        ref: stream-virt-rhel-rhel-8.9.0
+      libguestfs:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+      libguestfs-winsupport:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '5'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+      libiscsi:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.9.0
+      libnbd:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+      libtpms:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+      libvirt:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '3'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+      libvirt-dbus:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: libvirt-dbus is part of the virtualization module
+        ref: stream-virt-rhel-rhel-8.9.0
+      libvirt-python:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+      nbdkit:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '5'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+      netcf:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: libvirt dep
+        ref: stream-virt-rhel-rhel-8.9.0
+      perl-Sys-Virt:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+      qemu-kvm:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+      seabios:
+        arches:
+        - ppc64le
+        - x86_64
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.9.0
+      sgabios:
+        arches:
+        - ppc64le
+        - x86_64
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.9.0
+      supermin:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: libguestfs dep
+        ref: stream-virt-rhel-rhel-8.9.0
+      swtpm:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+      virt-v2v:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '6'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+  context: b46abd14
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0
+    requires:
+      platform:
+      - el8
+  description: A virtualization module
+  filter:
+    rpms:
+    - ocaml-hivex
+    - ocaml-hivex-debuginfo
+    - ocaml-hivex-devel
+    - ocaml-libguestfs
+    - ocaml-libguestfs-debuginfo
+    - ocaml-libguestfs-devel
+    - ocaml-libnbd
+    - ocaml-libnbd-debuginfo
+    - ocaml-libnbd-devel
+    - qemu-kvm-tests
+    - qemu-kvm-tests-debuginfo
+  license:
+    content:
+    - ASL 2.0
+    - BSD
+    - GPLv2 and GPLv2+ and CC-BY
+    - GPLv2+
+    - GPLv2+ or Artistic
+    - LGPLv2
+    - LGPLv2+
+    - LGPLv2+ and BSD
+    - LGPLv3
+    module:
+    - MIT
+  name: virt
+  profiles:
+    common:
+      rpms:
+      - libguestfs
+      - libvirt-client
+      - libvirt-daemon-config-network
+      - libvirt-daemon-kvm
+  stream: rhel
+  summary: Virtualization module
+  version: '8090020230904064849'
+document: modulemd
+version: 2
+...
+---
+data:
+  api:
+    rpms:
+    - ruby
+    - ruby-devel
+    - ruby-irb
+    - ruby-libs
+    - rubygem-abrt
+    - rubygem-bigdecimal
+    - rubygem-bson
+    - rubygem-bundler
+    - rubygem-did_you_mean
+    - rubygem-io-console
+    - rubygem-json
+    - rubygem-minitest
+    - rubygem-mongo
+    - rubygem-mysql2
+    - rubygem-net-telnet
+    - rubygem-openssl
+    - rubygem-pg
+    - rubygem-power_assert
+    - rubygem-psych
+    - rubygem-rake
+    - rubygem-rdoc
+    - rubygem-test-unit
+    - rubygem-xmlrpc
+    - rubygems
+    - rubygems-devel
+  arch: i686
+  artifacts:
+    rpms:
+    - ruby-0:2.5.9-111.module+el8.9.0+19193+435404ae.i686
+    - ruby-debuginfo-0:2.5.9-111.module+el8.9.0+19193+435404ae.i686
+    - ruby-debugsource-0:2.5.9-111.module+el8.9.0+19193+435404ae.i686
+    - ruby-devel-0:2.5.9-111.module+el8.9.0+19193+435404ae.i686
+    - ruby-doc-0:2.5.9-111.module+el8.9.0+19193+435404ae.noarch
+    - ruby-irb-0:2.5.9-111.module+el8.9.0+19193+435404ae.noarch
+    - ruby-libs-0:2.5.9-111.module+el8.9.0+19193+435404ae.i686
+    - ruby-libs-debuginfo-0:2.5.9-111.module+el8.9.0+19193+435404ae.i686
+    - rubygem-abrt-0:0.3.0-4.module+el8.1.0+3656+f80bfa1d.src
+    - rubygem-abrt-0:0.3.0-4.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-abrt-doc-0:0.3.0-4.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-bigdecimal-0:1.3.4-111.module+el8.9.0+19193+435404ae.i686
+    - rubygem-bigdecimal-debuginfo-0:1.3.4-111.module+el8.9.0+19193+435404ae.i686
+    - rubygem-bson-0:4.3.0-2.module+el8.1.0+3656+f80bfa1d.src
+    - rubygem-bson-0:4.3.0-2.module+el8.9.0+19193+435404ae.i686
+    - rubygem-bson-debuginfo-0:4.3.0-2.module+el8.9.0+19193+435404ae.i686
+    - rubygem-bson-debugsource-0:4.3.0-2.module+el8.9.0+19193+435404ae.i686
+    - rubygem-bson-doc-0:4.3.0-2.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-bundler-0:1.16.1-4.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-bundler-doc-0:1.16.1-4.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-did_you_mean-0:1.2.0-111.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-io-console-0:0.4.6-111.module+el8.9.0+19193+435404ae.i686
+    - rubygem-io-console-debuginfo-0:0.4.6-111.module+el8.9.0+19193+435404ae.i686
+    - rubygem-json-0:2.1.0-111.module+el8.9.0+19193+435404ae.i686
+    - rubygem-json-debuginfo-0:2.1.0-111.module+el8.9.0+19193+435404ae.i686
+    - rubygem-minitest-0:5.10.3-111.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-mongo-0:2.5.1-2.module+el8.1.0+3656+f80bfa1d.src
+    - rubygem-mongo-0:2.5.1-2.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-mongo-doc-0:2.5.1-2.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-mysql2-0:0.4.10-4.module+el8.1.0+3656+f80bfa1d.src
+    - rubygem-mysql2-doc-0:0.4.10-4.module+el8.1.0+3656+f80bfa1d.noarch
+    - rubygem-net-telnet-0:0.1.1-111.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-openssl-0:2.1.2-111.module+el8.9.0+19193+435404ae.i686
+    - rubygem-openssl-debuginfo-0:2.1.2-111.module+el8.9.0+19193+435404ae.i686
+    - rubygem-pg-0:1.0.0-2.module+el8.1.0+3656+f80bfa1d.src
+    - rubygem-pg-doc-0:1.0.0-2.module+el8.1.0+3656+f80bfa1d.noarch
+    - rubygem-power_assert-0:1.1.1-111.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-psych-0:3.0.2-111.module+el8.9.0+19193+435404ae.i686
+    - rubygem-psych-debuginfo-0:3.0.2-111.module+el8.9.0+19193+435404ae.i686
+    - rubygem-rake-0:12.3.3-111.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-rdoc-0:6.0.1.1-111.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-test-unit-0:3.2.7-111.module+el8.9.0+19193+435404ae.noarch
+    - rubygem-xmlrpc-0:0.3.0-111.module+el8.9.0+19193+435404ae.noarch
+    - rubygems-0:2.7.6.3-111.module+el8.9.0+19193+435404ae.noarch
+    - rubygems-devel-0:2.7.6.3-111.module+el8.9.0+19193+435404ae.noarch
+  buildopts:
+    rpms:
+      macros: '%_without_rubypick 1
+
+        '
+  components:
+    rpms:
+      ruby:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '101'
+        multilib:
+        - x86_64
+        rationale: An interpreter of object-oriented scripting language
+        ref: stream-ruby-2.5-rhel-8.9.0
+      rubygem-abrt:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '102'
+        rationale: ABRT support for Ruby
+        ref: stream-ruby-2.5-rhel-8.9.0
+      rubygem-bson:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '102'
+        rationale: Ruby Implementation of the BSON specification
+        ref: stream-ruby-2.5-rhel-8.9.0
+      rubygem-bundler:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '102'
+        rationale: Library and utilities to manage a Ruby application's gem dependencies
+        ref: stream-ruby-2.5-rhel-8.9.0
+      rubygem-mongo:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '103'
+        rationale: Ruby driver for MongoDB
+        ref: stream-ruby-2.5-rhel-8.9.0
+      rubygem-mysql2:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '102'
+        rationale: A simple, fast Mysql library for Ruby, binding to libmysql
+        ref: stream-ruby-2.5-rhel-8.9.0
+      rubygem-pg:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '102'
+        rationale: A Ruby interface to the PostgreSQL RDBMS
+        ref: stream-ruby-2.5-rhel-8.9.0
+  context: b46abd14
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0
+    requires:
+      platform:
+      - el8
+  description: Ruby is the interpreted scripting language for quick and easy object-oriented
+    programming.  It has many features to process text files and to do system management
+    tasks (as in Perl).  It is simple, straight-forward, and extensible.
+  license:
+    content:
+    - (BSD or Ruby) and PostgreSQL
+    - (Ruby or BSD) and (Ruby or BSD or Python) and (Ruby or BSD or LGPLv2+)
+    - (Ruby or BSD) and Public Domain and MIT and CC0 and zlib and UCD
+    - (Ruby or GPLv2) and UCD
+    - ASL 2.0
+    - GPLv2 and Ruby and MIT and OFL
+    - MIT
+    - Ruby or BSD
+    - Ruby or MIT
+    module:
+    - MIT
+  name: ruby
+  profiles:
+    common:
+      rpms:
+      - ruby
+  references:
+    community: http://ruby-lang.org/
+    documentation: https://www.ruby-lang.org/en/documentation/
+    tracker: https://bugs.ruby-lang.org/
+  stream: '2.5'
+  summary: An interpreter of object-oriented scripting language
+  version: '8090020230627084142'
+document: modulemd
+version: 2
+...
