@@ -8069,3 +8069,387 @@ data:
 document: modulemd
 version: '2'
 ...
+---
+document: modulemd
+version: 2
+data:
+  artifacts:
+    rpms:
+    - SLOF-0:20210217-1.module+el8.9.0+18724+20190c23.src
+    - ocaml-hivex-0:1.3.18-23.module+el8.9.0+18724+20190c23.aarch64
+    - ocaml-hivex-debuginfo-0:1.3.18-23.module+el8.9.0+18724+20190c23.aarch64
+    - ocaml-hivex-devel-0:1.3.18-23.module+el8.9.0+18724+20190c23.aarch64
+    - ocaml-libguestfs-1:1.44.0-9.module+el8.9.0+18724+20190c23.aarch64
+    - ocaml-libguestfs-debuginfo-1:1.44.0-9.module+el8.9.0+18724+20190c23.aarch64
+    - ocaml-libguestfs-devel-1:1.44.0-9.module+el8.9.0+18724+20190c23.aarch64
+    - ocaml-libnbd-0:1.6.0-5.module+el8.9.0+18724+20190c23.aarch64
+    - ocaml-libnbd-debuginfo-0:1.6.0-5.module+el8.9.0+18724+20190c23.aarch64
+    - ocaml-libnbd-devel-0:1.6.0-5.module+el8.9.0+18724+20190c23.aarch64
+    - qemu-kvm-tests-15:6.2.0-40.module+el8.9.0+20056+d9fb1ac3.1.aarch64
+    - seabios-0:1.16.0-4.module+el8.9.0+19570+14a90618.src
+    - sgabios-1:0.20170427git-3.module+el8.9.0+18724+20190c23.src
+    - virt-v2v-1:1.42.0-22.module+el8.9.0+18724+20190c23.src
+  name: virt-devel
+  stream: "rhel"
+  version: 8090020230927071820
+  context: b46abd14
+  arch: aarch64
+  summary: Virtualization module
+  description: >-
+    A virtualization module
+  license:
+    module:
+    - MIT
+    content:
+    - GPLv2 and GPLv2+ and CC-BY
+    - LGPLv2
+    - LGPLv2+
+  xmd: {}
+  dependencies:
+  - buildrequires:
+      platform: [el8.9.0]
+    requires:
+      platform: [el8]
+      virt: [rhel]
+  filter:
+    rpms:
+    - ocaml-hivex
+    - ocaml-hivex-debuginfo
+    - ocaml-hivex-devel
+    - ocaml-libguestfs
+    - ocaml-libguestfs-debuginfo
+    - ocaml-libguestfs-devel
+    - ocaml-libnbd
+    - ocaml-libnbd-debuginfo
+    - ocaml-libnbd-devel
+    - qemu-kvm-tests
+    - qemu-kvm-tests-debuginfo
+  components:
+    rpms:
+      SLOF:
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 1
+        arches: [ppc64le]
+      hivex:
+        rationale: libguestfs dep
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 1
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      libguestfs:
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 4
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      libguestfs-winsupport:
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 5
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      libiscsi:
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 1
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      libnbd:
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 1
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      libtpms:
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 1
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      libvirt:
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 3
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      libvirt-dbus:
+        rationale: libvirt-dbus is part of the virtualization module
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 4
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      libvirt-python:
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 4
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      nbdkit:
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 5
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      netcf:
+        rationale: libvirt dep
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 1
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      perl-Sys-Virt:
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 4
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      qemu-kvm:
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 2
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      seabios:
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 1
+        arches: [ppc64le, x86_64]
+      sgabios:
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 1
+        arches: [ppc64le, x86_64]
+      supermin:
+        rationale: libguestfs dep
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 2
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      swtpm:
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 2
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      virt-v2v:
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.9.0
+        buildorder: 6
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+...
+---
+document: modulemd
+version: 2
+data:
+  artifacts:
+    rpms:
+    - Cython-0:0.29.21-5.module+el8.9.0+19644+d68f775d.src
+    - Cython-debugsource-0:0.29.21-5.module+el8.9.0+19644+d68f775d.aarch64
+    - pybind11-0:2.7.1-1.module+el8.9.0+19644+d68f775d.src
+    - pytest-0:6.0.2-2.module+el8.9.0+19644+d68f775d.src
+    - python-attrs-0:20.3.0-2.module+el8.9.0+19644+d68f775d.src
+    - python-iniconfig-0:1.1.1-2.module+el8.9.0+19644+d68f775d.src
+    - python-more-itertools-0:8.5.0-2.module+el8.9.0+19644+d68f775d.src
+    - python-packaging-0:20.4-4.module+el8.9.0+19644+d68f775d.src
+    - python-pluggy-0:0.13.1-3.module+el8.9.0+19644+d68f775d.src
+    - python-py-0:1.10.0-1.module+el8.9.0+19644+d68f775d.src
+    - python-wcwidth-0:0.2.5-3.module+el8.9.0+19644+d68f775d.src
+    - python39-Cython-0:0.29.21-5.module+el8.9.0+19644+d68f775d.aarch64
+    - python39-Cython-debuginfo-0:0.29.21-5.module+el8.9.0+19644+d68f775d.aarch64
+    - python39-attrs-0:20.3.0-2.module+el8.9.0+19644+d68f775d.noarch
+    - python39-debug-0:3.9.18-1.module+el8.9.0+20024+793d7211.aarch64
+    - python39-iniconfig-0:1.1.1-2.module+el8.9.0+19644+d68f775d.noarch
+    - python39-more-itertools-0:8.5.0-2.module+el8.9.0+19644+d68f775d.noarch
+    - python39-packaging-0:20.4-4.module+el8.9.0+19644+d68f775d.noarch
+    - python39-pluggy-0:0.13.1-3.module+el8.9.0+19644+d68f775d.noarch
+    - python39-py-0:1.10.0-1.module+el8.9.0+19644+d68f775d.noarch
+    - python39-pybind11-0:2.7.1-1.module+el8.9.0+19644+d68f775d.aarch64
+    - python39-pybind11-devel-0:2.7.1-1.module+el8.9.0+19644+d68f775d.aarch64
+    - python39-pyparsing-0:2.4.7-5.module+el8.9.0+19644+d68f775d.noarch
+    - python39-pytest-0:6.0.2-2.module+el8.9.0+19644+d68f775d.noarch
+    - python39-wcwidth-0:0.2.5-3.module+el8.9.0+19644+d68f775d.noarch
+    - python3x-pyparsing-0:2.4.7-5.module+el8.9.0+19644+d68f775d.src
+  name: python39-devel
+  stream: "3.9"
+  version: 8090020230922213827
+  context: 7484f1d1
+  arch: aarch64
+  summary: Python programming language, version 3.9
+  description: >-
+    This module gives users access to the internal Python 3.9 in RHEL8, as
+
+    well as provides some additional Python packages the users might need.
+
+    In addition to these you can install any python3-* package available
+
+    in RHEL and use it with Python from this module.
+  license:
+    module:
+    - MIT
+    content:
+    - ASL 2.0
+    - BSD
+    - BSD or ASL 2.0
+    - MIT
+    - MIT and Public Domain
+    - Python
+  xmd: {}
+  dependencies:
+  - buildrequires:
+      httpd: [2.4]
+      platform: [el8.9.0]
+      python39: [3.9_bootstrap]
+      swig: [4.0]
+    requires:
+      platform: [el8]
+      python39: [3.9]
+  references:
+    community: https://www.python.org/
+    documentation: https://docs.python.org/3.9/
+  filter:
+    rpms:
+    - python39-Cython
+    - python39-attrs
+    - python39-debug
+    - python39-iniconfig
+    - python39-more-itertools
+    - python39-packaging
+    - python39-pluggy
+    - python39-py
+    - python39-pybind11
+    - python39-pybind11-devel
+    - python39-pyparsing
+    - python39-pytest
+    - python39-wcwidth
+  buildopts:
+    rpms:
+      macros: >
+        # === Bootstrap phase 4 ===
+
+        #
+
+        %python3_pkgversion 39
+  components:
+    rpms:
+      Cython:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      PyYAML:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      mod_wsgi:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      numpy:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      pybind11:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      pytest:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-PyMySQL:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-attrs:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-cffi:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-chardet:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-cryptography:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-idna:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-iniconfig:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-lxml:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-more-itertools:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-packaging:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-pluggy:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-ply:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-psutil:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-psycopg2:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-py:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-pycparser:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-pysocks:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-requests:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-toml:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-urllib3:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-wcwidth:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python-wheel:
+        rationale: Packaging tool
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python39:
+        rationale: The main Python interpreter
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python3x-pip:
+        rationale: Packaging tool
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python3x-pyparsing:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python3x-setuptools:
+        rationale: Packaging tool
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      python3x-six:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+      scipy:
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.9.0
+        arches: [aarch64, i686, ppc64le, s390x, x86_64]
+...
