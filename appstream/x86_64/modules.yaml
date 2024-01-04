@@ -105341,3 +105341,69 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - squid
+  arch: x86_64
+  artifacts:
+    rpms:
+    - libecap-0:1.0.1-2.module+el8.9.0+19703+a1da7223.x86_64
+    - libecap-debuginfo-0:1.0.1-2.module+el8.9.0+19703+a1da7223.x86_64
+    - libecap-debugsource-0:1.0.1-2.module+el8.9.0+19703+a1da7223.x86_64
+    - libecap-devel-0:1.0.1-2.module+el8.9.0+19703+a1da7223.x86_64
+    - squid-7:4.15-7.module+el8.9.0+20975+25f17541.5.x86_64
+    - squid-debuginfo-7:4.15-7.module+el8.9.0+20975+25f17541.5.x86_64
+    - squid-debugsource-7:4.15-7.module+el8.9.0+20975+25f17541.5.x86_64
+  components:
+    rpms:
+      libecap:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: library needed by Squid
+        ref: stream-squid-4-rhel-8.9.0
+      squid:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: squid caching proxy
+        ref: stream-squid-4-rhel-8.9.0
+  context: a75119d5
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0.z
+    requires:
+      platform:
+      - el8
+  description: an initial version of the squid caching proxy module
+  license:
+    content:
+    - BSD
+    - GPLv2+ and (LGPLv2+ and MIT and BSD and Public Domain)
+    module:
+    - MIT
+  name: squid
+  profiles:
+    common:
+      rpms:
+      - squid
+  references:
+    documentation: http://www.squid-cache.org/Doc/
+    tracker: https://bugs.squid-cache.org/index.cgi
+  stream: '4'
+  summary: Squid - Optimising Web Delivery
+  version: '8090020231207155957'
+document: modulemd
+version: 2
+...
