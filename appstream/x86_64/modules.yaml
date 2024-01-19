@@ -106187,6 +106187,7 @@ data:
   artifacts:
     rpms:
     - clang-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - clang-0:16.0.6-2.module+el8.9.0+19521+190d7aba.src
     - clang-0:16.0.6-2.module+el8.9.0+19521+190d7aba.x86_64
     - clang-analyzer-0:16.0.6-2.module+el8.9.0+19521+190d7aba.noarch
     - clang-debuginfo-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
@@ -106205,15 +106206,17 @@ data:
     - clang-tools-extra-0:16.0.6-2.module+el8.9.0+19521+190d7aba.x86_64
     - clang-tools-extra-debuginfo-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
     - clang-tools-extra-debuginfo-0:16.0.6-2.module+el8.9.0+19521+190d7aba.x86_64
-    - compiler-rt-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+    - compiler-rt-0:16.0.6-3.module+el8.9.0+20599+53352ad4.i686
+    - compiler-rt-0:16.0.6-3.module+el8.9.0+20599+53352ad4.src
     - compiler-rt-0:16.0.6-3.module+el8.9.0+20599+53352ad4.x86_64
-    - compiler-rt-debuginfo-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+    - compiler-rt-debuginfo-0:16.0.6-3.module+el8.9.0+20599+53352ad4.i686
     - compiler-rt-debuginfo-0:16.0.6-3.module+el8.9.0+20599+53352ad4.x86_64
-    - compiler-rt-debugsource-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+    - compiler-rt-debugsource-0:16.0.6-3.module+el8.9.0+20599+53352ad4.i686
     - compiler-rt-debugsource-0:16.0.6-3.module+el8.9.0+20599+53352ad4.x86_64
     - git-clang-format-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
     - git-clang-format-0:16.0.6-2.module+el8.9.0+19521+190d7aba.x86_64
     - libomp-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.i686
+    - libomp-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.src
     - libomp-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.x86_64
     - libomp-debuginfo-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.i686
     - libomp-debuginfo-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.x86_64
@@ -106221,11 +106224,9 @@ data:
     - libomp-debugsource-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.x86_64
     - libomp-devel-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.i686
     - libomp-devel-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.x86_64
-    - libomp-test-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.i686
     - libomp-test-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.x86_64
-    - libomp-test-debuginfo-0:15.0.7-1.module+el8.8.0+17939+b58878af.i686
-    - libomp-test-debuginfo-0:15.0.7-1.module+el8.8.0+17939+b58878af.x86_64
     - lld-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.i686
+    - lld-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.src
     - lld-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.x86_64
     - lld-debuginfo-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.i686
     - lld-debuginfo-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.x86_64
@@ -106238,6 +106239,7 @@ data:
     - lld-libs-debuginfo-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.i686
     - lld-libs-debuginfo-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.x86_64
     - lldb-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
+    - lldb-0:16.0.6-1.module+el8.9.0+19220+2631d101.src
     - lldb-0:16.0.6-1.module+el8.9.0+19220+2631d101.x86_64
     - lldb-debuginfo-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
     - lldb-debuginfo-0:16.0.6-1.module+el8.9.0+19220+2631d101.x86_64
@@ -106246,6 +106248,7 @@ data:
     - lldb-devel-0:16.0.6-1.module+el8.9.0+19220+2631d101.i686
     - lldb-devel-0:16.0.6-1.module+el8.9.0+19220+2631d101.x86_64
     - llvm-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
+    - llvm-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.src
     - llvm-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.x86_64
     - llvm-debuginfo-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
     - llvm-debuginfo-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.x86_64
@@ -106270,6 +106273,7 @@ data:
     - llvm-test-debuginfo-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.x86_64
     - llvm-toolset-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.i686
     - llvm-toolset-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.x86_64
+    - python-lit-0:16.0.6-1.module+el8.9.0+19220+2631d101.src
     - python3-clang-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
     - python3-clang-0:16.0.6-2.module+el8.9.0+19521+190d7aba.x86_64
     - python3-lit-0:16.0.6-1.module+el8.9.0+19220+2631d101.noarch
