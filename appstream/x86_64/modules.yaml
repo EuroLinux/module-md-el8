@@ -107373,3 +107373,126 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - gimp
+    - gimp-devel
+    - gimp-devel-tools
+    - gimp-libs
+  arch: x86_64
+  artifacts:
+    rpms:
+    - gimp-2:2.8.22-25.module+el8.9.0+21239+e25d5ab1.x86_64
+    - gimp-debuginfo-2:2.8.22-25.module+el8.9.0+21239+e25d5ab1.x86_64
+    - gimp-debugsource-2:2.8.22-25.module+el8.9.0+21239+e25d5ab1.x86_64
+    - gimp-devel-2:2.8.22-25.module+el8.9.0+21239+e25d5ab1.x86_64
+    - gimp-devel-tools-2:2.8.22-25.module+el8.9.0+21239+e25d5ab1.x86_64
+    - gimp-devel-tools-debuginfo-2:2.8.22-25.module+el8.9.0+21239+e25d5ab1.x86_64
+    - gimp-libs-2:2.8.22-25.module+el8.9.0+21239+e25d5ab1.x86_64
+    - gimp-libs-debuginfo-2:2.8.22-25.module+el8.9.0+21239+e25d5ab1.x86_64
+    - pygobject2-0:2.28.7-4.module+el8.9.0+21228+8e80d31d.x86_64
+    - pygobject2-codegen-0:2.28.7-4.module+el8.9.0+21228+8e80d31d.x86_64
+    - pygobject2-debuginfo-0:2.28.7-4.module+el8.9.0+21228+8e80d31d.x86_64
+    - pygobject2-debugsource-0:2.28.7-4.module+el8.9.0+21228+8e80d31d.x86_64
+    - pygobject2-devel-0:2.28.7-4.module+el8.9.0+21228+8e80d31d.x86_64
+    - pygobject2-doc-0:2.28.7-4.module+el8.9.0+21228+8e80d31d.x86_64
+    - pygtk2-0:2.24.0-25.module+el8.9.0+21228+8e80d31d.x86_64
+    - pygtk2-codegen-0:2.24.0-25.module+el8.9.0+21228+8e80d31d.x86_64
+    - pygtk2-debuginfo-0:2.24.0-25.module+el8.9.0+21228+8e80d31d.x86_64
+    - pygtk2-debugsource-0:2.24.0-25.module+el8.9.0+21228+8e80d31d.x86_64
+    - pygtk2-devel-0:2.24.0-25.module+el8.9.0+21228+8e80d31d.x86_64
+    - pygtk2-doc-0:2.24.0-25.module+el8.9.0+21228+8e80d31d.noarch
+    - python2-cairo-0:1.16.3-6.module+el8.9.0+21228+8e80d31d.x86_64
+    - python2-cairo-debuginfo-0:1.16.3-6.module+el8.9.0+21228+8e80d31d.x86_64
+    - python2-cairo-devel-0:1.16.3-6.module+el8.9.0+21228+8e80d31d.x86_64
+    - python2-pycairo-debugsource-0:1.16.3-6.module+el8.9.0+21228+8e80d31d.x86_64
+  components:
+    rpms:
+      gimp:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: GIMP Module.
+        ref: stream-gimp-2.8-rhel-8.9.0
+      pygobject2:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: GIMP Module dependency
+        ref: stream-gimp-2.8-rhel-8.9.0
+      pygtk2:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '5'
+        rationale: GIMP Module dependency
+        ref: stream-gimp-2.8-rhel-8.9.0
+      python2-pycairo:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '3'
+        rationale: Python2 binding required by pygtk2
+        ref: stream-gimp-2.8-rhel-8.9.0
+  context: 4ba4a31a
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0.z
+      python27:
+      - '2.7'
+    requires:
+      platform:
+      - el8
+      python27:
+      - '2.7'
+  description: 'GIMP (GNU Image Manipulation Program) is a powerful image composition
+    and
+
+    editing program, which can be extremely useful for creating logos and other
+
+    graphics for webpages. '
+  license:
+    content:
+    - GPLv3+ and GPLv3
+    - LGPLv2+
+    - LGPLv2+, MIT
+    - LGPLv3+
+    - MPLv1.1 or LGPLv2
+    module:
+    - MIT
+  name: gimp
+  profiles:
+    common:
+      rpms:
+      - gimp
+    devel:
+      rpms:
+      - gimp-devel
+      - gimp-devel-tools
+  references:
+    community: https://www.gimp.org/develop/
+    documentation: https://www.gimp.org/docs/
+    tracker: https://www.gimp.org/bugs/
+  stream: '2.8'
+  summary: gimp module
+  version: '8090020240201075404'
+document: modulemd
+version: 2
+...
