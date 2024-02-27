@@ -108118,7 +108118,6 @@ document: modulemd
 version: 2
 ...
 ---
----
 data:
   api:
     rpms:
