@@ -88055,3 +88055,179 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - clang
+    - clang-analyzer
+    - clang-devel
+    - clang-libs
+    - clang-tools-extra
+    - git-clang-format
+    - lld
+    - lld-libs
+    - lldb
+    - lldb-devel
+    - llvm
+    - llvm-devel
+    - llvm-libs
+  arch: aarch64
+  artifacts:
+    rpms:
+    - clang-0:16.0.6-2.module+el8.9.0+19521+190d7aba.aarch64
+    - clang-analyzer-0:16.0.6-2.module+el8.9.0+19521+190d7aba.noarch
+    - clang-debuginfo-0:16.0.6-2.module+el8.9.0+19521+190d7aba.aarch64
+    - clang-debugsource-0:16.0.6-2.module+el8.9.0+19521+190d7aba.aarch64
+    - clang-devel-0:16.0.6-2.module+el8.9.0+19521+190d7aba.aarch64
+    - clang-libs-0:16.0.6-2.module+el8.9.0+19521+190d7aba.aarch64
+    - clang-libs-debuginfo-0:16.0.6-2.module+el8.9.0+19521+190d7aba.aarch64
+    - clang-resource-filesystem-0:16.0.6-2.module+el8.9.0+19521+190d7aba.aarch64
+    - clang-tools-extra-0:16.0.6-2.module+el8.9.0+19521+190d7aba.aarch64
+    - clang-tools-extra-debuginfo-0:16.0.6-2.module+el8.9.0+19521+190d7aba.aarch64
+    - compiler-rt-0:16.0.6-3.module+el8.9.0+20599+53352ad4.aarch64
+    - compiler-rt-debuginfo-0:16.0.6-3.module+el8.9.0+20599+53352ad4.aarch64
+    - compiler-rt-debugsource-0:16.0.6-3.module+el8.9.0+20599+53352ad4.aarch64
+    - git-clang-format-0:16.0.6-2.module+el8.9.0+19521+190d7aba.aarch64
+    - libomp-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.aarch64
+    - libomp-debuginfo-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.aarch64
+    - libomp-debugsource-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.aarch64
+    - libomp-devel-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.aarch64
+    - libomp-test-0:16.0.6-3.module+el8.9.0+19397+8ad4a755.aarch64
+    - libomp-test-debuginfo-0:15.0.7-1.module+el8.8.0+17939+b58878af.aarch64
+    - lld-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.aarch64
+    - lld-debuginfo-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.aarch64
+    - lld-debugsource-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.aarch64
+    - lld-devel-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.aarch64
+    - lld-libs-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.aarch64
+    - lld-libs-debuginfo-0:16.0.6-1.module+el8.9.0+19261+b807b1fe.aarch64
+    - lldb-0:16.0.6-1.module+el8.9.0+19220+2631d101.aarch64
+    - lldb-debuginfo-0:16.0.6-1.module+el8.9.0+19220+2631d101.aarch64
+    - lldb-debugsource-0:16.0.6-1.module+el8.9.0+19220+2631d101.aarch64
+    - lldb-devel-0:16.0.6-1.module+el8.9.0+19220+2631d101.aarch64
+    - llvm-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - llvm-debuginfo-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - llvm-debugsource-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - llvm-devel-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - llvm-devel-debuginfo-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - llvm-doc-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.noarch
+    - llvm-googletest-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - llvm-libs-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - llvm-libs-debuginfo-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - llvm-static-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - llvm-test-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - llvm-test-debuginfo-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - llvm-toolset-0:16.0.6-3.module+el8.9.0+19571+4f9fba7b.aarch64
+    - python3-clang-0:16.0.6-2.module+el8.9.0+19521+190d7aba.aarch64
+    - python3-lit-0:16.0.6-1.module+el8.9.0+19220+2631d101.noarch
+    - python3-lldb-0:16.0.6-1.module+el8.9.0+19220+2631d101.aarch64
+  components:
+    rpms:
+      clang:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        multilib:
+        - x86_64
+        rationale: clang tools and libraries
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      compiler-rt:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        multilib:
+        - x86_64
+        rationale: LLVM compiler intrinsic and sanitizer libraries
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      libomp:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        multilib:
+        - x86_64
+        rationale: LLVM OpenMP runtime
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      lld:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        multilib:
+        - x86_64
+        rationale: LLVM linker
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      lldb:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        multilib:
+        - x86_64
+        rationale: lldb debugger
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      llvm:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+        rationale: LLVM tools and libraries
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+      python-lit:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Lit test runner for LLVM
+        ref: stream-llvm-toolset-rhel8-rhel-8.9.0
+  context: a75119d5
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0.z
+    requires:
+      platform:
+      - el8
+  description: LLVM Tools and libraries
+  license:
+    content:
+    - Apache-2.0 WITH LLVM-exception OR NCSA
+    - NCSA
+    - NCSA and MIT
+    - NCSA or MIT
+    module:
+    - MIT
+  name: llvm-toolset
+  profiles:
+    common:
+      rpms:
+      - llvm-toolset
+  stream: rhel8
+  summary: LLVM
+  version: '8090020231103140920'
+document: modulemd
+version: 2
+...
