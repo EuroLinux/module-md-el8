@@ -108367,3 +108367,106 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - nodejs
+    - nodejs-devel
+    - npm
+  arch: x86_64
+  artifacts:
+    rpms:
+    - nodejs-1:16.20.2-4.module+el8.9.0+21536+8fdee1fb.x86_64
+    - nodejs-debuginfo-1:16.20.2-4.module+el8.9.0+21536+8fdee1fb.x86_64
+    - nodejs-debugsource-1:16.20.2-4.module+el8.9.0+21536+8fdee1fb.x86_64
+    - nodejs-devel-1:16.20.2-4.module+el8.9.0+21536+8fdee1fb.x86_64
+    - nodejs-docs-1:16.20.2-4.module+el8.9.0+21536+8fdee1fb.noarch
+    - nodejs-full-i18n-1:16.20.2-4.module+el8.9.0+21536+8fdee1fb.x86_64
+    - nodejs-nodemon-0:3.0.1-1.module+el8.9.0+19741+03a9aaff.noarch
+    - nodejs-packaging-0:26-1.module+el8.9.0+19858+c237a2cf.noarch
+    - npm-1:8.19.4-1.16.20.2.4.module+el8.9.0+21536+8fdee1fb.x86_64
+  buildopts:
+    rpms:
+      macros: '%_with_bundled 1
+
+        '
+  components:
+    rpms:
+      nodejs:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '100'
+        rationale: Javascript runtime and npm package manager.
+        ref: stream-nodejs-16-rhel-8.9.0
+      nodejs-nodemon:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '200'
+        rationale: Simple monitor script for use during development of a node.js app
+        ref: stream-nodejs-16-rhel-8.9.0
+      nodejs-packaging:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: RPM Macros and Utilities for Node.js Packaging
+        ref: stream-nodejs-16-rhel-8.9.0
+  context: a75119d5
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0.z
+    requires:
+      platform:
+      - el8
+  description: Node.js is a platform built on Chrome's JavaScript runtime for easily
+    building fast, scalable network applications. Node.js uses an event-driven, non-blocking
+    I/O model that makes it lightweight and efficient, perfect for data-intensive
+    real-time applications that run across distributed devices.
+  license:
+    content:
+    - MIT
+    - MIT and ASL 2.0 and ISC and BSD
+    module:
+    - MIT
+  name: nodejs
+  profiles:
+    common:
+      rpms:
+      - nodejs
+      - npm
+    development:
+      rpms:
+      - nodejs
+      - nodejs-devel
+      - npm
+    minimal:
+      rpms:
+      - nodejs
+    s2i:
+      rpms:
+      - nodejs
+      - nodejs-nodemon
+      - npm
+  references:
+    community: http://nodejs.org
+    documentation: http://nodejs.org/en/docs
+    tracker: https://github.com/nodejs/node/issues
+  stream: '16'
+  summary: Javascript runtime
+  version: '8090020240315081818'
+document: modulemd
+version: 2
+...
