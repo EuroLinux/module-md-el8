@@ -110248,3 +110248,128 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - postgresql
+    - postgresql-server
+  arch: x86_64
+  artifacts:
+    rpms:
+    - postgresql-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-private-libs-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-private-devel-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-server-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-docs-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-contrib-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-server-devel-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-test-rpm-macros-0:16.1-1.module+el8.10.0+21088+c27ed7b8.noarch
+    - postgresql-static-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-upgrade-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-upgrade-devel-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-plperl-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-plpython3-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-pltcl-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-test-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-debugsource-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-private-libs-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-server-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-docs-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-contrib-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-server-devel-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-upgrade-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-upgrade-devel-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-plperl-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-plpython3-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-pltcl-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgresql-test-debuginfo-0:16.1-1.module+el8.10.0+21088+c27ed7b8.x86_64
+    - postgres-decoderbufs-0:2.4.0-1.Final.module+el8.10.0+20413+d8116364.x86_64
+    - postgres-decoderbufs-debugsource-0:2.4.0-1.Final.module+el8.10.0+20413+d8116364.x86_64
+    - postgres-decoderbufs-debuginfo-0:2.4.0-1.Final.module+el8.10.0+20413+d8116364.x86_64
+    - pgaudit-0:16.0-1.module+el8.10.0+20413+d8116364.x86_64
+    - pgaudit-debugsource-0:16.0-1.module+el8.10.0+20413+d8116364.x86_64
+    - pgaudit-debuginfo-0:16.0-1.module+el8.10.0+20413+d8116364.x86_64
+    - pg_repack-0:1.4.8-1.module+el8.10.0+20413+d8116364.x86_64
+    - pg_repack-debugsource-0:1.4.8-1.module+el8.10.0+20413+d8116364.x86_64
+    - pg_repack-debuginfo-0:1.4.8-1.module+el8.10.0+20413+d8116364.x86_64
+  components:
+    rpms:
+      pg_repack:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: pg_repack extension
+        ref: stream-postgresql-16-rhel-8.10.0
+      pgaudit:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: pgaudit extension
+        ref: stream-postgresql-16-rhel-8.10.0
+      postgres-decoderbufs:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: postgres-decoderbufs extension
+        ref: stream-postgresql-16-rhel-8.10.0
+      postgresql:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Module API.
+        ref: stream-postgresql-16-rhel-8.10.0
+  context: e155f54d
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.10.0
+    requires:
+      platform:
+      - el8
+  description: PostgreSQL is an advanced Object-Relational database management system
+    (DBMS). The postgresql-server package contains the programs needed to create and
+    run a PostgreSQL server, which will in turn allow you to create and maintain PostgreSQL
+    databases. The base postgresql package contains the client programs that you'll
+    need to access a PostgreSQL DBMS server.
+  license:
+    content:
+    - BSD
+    - MIT
+    - PostgreSQL
+    module:
+    - MIT
+  name: postgresql
+  profiles:
+    client:
+      rpms:
+      - postgresql
+    server:
+      rpms:
+      - postgresql-server
+  references:
+    community: https://www.postgresql.org
+    documentation: https://www.postgresql.org/docs/16/index.html
+    tracker: https://issues.redhat.com
+  stream: '16'
+  summary: PostgreSQL server and client module
+  version: '8100020240108131456'
+document: modulemd
+version: 2
+...
