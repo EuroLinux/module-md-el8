@@ -96423,3 +96423,61 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  arch: aarch64
+  artifacts:
+    rpms:
+    - 389-ds-base-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.aarch64
+    - 389-ds-base-debuginfo-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.aarch64
+    - 389-ds-base-debugsource-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.aarch64
+    - 389-ds-base-devel-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.aarch64
+    - 389-ds-base-legacy-tools-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.aarch64
+    - 389-ds-base-legacy-tools-debuginfo-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.aarch64
+    - 389-ds-base-libs-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.aarch64
+    - 389-ds-base-libs-debuginfo-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.aarch64
+    - 389-ds-base-snmp-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.aarch64
+    - 389-ds-base-snmp-debuginfo-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.aarch64
+    - cockpit-389-ds-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.noarch
+    - python3-lib389-0:1.4.3.39-2.module+el8.10.0+21274+876b7855.noarch
+  components:
+    rpms:
+      389-ds-base:
+        arches:
+        - aarch64
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Package in api
+        ref: stream-389-ds-1.4-rhel-8.10.0
+  context: 945b6f6d
+  dependencies:
+  - buildrequires:
+      llvm-toolset:
+      - rhel8
+      nodejs:
+      - '10'
+      platform:
+      - el8.10.0
+      rust-toolset:
+      - rhel8
+    requires:
+      platform:
+      - el8
+  description: 389 Directory Server is an LDAPv3 compliant server.  The base package
+    includes the LDAP server and command line utilities for server administration.
+  filter:
+    rpms:
+    - cockpit-389-ds
+  license:
+    content:
+    - GPLv3+ and (ASL 2.0 or MIT)
+    module:
+    - MIT
+  name: 389-ds
+  stream: '1.4'
+  summary: 389 Directory Server (base)
+  version: '8100020240207171226'
+document: modulemd
+version: 2
+...
