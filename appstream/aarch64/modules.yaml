@@ -97173,3 +97173,440 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - maven
+    - maven-openjdk11
+    - maven-openjdk17
+    - maven-openjdk21
+    - maven-openjdk8
+  arch: aarch64
+  artifacts:
+    rpms:
+    - apache-commons-cli-0:1.5.0-5.module+el8.10.0+21301+657f54a3.noarch
+    - apache-commons-cli-javadoc-0:1.5.0-5.module+el8.10.0+21301+657f54a3.noarch
+    - apache-commons-codec-0:1.15-8.module+el8.10.0+21301+657f54a3.noarch
+    - apache-commons-codec-javadoc-0:1.15-8.module+el8.10.0+21301+657f54a3.noarch
+    - apache-commons-io-1:2.11.0-3.module+el8.10.0+21301+657f54a3.noarch
+    - apache-commons-io-javadoc-1:2.11.0-3.module+el8.10.0+21301+657f54a3.noarch
+    - apache-commons-lang3-0:3.12.0-8.module+el8.10.0+21301+657f54a3.noarch
+    - apache-commons-lang3-javadoc-0:3.12.0-8.module+el8.10.0+21301+657f54a3.noarch
+    - atinject-0:1.0.5-5.module+el8.10.0+21301+657f54a3.noarch
+    - atinject-javadoc-0:1.0.5-5.module+el8.10.0+21301+657f54a3.noarch
+    - cdi-api-0:2.0.2-7.module+el8.10.0+21301+657f54a3.noarch
+    - cdi-api-javadoc-0:2.0.2-7.module+el8.10.0+21301+657f54a3.noarch
+    - google-guice-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - google-guice-javadoc-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - guava-0:31.0.1-5.module+el8.10.0+21301+657f54a3.noarch
+    - guava-javadoc-0:31.0.1-5.module+el8.10.0+21301+657f54a3.noarch
+    - guava-testlib-0:31.0.1-5.module+el8.10.0+21301+657f54a3.noarch
+    - guice-assistedinject-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - guice-bom-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - guice-extensions-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - guice-grapher-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - guice-jmx-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - guice-jndi-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - guice-multibindings-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - guice-parent-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - guice-servlet-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - guice-throwingproviders-0:4.2.3-10.module+el8.10.0+21301+657f54a3.noarch
+    - httpcomponents-client-0:4.5.13-6.module+el8.10.0+21301+657f54a3.noarch
+    - httpcomponents-client-javadoc-0:4.5.13-6.module+el8.10.0+21301+657f54a3.noarch
+    - httpcomponents-core-0:4.4.13-8.module+el8.10.0+21301+657f54a3.noarch
+    - httpcomponents-core-javadoc-0:4.4.13-8.module+el8.10.0+21301+657f54a3.noarch
+    - jakarta-annotations-0:1.3.5-15.module+el8.10.0+21301+657f54a3.noarch
+    - jakarta-annotations-javadoc-0:1.3.5-15.module+el8.10.0+21301+657f54a3.noarch
+    - jansi-0:2.4.0-7.module+el8.10.0+21301+657f54a3.aarch64
+    - jansi-debuginfo-0:2.4.0-7.module+el8.10.0+21301+657f54a3.aarch64
+    - jansi-debugsource-0:2.4.0-7.module+el8.10.0+21301+657f54a3.aarch64
+    - jansi-javadoc-0:2.4.0-7.module+el8.10.0+21301+657f54a3.noarch
+    - jcl-over-slf4j-0:1.7.32-5.module+el8.10.0+21301+657f54a3.noarch
+    - jsr-305-0:3.0.2-7.module+el8.10.0+21301+657f54a3.noarch
+    - jsr-305-javadoc-0:3.0.2-7.module+el8.10.0+21301+657f54a3.noarch
+    - jul-to-slf4j-0:1.7.32-5.module+el8.10.0+21301+657f54a3.noarch
+    - log4j-over-slf4j-0:1.7.32-5.module+el8.10.0+21301+657f54a3.noarch
+    - maven-1:3.8.5-6.module+el8.10.0+21301+657f54a3.noarch
+    - maven-javadoc-1:3.8.5-6.module+el8.10.0+21301+657f54a3.noarch
+    - maven-lib-1:3.8.5-6.module+el8.10.0+21301+657f54a3.noarch
+    - maven-openjdk11-1:3.8.5-6.module+el8.10.0+21301+657f54a3.noarch
+    - maven-openjdk17-1:3.8.5-6.module+el8.10.0+21301+657f54a3.noarch
+    - maven-openjdk21-1:3.8.5-6.module+el8.10.0+21301+657f54a3.noarch
+    - maven-openjdk8-1:3.8.5-6.module+el8.10.0+21301+657f54a3.noarch
+    - maven-resolver-1:1.7.3-6.module+el8.10.0+21301+657f54a3.noarch
+    - maven-resolver-javadoc-1:1.7.3-6.module+el8.10.0+21301+657f54a3.noarch
+    - maven-shared-utils-0:3.3.4-6.module+el8.10.0+21301+657f54a3.noarch
+    - maven-shared-utils-javadoc-0:3.3.4-6.module+el8.10.0+21301+657f54a3.noarch
+    - maven-wagon-0:3.5.1-3.module+el8.10.0+21301+657f54a3.noarch
+    - maven-wagon-javadoc-0:3.5.1-3.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-cipher-0:2.0-3.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-cipher-javadoc-0:2.0-3.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-classworlds-0:2.6.0-13.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-classworlds-javadoc-0:2.6.0-13.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-containers-0:2.1.1-3.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-containers-component-annotations-0:2.1.1-3.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-containers-component-metadata-0:2.1.1-3.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-containers-container-default-0:2.1.1-3.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-containers-javadoc-0:2.1.1-3.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-interpolation-0:1.26-13.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-interpolation-javadoc-0:1.26-13.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-sec-dispatcher-0:2.0-5.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-sec-dispatcher-javadoc-0:2.0-5.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-utils-0:3.3.0-11.module+el8.10.0+21301+657f54a3.noarch
+    - plexus-utils-javadoc-0:3.3.0-11.module+el8.10.0+21301+657f54a3.noarch
+    - sisu-1:0.3.5-3.module+el8.10.0+21301+657f54a3.noarch
+    - sisu-javadoc-1:0.3.5-3.module+el8.10.0+21301+657f54a3.noarch
+    - slf4j-0:1.7.32-5.module+el8.10.0+21301+657f54a3.noarch
+    - slf4j-javadoc-0:1.7.32-5.module+el8.10.0+21301+657f54a3.noarch
+    - slf4j-jcl-0:1.7.32-5.module+el8.10.0+21301+657f54a3.noarch
+    - slf4j-jdk14-0:1.7.32-5.module+el8.10.0+21301+657f54a3.noarch
+    - slf4j-manual-0:1.7.32-5.module+el8.10.0+21301+657f54a3.noarch
+    - slf4j-migrator-0:1.7.32-5.module+el8.10.0+21301+657f54a3.noarch
+    - slf4j-sources-0:1.7.32-5.module+el8.10.0+21301+657f54a3.noarch
+  buildopts:
+    rpms:
+      macros: '%_without_maven_resolver_extra_modules 1
+
+        %java_arches aarch64 ppc64le s390x x86_64
+
+        '
+  components:
+    rpms:
+      apache-commons-cli:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      apache-commons-codec:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      apache-commons-io:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      apache-commons-lang3:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      atinject:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      cdi-api:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '20'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      google-guice:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '30'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      guava:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '20'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      httpcomponents-client:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '20'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      httpcomponents-core:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      jakarta-annotations:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      jansi:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      jsr-305:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      maven:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '50'
+        rationale: Module API.
+        ref: stream-maven-3.8-rhel-8.10.0
+      maven-resolver:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '40'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      maven-shared-utils:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '20'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      maven-wagon:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '30'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      plexus-cipher:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      plexus-classworlds:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      plexus-containers:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      plexus-interpolation:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      plexus-sec-dispatcher:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '20'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      plexus-utils:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      sisu:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '30'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+      slf4j:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Runtime dependency of maven.
+        ref: stream-maven-3.8-rhel-8.10.0
+  context: 9b3be2c4
+  dependencies:
+  - buildrequires:
+      javapackages-tools:
+      - '202201'
+      platform:
+      - el8.10.0
+    requires:
+      platform:
+      - el8
+  description: Maven is a software project management and comprehension tool. Based
+    on the concept of a project object model (POM), Maven can manage a project's build,
+    reporting and documentation from a central piece of information.
+  filter:
+    rpms:
+    - apache-commons-cli-javadoc
+    - apache-commons-codec-javadoc
+    - apache-commons-io-javadoc
+    - apache-commons-lang3-javadoc
+    - atinject-javadoc
+    - cdi-api-javadoc
+    - google-guice-javadoc
+    - guava-javadoc
+    - guava-testlib
+    - guice-assistedinject
+    - guice-bom
+    - guice-extensions
+    - guice-grapher
+    - guice-jmx
+    - guice-jndi
+    - guice-multibindings
+    - guice-parent
+    - guice-servlet
+    - guice-throwingproviders
+    - httpcomponents-client-javadoc
+    - httpcomponents-core-javadoc
+    - jakarta-annotations-javadoc
+    - jansi-javadoc
+    - jsr-305-javadoc
+    - jul-to-slf4j
+    - log4j-over-slf4j
+    - maven-javadoc
+    - maven-resolver-javadoc
+    - maven-shared-utils-javadoc
+    - maven-wagon-javadoc
+    - plexus-cipher-javadoc
+    - plexus-classworlds-javadoc
+    - plexus-containers
+    - plexus-containers-component-metadata
+    - plexus-containers-container-default
+    - plexus-containers-javadoc
+    - plexus-interpolation-javadoc
+    - plexus-sec-dispatcher-javadoc
+    - plexus-utils-javadoc
+    - sisu-javadoc
+    - slf4j-javadoc
+    - slf4j-jcl
+    - slf4j-jdk14
+    - slf4j-manual
+    - slf4j-migrator
+    - slf4j-sources
+  license:
+    content:
+    - ASL 1.1 and ASL 2.0 and xpp and BSD and Public Domain
+    - ASL 2.0
+    - ASL 2.0 and ASL 1.1 and MIT
+    - ASL 2.0 and CC0
+    - ASL 2.0 and MIT
+    - ASL 2.0 and MIT and xpp
+    - ASL 2.0 and Plexus
+    - BSD and CC-BY
+    - EPL-1.0 and BSD
+    - EPL-2.0 or GPLv2 with exceptions
+    - MIT and ASL 2.0
+    module:
+    - MIT
+  name: maven
+  profiles:
+    common:
+      rpms:
+      - maven-openjdk11
+  stream: '3.8'
+  summary: Java project management and project comprehension tool
+  version: '8100020240210094037'
+document: modulemd
+version: 2
+...
