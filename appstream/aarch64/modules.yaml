@@ -96481,3 +96481,89 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - cargo
+    - clippy
+    - rust
+    - rust-analyzer
+    - rust-doc
+    - rust-gdb
+    - rust-lldb
+    - rust-src
+    - rust-std-static
+    - rust-toolset
+    - rustfmt
+  arch: aarch64
+  artifacts:
+    rpms:
+    - cargo-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - cargo-debuginfo-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - cargo-doc-0:1.62.1-1.module+el8.7.0+16002+ac58477b.noarch
+    - clippy-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - clippy-debuginfo-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - rls-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rls-debuginfo-0:1.62.1-1.module+el8.7.0+16002+ac58477b.aarch64
+    - rust-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - rust-analysis-0:1.66.1-2.module+el8.8.0+19613+f0bba33b.aarch64
+    - rust-analyzer-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - rust-analyzer-debuginfo-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - rust-debugger-common-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.noarch
+    - rust-debuginfo-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - rust-debugsource-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - rust-doc-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - rust-gdb-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.noarch
+    - rust-lldb-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.noarch
+    - rust-src-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.noarch
+    - rust-std-static-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - rust-std-static-wasm32-unknown-unknown-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - rust-std-static-wasm32-wasi-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - rust-toolset-0:1.66.1-2.module+el8.8.0+19613+f0bba33b.aarch64
+    - rust-toolset-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.noarch
+    - rustfmt-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+    - rustfmt-debuginfo-0:1.75.0-1.module+el8.10.0+21160+cc6a0df8.aarch64
+  components:
+    rpms:
+      rust:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Rust compiler and tools
+        ref: stream-rust-toolset-rhel8-rhel-8.10.0
+  context: f4e2ccb8
+  dependencies:
+  - buildrequires:
+      llvm-toolset:
+      - rhel8
+      platform:
+      - el8.10.0
+      rust-toolset:
+      - rhel8
+    requires:
+      llvm-toolset:
+      - rhel8
+      platform:
+      - el8
+  description: Rust Toolset
+  license:
+    content:
+    - (Apache-2.0 OR MIT) AND (Artistic-2.0 AND BSD-3-Clause AND ISC AND MIT AND MPL-2.0
+      AND Unicode-DFS-2016)
+    module:
+    - MIT
+  name: rust-toolset
+  profiles:
+    common:
+      rpms:
+      - rust-toolset
+  stream: rhel8
+  summary: Rust
+  version: '8100020240119204620'
+document: modulemd
+version: 2
+...
