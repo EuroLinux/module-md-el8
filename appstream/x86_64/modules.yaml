@@ -111908,3 +111908,133 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  arch: x86_64
+  artifacts:
+    rpms:
+    - idm-jss-0:4.11.0-1.module+el8.10.0+21280+cce842b8.x86_64
+    - idm-jss-debuginfo-0:4.11.0-1.module+el8.10.0+21280+cce842b8.x86_64
+    - idm-jss-javadoc-0:4.11.0-1.module+el8.10.0+21280+cce842b8.x86_64
+    - idm-ldapjdk-0:4.24.0-1.module+el8.10.0+21280+cce842b8.noarch
+    - idm-ldapjdk-javadoc-0:4.24.0-1.module+el8.10.0+21280+cce842b8.noarch
+    - idm-pki-acme-0:10.15.0-1.module+el8.10.0+21280+cce842b8.noarch
+    - idm-pki-base-0:10.15.0-1.module+el8.10.0+21280+cce842b8.noarch
+    - idm-pki-base-java-0:10.15.0-1.module+el8.10.0+21280+cce842b8.noarch
+    - idm-pki-ca-0:10.15.0-1.module+el8.10.0+21280+cce842b8.noarch
+    - idm-pki-kra-0:10.15.0-1.module+el8.10.0+21280+cce842b8.noarch
+    - idm-pki-server-0:10.15.0-1.module+el8.10.0+21280+cce842b8.noarch
+    - idm-pki-symkey-0:10.15.0-1.module+el8.10.0+21280+cce842b8.x86_64
+    - idm-pki-symkey-debuginfo-0:10.15.0-1.module+el8.10.0+21280+cce842b8.x86_64
+    - idm-pki-tools-0:10.15.0-1.module+el8.10.0+21280+cce842b8.x86_64
+    - idm-pki-tools-debuginfo-0:10.15.0-1.module+el8.10.0+21280+cce842b8.x86_64
+    - idm-tomcatjss-0:7.8.0-1.module+el8.10.0+21280+cce842b8.noarch
+    - jss-0:4.9.4-1.module+el8.7.0+15532+95bac9ee.x86_64
+    - jss-debuginfo-0:4.9.4-1.module+el8.7.0+15532+95bac9ee.x86_64
+    - jss-debugsource-0:4.11.0-1.module+el8.10.0+21280+cce842b8.x86_64
+    - jss-javadoc-0:4.9.4-1.module+el8.7.0+15532+95bac9ee.x86_64
+    - ldapjdk-0:4.23.0-1.module+el8.5.0+11983+6ba118b4.noarch
+    - ldapjdk-javadoc-0:4.23.0-1.module+el8.5.0+11983+6ba118b4.noarch
+    - pki-acme-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-base-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-base-java-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-ca-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-core-debuginfo-0:10.15.0-1.module+el8.10.0+21280+cce842b8.x86_64
+    - pki-core-debugsource-0:10.15.0-1.module+el8.10.0+21280+cce842b8.x86_64
+    - pki-kra-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-server-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - pki-symkey-0:10.12.0-2.module+el8.6.0+14115+8b467244.x86_64
+    - pki-symkey-debuginfo-0:10.12.0-2.module+el8.6.0+14115+8b467244.x86_64
+    - pki-tools-0:10.12.0-2.module+el8.6.0+14115+8b467244.x86_64
+    - pki-tools-debuginfo-0:10.12.0-2.module+el8.6.0+14115+8b467244.x86_64
+    - python3-idm-pki-0:10.15.0-1.module+el8.10.0+21280+cce842b8.noarch
+    - python3-pki-0:10.12.0-2.module+el8.6.0+14115+8b467244.noarch
+    - resteasy-0:3.0.26-7.module+el8.10.0+21132+79720f4e.noarch
+    - resteasy-javadoc-0:3.0.26-7.module+el8.10.0+21132+79720f4e.noarch
+    - tomcatjss-0:7.7.1-1.module+el8.6.0+13291+248751b1.noarch
+  components:
+    rpms:
+      jss:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '50'
+        rationale: JSS packages
+        ref: stream-pki-core-10.6-rhel-8.10.0
+      ldapjdk:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '52'
+        rationale: LDAP JDK packages
+        ref: stream-pki-core-10.6-rhel-8.10.0
+      pki-core:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '53'
+        rationale: PKI Core packages
+        ref: stream-pki-core-10.6-rhel-8.10.0
+      resteasy:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '30'
+        rationale: RESTEasy packages
+        ref: stream-pki-core-10.6-rhel-8.10.0
+      tomcatjss:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '51'
+        rationale: TomcatJSS packages
+        ref: stream-pki-core-10.6-rhel-8.10.0
+  context: a1a9ba2e
+  dependencies:
+  - buildrequires:
+      golang-ecosystem:
+      - '1.0'
+      pki-deps:
+      - '10.6'
+      platform:
+      - el8.10.0
+    requires:
+      pki-deps:
+      - '10.6'
+      platform:
+      - el8
+  description: A module for PKI Core packages for PKI version 10.6 or later.
+  license:
+    content:
+    - ASL 2.0
+    - GPLv2 and LGPLv2
+    - LGPLv2+
+    - MPLv1.1 or GPLv2+ or LGPLv2+
+    module:
+    - MIT
+  name: pki-core
+  references:
+    community: https://www.dogtagpki.org
+    documentation: https://www.dogtagpki.org
+    tracker: https://github.com/dogtagpki/pki/issues
+  stream: '10.6'
+  summary: PKI Core module for PKI 10.6 or later
+  version: '8100020240209023546'
+document: modulemd
+version: 2
+...
