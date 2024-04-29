@@ -92199,3 +92199,80 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - nginx
+    - nginx-all-modules
+    - nginx-filesystem
+    - nginx-mod-http-image-filter
+    - nginx-mod-http-perl
+    - nginx-mod-http-xslt-filter
+    - nginx-mod-mail
+    - nginx-mod-stream
+  arch: aarch64
+  artifacts:
+    rpms:
+    - nginx-all-modules-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.noarch
+    - nginx-mod-http-xslt-filter-debuginfo-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-debuginfo-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-mod-stream-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-mod-http-perl-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-mod-mail-debuginfo-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-mod-stream-debuginfo-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-mod-http-image-filter-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-mod-http-perl-debuginfo-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-mod-http-xslt-filter-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-mod-mail-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-debugsource-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-mod-devel-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-mod-http-image-filter-debuginfo-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+    - nginx-filesystem-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.noarch
+    - nginx-1:1.24.0-1.module+el8.10.0+21149+ae7d62bd.aarch64
+  components:
+    rpms:
+      nginx:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Module API.
+        ref: stream-nginx-1.24-rhel-8.10.0
+  context: e155f54d
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.10.0
+    requires:
+      platform:
+      - el8
+  description: nginx 1.24 webserver module
+  license:
+    content:
+    - BSD
+    module:
+    - MIT
+  name: nginx
+  profiles:
+    common:
+      rpms:
+      - nginx
+      - nginx-all-modules
+      - nginx-filesystem
+      - nginx-mod-http-image-filter
+      - nginx-mod-http-perl
+      - nginx-mod-http-xslt-filter
+      - nginx-mod-mail
+      - nginx-mod-stream
+  references:
+    documentation: http://nginx.org/en/docs/
+    tracker: https://trac.nginx.org/nginx/
+  stream: '1.24'
+  summary: nginx webserver
+  version: '8100020240119085512'
+document: modulemd
+version: 2
+...
