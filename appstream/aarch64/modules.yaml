@@ -92199,3 +92199,109 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - httpd
+    - httpd-devel
+    - httpd-filesystem
+    - mod_ssl
+  arch: aarch64
+  artifacts:
+    rpms:
+    - httpd-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - httpd-debuginfo-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - httpd-debugsource-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - httpd-devel-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - httpd-filesystem-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.noarch
+    - httpd-manual-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.noarch
+    - httpd-tools-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - httpd-tools-debuginfo-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - mod_http2-0:1.15.7-8.module+el8.9.0+21652+2dd1200b.5.aarch64
+    - mod_http2-debuginfo-0:1.15.7-8.module+el8.9.0+21652+2dd1200b.5.aarch64
+    - mod_http2-debugsource-0:1.15.7-8.module+el8.9.0+21652+2dd1200b.5.aarch64
+    - mod_ldap-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - mod_ldap-debuginfo-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - mod_md-1:2.0.8-8.module+el8.9.0+19080+567b90f8.aarch64
+    - mod_md-debuginfo-1:2.0.8-8.module+el8.9.0+19080+567b90f8.aarch64
+    - mod_md-debugsource-1:2.0.8-8.module+el8.9.0+19080+567b90f8.aarch64
+    - mod_proxy_html-1:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - mod_proxy_html-debuginfo-1:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - mod_session-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - mod_session-debuginfo-0:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - mod_ssl-1:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+    - mod_ssl-debuginfo-1:2.4.37-62.module+el8.9.0+19699+7a7a2044.aarch64
+  components:
+    rpms:
+      httpd:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '10'
+        rationale: Apache httpd
+        ref: stream-httpd-2.4-rhel-8.9.0
+      mod_http2:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '20'
+        rationale: HTTP/2 support for Apache httpd
+        ref: stream-httpd-2.4-rhel-8.9.0
+      mod_md:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '20'
+        rationale: Certificate provisioning using ACME for Apache httpd
+        ref: stream-httpd-2.4-rhel-8.9.0
+  context: a75119d5
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.9.0.z
+    requires:
+      platform:
+      - el8
+  description: Apache httpd is a powerful, efficient, and extensible HTTP server.
+  license:
+    content:
+    - ASL 2.0
+    module:
+    - MIT
+  name: httpd
+  profiles:
+    common:
+      rpms:
+      - httpd
+      - httpd-filesystem
+      - httpd-tools
+      - mod_http2
+      - mod_ssl
+    devel:
+      rpms:
+      - httpd
+      - httpd-devel
+      - httpd-filesystem
+      - httpd-tools
+    minimal:
+      rpms:
+      - httpd
+  references:
+    documentation: https://httpd.apache.org/docs/2.4/
+    tracker: https://bz.apache.org/bugzilla/
+  stream: '2.4'
+  summary: Apache HTTP Server
+  version: '8090020240405093943'
+document: modulemd
+version: 2
+...
