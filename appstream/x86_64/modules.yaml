@@ -122215,3 +122215,398 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  arch: aarch64
+  artifacts:
+    rpms:
+    - python39-packaging-0:20.4-4.module+el8.9.0+19644+d68f775d.noarch
+    - python39-pybind11-devel-0:2.7.1-1.module+el8.9.0+19644+d68f775d.aarch64
+    - python39-pyparsing-0:2.4.7-5.module+el8.9.0+19644+d68f775d.noarch
+    - python39-more-itertools-0:8.5.0-2.module+el8.9.0+19644+d68f775d.noarch
+    - python39-Cython-debuginfo-0:0.29.21-5.module+el8.9.0+19644+d68f775d.aarch64
+    - python39-pluggy-0:0.13.1-3.module+el8.9.0+19644+d68f775d.noarch
+    - python39-Cython-0:0.29.21-5.module+el8.9.0+19644+d68f775d.aarch64
+    - Cython-debugsource-0:0.29.21-5.module+el8.9.0+19644+d68f775d.aarch64
+    - python39-py-0:1.10.0-1.module+el8.9.0+19644+d68f775d.noarch
+    - python39-iniconfig-0:1.1.1-2.module+el8.9.0+19644+d68f775d.noarch
+    - python39-pytest-0:6.0.2-2.module+el8.9.0+19644+d68f775d.noarch
+    - python39-wcwidth-0:0.2.5-3.module+el8.9.0+19644+d68f775d.noarch
+    - python39-pybind11-0:2.7.1-1.module+el8.9.0+19644+d68f775d.aarch64
+    - python39-attrs-0:20.3.0-2.module+el8.9.0+19644+d68f775d.noarch
+  buildopts:
+    rpms:
+      macros: '# === Bootstrap phase 4 ===
+
+        #
+
+        %python3_pkgversion 39
+
+        '
+  components:
+    rpms:
+      Cython:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      PyYAML:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      mod_wsgi:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      numpy:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      pybind11:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      pytest:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-PyMySQL:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-attrs:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-cffi:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-chardet:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-cryptography:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-idna:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-iniconfig:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-lxml:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-more-itertools:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-packaging:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-pluggy:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-ply:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-psutil:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-psycopg2:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-py:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-pycparser:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-pysocks:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-requests:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-toml:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-urllib3:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-wcwidth:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python-wheel:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Packaging tool
+        ref: stream-python39-3.9-rhel-8.10.0
+      python39:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: The main Python interpreter
+        ref: stream-python39-3.9-rhel-8.10.0
+      python3x-pip:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Packaging tool
+        ref: stream-python39-3.9-rhel-8.10.0
+      python3x-pyparsing:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      python3x-setuptools:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Packaging tool
+        ref: stream-python39-3.9-rhel-8.10.0
+      python3x-six:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+      scipy:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Python component
+        ref: stream-python39-3.9-rhel-8.10.0
+  context: 7044f6c1
+  dependencies:
+  - buildrequires:
+      httpd:
+      - '2.4'
+      platform:
+      - el8.10.0
+      python39:
+      - 3.9_bootstrap
+      swig:
+      - '4.0'
+    requires:
+      platform:
+      - el8
+      python39:
+      - '3.9'
+  description: 'This module gives users access to the internal Python 3.9 in RHEL8,
+    as
+
+    well as provides some additional Python packages the users might need.
+
+    In addition to these you can install any python3-* package available
+
+    in RHEL and use it with Python from this module.'
+  filter:
+    rpms:
+    - python39-Cython
+    - python39-attrs
+    - python39-debug
+    - python39-iniconfig
+    - python39-more-itertools
+    - python39-packaging
+    - python39-pluggy
+    - python39-py
+    - python39-pybind11
+    - python39-pybind11-devel
+    - python39-pyparsing
+    - python39-pytest
+    - python39-wcwidth
+  license:
+    content:
+    - ASL 2.0
+    - BSD
+    - BSD or ASL 2.0
+    - MIT
+    - MIT and Public Domain
+    - Python
+    module:
+    - MIT
+  name: python39-devel
+  references:
+    community: https://www.python.org/
+    documentation: https://docs.python.org/3.9/
+  stream: '3.9'
+  summary: Python programming language, version 3.9
+  version: '8100020240214182535'
+document: modulemd
+version: 2
+...
