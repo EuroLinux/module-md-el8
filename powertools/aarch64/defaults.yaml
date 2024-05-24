@@ -1,1 +1,9 @@
-
+---
+document: modulemd-defaults
+version: 1
+data:
+  module: javapackages-tools
+  stream: "201801"
+  profiles:
+    201801: [common]
+...
