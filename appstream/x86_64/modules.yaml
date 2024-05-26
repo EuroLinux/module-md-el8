@@ -117904,50 +117904,70 @@ data:
   artifacts:
     rpms:
     - rpm-local-generator-support-0:1-1.module+el8.10.0+21226+b78a28c4.noarch
+    - ruby-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
     - ruby-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - ruby-devel-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - ruby-libs-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygems-0:3.5.3-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygems-devel-0:3.5.3-1.module+el8.10.0+21226+b78a28c4.noarch
-    - ruby-default-gems-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygem-irb-0:1.11.0-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygem-rdoc-0:6.6.2-1.module+el8.10.0+21226+b78a28c4.noarch
-    - ruby-doc-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygem-bigdecimal-0:3.1.5-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-io-console-0:0.7.1-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-json-0:2.7.1-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-psych-0:5.1.2-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-bundler-0:2.5.3-1.module+el8.10.0+21226+b78a28c4.noarch
+    - ruby-bundled-gems-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
     - ruby-bundled-gems-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-minitest-0:5.20.0-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygem-power_assert-0:2.0.3-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygem-rake-0:13.1.0-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygem-rbs-0:3.4.0-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-test-unit-0:3.6.1-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygem-racc-0:1.7.3-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-rexml-0:3.2.6-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygem-rss-0:0.3.0-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygem-typeprof-0:0.21.9-1.module+el8.10.0+21226+b78a28c4.noarch
-    - ruby-debugsource-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - ruby-debuginfo-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - ruby-libs-debuginfo-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-bigdecimal-debuginfo-0:3.1.5-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-io-console-debuginfo-0:0.7.1-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-json-debuginfo-0:2.7.1-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-psych-debuginfo-0:5.1.2-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - ruby-bundled-gems-debuginfo-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
     - ruby-bundled-gems-debuginfo-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-rbs-debuginfo-0:3.4.0-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-racc-debuginfo-0:1.7.3-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-pg-0:1.5.4-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-pg-doc-0:1.5.4-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygem-pg-debugsource-0:1.5.4-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-pg-debuginfo-0:1.5.4-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-mysql2-0:0.5.5-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-mysql2-doc-0:0.5.5-1.module+el8.10.0+21226+b78a28c4.noarch
-    - rubygem-mysql2-debugsource-0:0.5.5-1.module+el8.10.0+21226+b78a28c4.x86_64
-    - rubygem-mysql2-debuginfo-0:0.5.5-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - ruby-debuginfo-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - ruby-debuginfo-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - ruby-debugsource-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - ruby-debugsource-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - ruby-default-gems-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - ruby-devel-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - ruby-devel-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - ruby-doc-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - ruby-libs-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - ruby-libs-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - ruby-libs-debuginfo-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - ruby-libs-debuginfo-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.x86_64
     - rubygem-abrt-0:0.4.0-1.module+el8.10.0+21226+b78a28c4.noarch
     - rubygem-abrt-doc-0:0.4.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-bigdecimal-0:3.1.5-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-bigdecimal-0:3.1.5-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-bigdecimal-debuginfo-0:3.1.5-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-bigdecimal-debuginfo-0:3.1.5-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-bundler-0:2.5.3-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-io-console-0:0.7.1-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-io-console-0:0.7.1-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-io-console-debuginfo-0:0.7.1-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-io-console-debuginfo-0:0.7.1-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-irb-0:1.11.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-json-0:2.7.1-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-json-0:2.7.1-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-json-debuginfo-0:2.7.1-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-json-debuginfo-0:2.7.1-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-minitest-0:5.20.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-mysql2-0:0.5.5-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-mysql2-debuginfo-0:0.5.5-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-mysql2-debugsource-0:0.5.5-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-mysql2-doc-0:0.5.5-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-pg-0:1.5.4-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-pg-debuginfo-0:1.5.4-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-pg-debugsource-0:1.5.4-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-pg-doc-0:1.5.4-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-power_assert-0:2.0.3-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-psych-0:5.1.2-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-psych-0:5.1.2-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-psych-debuginfo-0:5.1.2-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-psych-debuginfo-0:5.1.2-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-racc-0:1.7.3-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-racc-0:1.7.3-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-racc-debuginfo-0:1.7.3-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-racc-debuginfo-0:1.7.3-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-rake-0:13.1.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-rbs-0:3.4.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-rbs-0:3.4.0-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-rbs-debuginfo-0:3.4.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-rbs-debuginfo-0:3.4.0-1.module+el8.10.0+21226+b78a28c4.x86_64
+    - rubygem-rdoc-0:6.6.2-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-rexml-0:3.2.6-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-rss-0:0.3.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-test-unit-0:3.6.1-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-typeprof-0:0.21.9-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygems-0:3.5.3-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygems-devel-0:3.5.3-1.module+el8.10.0+21226+b78a28c4.noarch
   components:
     rpms:
       rpm-local-generator-support:
