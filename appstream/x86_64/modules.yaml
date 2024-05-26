@@ -539,7 +539,6 @@ data:
     - inkscape-docs-0:0.92.3-12.module+el8.1.0+4737+97b227b1.x86_64
     - inkscape-view-debuginfo-0:0.92.3-12.module+el8.1.0+4737+97b227b1.x86_64
     - inkscape-view-0:0.92.3-12.module+el8.1.0+4737+97b227b1.x86_64
-    - python3-scour-0:0.35-9.module+el8.1.0+3666+f1394dd4.noarch
     - python2-scour-0:0.35-9.module+el8.1.0+3666+f1394dd4.noarch
     - inkscape-0:0.92.3-12.module+el8.1.0+4737+97b227b1.x86_64
 ...
@@ -17540,7 +17539,6 @@ data:
   artifacts:
     rpms:
     - python2-scour-0:0.35-9.module+el8.1.0+3666+f1394dd4.noarch
-    - python3-scour-0:0.35-9.module+el8.1.0+3666+f1394dd4.noarch
     - inkscape-0:0.92.3-13.module+el8.4.0+9084+d4695395.x86_64
     - inkscape-view-0:0.92.3-13.module+el8.4.0+9084+d4695395.x86_64
     - inkscape-docs-0:0.92.3-13.module+el8.4.0+9084+d4695395.x86_64
@@ -45376,7 +45374,6 @@ data:
     - inkscape-view-0:0.92.3-16.module+el8.6.0+13197+b722211d.x86_64
     - python2-scour-0:0.35-9.module+el8.1.0+3666+f1394dd4.noarch
     - inkscape-debugsource-0:0.92.3-16.module+el8.6.0+13197+b722211d.x86_64
-    - python3-scour-0:0.35-9.module+el8.1.0+3666+f1394dd4.noarch
     - inkscape-0:0.92.3-16.module+el8.6.0+13197+b722211d.x86_64
     - inkscape-docs-0:0.92.3-16.module+el8.6.0+13197+b722211d.x86_64
     - inkscape-debuginfo-0:0.92.3-16.module+el8.6.0+13197+b722211d.x86_64
