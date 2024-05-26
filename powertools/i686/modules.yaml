@@ -4169,3 +4169,275 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  arch: i686
+  artifacts:
+    rpms:
+    - libvirt-daemon-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-libs-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-interface-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-iscsi-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-mpath-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-core-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-logical-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-client-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-nwfilter-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-scsi-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-docs-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-secret-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-nss-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-core-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-debugsource-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-disk-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-devel-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libguestfs-winsupport-0:8.10-1.module+el8.10.0+19908+9938c7c9.i686
+    - libvirt-daemon-driver-storage-scsi-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-iscsi-direct-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-config-network-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-wireshark-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-libs-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-nodedev-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-config-nwfilter-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-logical-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-wireshark-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-nwfilter-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-iscsi-direct-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-client-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-network-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-nss-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-iscsi-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-disk-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-nodedev-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-network-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-secret-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-storage-mpath-debuginfo-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+    - libvirt-daemon-driver-interface-0:8.0.0-23.1.module+el8.10.0+21659+98b2ad6a.i686
+  components:
+    rpms:
+      SLOF:
+        arches:
+        - ppc64le
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.10.0
+      hivex:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: libguestfs dep
+        ref: stream-virt-rhel-rhel-8.10.0
+      libguestfs:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.10.0
+      libguestfs-winsupport:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '5'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.10.0
+      libiscsi:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.10.0
+      libnbd:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.10.0
+      libtpms:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.10.0
+      libvirt:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '3'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.10.0
+      libvirt-dbus:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: libvirt-dbus is part of the virtualization module
+        ref: stream-virt-rhel-rhel-8.10.0
+      libvirt-python:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.10.0
+      nbdkit:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '5'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.10.0
+      netcf:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        rationale: libvirt dep
+        ref: stream-virt-rhel-rhel-8.10.0
+      perl-Sys-Virt:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '4'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.10.0
+      qemu-kvm:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.10.0
+      seabios:
+        arches:
+        - ppc64le
+        - x86_64
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.10.0
+      sgabios:
+        arches:
+        - ppc64le
+        - x86_64
+        buildorder: '1'
+        rationale: qemu-kvm dep
+        ref: stream-virt-rhel-rhel-8.10.0
+      supermin:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: libguestfs dep
+        ref: stream-virt-rhel-rhel-8.10.0
+      swtpm:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.10.0
+      virt-v2v:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '6'
+        rationale: Primary module content
+        ref: stream-virt-rhel-rhel-8.10.0
+  context: 489197e6
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.10.0.z
+    requires:
+      platform:
+      - el8
+      virt:
+      - rhel
+  description: A virtualization module
+  filter:
+    rpms:
+    - ocaml-hivex
+    - ocaml-hivex-debuginfo
+    - ocaml-hivex-devel
+    - ocaml-libguestfs
+    - ocaml-libguestfs-debuginfo
+    - ocaml-libguestfs-devel
+    - ocaml-libnbd
+    - ocaml-libnbd-debuginfo
+    - ocaml-libnbd-devel
+    - qemu-kvm-tests
+    - qemu-kvm-tests-debuginfo
+  license:
+    content:
+    - ASL 2.0
+    - GPLv2 and GPLv2+ and CC-BY
+    - GPLv2+
+    - GPLv2+ or Artistic
+    - LGPLv2
+    - LGPLv2+
+    - LGPLv2+ and BSD
+    module:
+    - MIT
+  name: virt-devel
+  stream: rhel
+  summary: Virtualization module
+  version: '8100020240409073027'
+document: modulemd
+version: 2
+...
