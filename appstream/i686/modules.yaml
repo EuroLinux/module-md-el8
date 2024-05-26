@@ -12058,3 +12058,183 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - clang
+    - clang-analyzer
+    - clang-devel
+    - clang-libs
+    - clang-tools-extra
+    - git-clang-format
+    - lld
+    - lld-libs
+    - lldb
+    - lldb-devel
+    - llvm
+    - llvm-devel
+    - llvm-libs
+  arch: i686
+  artifacts:
+    rpms:
+    - clang-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - clang-analyzer-0:17.0.6-1.module+el8.10.0+20808+e12784c0.noarch
+    - clang-debuginfo-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - clang-debugsource-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - clang-devel-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - clang-devel-debuginfo-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - clang-libs-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - clang-libs-debuginfo-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - clang-resource-filesystem-0:16.0.6-2.module+el8.9.0+19521+190d7aba.i686
+    - clang-resource-filesystem-0:17.0.6-1.module+el8.10.0+20808+e12784c0.noarch
+    - clang-tools-extra-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - clang-tools-extra-debuginfo-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - clang-tools-extra-devel-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - compiler-rt-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - compiler-rt-debuginfo-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - compiler-rt-debugsource-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - git-clang-format-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - libomp-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - libomp-debuginfo-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - libomp-debugsource-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - libomp-devel-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - libomp-test-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - libomp-test-debuginfo-0:13.0.1-1.module+el8.6.0+14118+d530a951.i686
+    - lld-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - lld-debuginfo-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - lld-debugsource-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - lld-devel-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - lld-libs-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - lld-libs-debuginfo-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - lldb-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - lldb-debuginfo-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - lldb-debugsource-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - lldb-devel-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - llvm-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-cmake-utils-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-debuginfo-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-debugsource-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-devel-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-devel-debuginfo-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-doc-0:17.0.6-2.module+el8.10.0+21256+978ccea6.noarch
+    - llvm-googletest-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-libs-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-libs-debuginfo-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-static-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-test-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-test-debuginfo-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - llvm-toolset-0:17.0.6-2.module+el8.10.0+21256+978ccea6.i686
+    - python3-clang-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+    - python3-lit-0:17.0.6-1.module+el8.10.0+20808+e12784c0.noarch
+    - python3-lldb-0:17.0.6-1.module+el8.10.0+20808+e12784c0.i686
+  components:
+    rpms:
+      clang:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        multilib:
+        - x86_64
+        rationale: clang tools and libraries
+        ref: stream-llvm-toolset-rhel8-rhel-8.10.0
+      compiler-rt:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        multilib:
+        - x86_64
+        rationale: LLVM compiler intrinsic and sanitizer libraries
+        ref: stream-llvm-toolset-rhel8-rhel-8.10.0
+      libomp:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        multilib:
+        - x86_64
+        rationale: LLVM OpenMP runtime
+        ref: stream-llvm-toolset-rhel8-rhel-8.10.0
+      lld:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '1'
+        multilib:
+        - x86_64
+        rationale: LLVM linker
+        ref: stream-llvm-toolset-rhel8-rhel-8.10.0
+      lldb:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '2'
+        multilib:
+        - x86_64
+        rationale: lldb debugger
+        ref: stream-llvm-toolset-rhel8-rhel-8.10.0
+      llvm:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        multilib:
+        - x86_64
+        rationale: LLVM tools and libraries
+        ref: stream-llvm-toolset-rhel8-rhel-8.10.0
+      python-lit:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        rationale: Lit test runner for LLVM
+        ref: stream-llvm-toolset-rhel8-rhel-8.10.0
+  context: e155f54d
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.10.0
+    requires:
+      platform:
+      - el8
+  description: LLVM Tools and libraries
+  license:
+    content:
+    - Apache-2.0 WITH LLVM-exception OR NCSA
+    - NCSA
+    - NCSA and MIT
+    - NCSA or MIT
+    module:
+    - MIT
+  name: llvm-toolset
+  profiles:
+    common:
+      rpms:
+      - llvm-toolset
+  stream: rhel8
+  summary: LLVM
+  version: '8100020240205133135'
+document: modulemd
+version: 2
+...
