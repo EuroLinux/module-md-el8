@@ -12238,3 +12238,169 @@ data:
 document: modulemd
 version: 2
 ...
+---
+data:
+  api:
+    rpms:
+    - ruby
+    - ruby-bundled-gems
+    - ruby-default-gems
+    - ruby-devel
+    - ruby-libs
+    - rubygem-abrt
+    - rubygem-bigdecimal
+    - rubygem-bundler
+    - rubygem-io-console
+    - rubygem-irb
+    - rubygem-json
+    - rubygem-minitest
+    - rubygem-mysql2
+    - rubygem-pg
+    - rubygem-power_assert
+    - rubygem-psych
+    - rubygem-racc
+    - rubygem-rake
+    - rubygem-rbs
+    - rubygem-rdoc
+    - rubygem-rexml
+    - rubygem-rss
+    - rubygem-test-unit
+    - rubygem-typeprof
+    - rubygems
+    - rubygems-devel
+  arch: i686
+  artifacts:
+    rpms:
+    - ruby-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-json-0:2.7.1-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygems-0:3.5.3-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rpm-local-generator-support-0:1-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-rdoc-0:6.6.2-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-minitest-0:5.20.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - ruby-default-gems-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-rake-0:13.1.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-rss-0:0.3.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-power_assert-0:2.0.3-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-json-debuginfo-0:2.7.1-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-test-unit-0:3.6.1-1.module+el8.10.0+21226+b78a28c4.noarch
+    - ruby-devel-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-io-console-debuginfo-0:0.7.1-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-rbs-debuginfo-0:3.4.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-racc-debuginfo-0:1.7.3-1.module+el8.10.0+21226+b78a28c4.i686
+    - ruby-doc-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-bigdecimal-debuginfo-0:3.1.5-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygems-devel-0:3.5.3-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-irb-0:1.11.0-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-psych-0:5.1.2-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-psych-debuginfo-0:5.1.2-1.module+el8.10.0+21226+b78a28c4.i686
+    - ruby-bundled-gems-debuginfo-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-rexml-0:3.2.6-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-bundler-0:2.5.3-1.module+el8.10.0+21226+b78a28c4.noarch
+    - rubygem-rbs-0:3.4.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-io-console-0:0.7.1-1.module+el8.10.0+21226+b78a28c4.i686
+    - ruby-libs-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-bigdecimal-0:3.1.5-1.module+el8.10.0+21226+b78a28c4.i686
+    - ruby-libs-debuginfo-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-racc-0:1.7.3-1.module+el8.10.0+21226+b78a28c4.i686
+    - ruby-debugsource-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - rubygem-typeprof-0:0.21.9-1.module+el8.10.0+21226+b78a28c4.noarch
+    - ruby-bundled-gems-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+    - ruby-debuginfo-0:3.3.0-1.module+el8.10.0+21226+b78a28c4.i686
+  components:
+    rpms:
+      rpm-local-generator-support:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '100'
+        rationale: RPM local_generator support
+        ref: c8s
+      ruby:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '101'
+        multilib:
+        - x86_64
+        rationale: An interpreter of object-oriented scripting language
+        ref: stream-ruby-3.3-rhel-8.10.0
+      rubygem-abrt:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '102'
+        rationale: ABRT support for Ruby
+        ref: stream-ruby-3.3-rhel-8.10.0
+      rubygem-mysql2:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '102'
+        rationale: A simple, fast Mysql library for Ruby, binding to libmysql
+        ref: stream-ruby-3.3-rhel-8.10.0
+      rubygem-pg:
+        arches:
+        - aarch64
+        - i686
+        - ppc64le
+        - s390x
+        - x86_64
+        buildorder: '102'
+        rationale: A Ruby interface to the PostgreSQL RDBMS
+        ref: stream-ruby-3.3-rhel-8.10.0
+  context: e155f54d
+  dependencies:
+  - buildrequires:
+      platform:
+      - el8.10.0
+    requires:
+      platform:
+      - el8
+  description: Ruby is the interpreted scripting language for quick and easy object-oriented
+    programming.  It has many features to process text files and to do system management
+    tasks (as in Perl).  It is simple, straight-forward, and extensible.
+  filter:
+    rpms:
+    - rpm-local-generator-support
+  license:
+    content:
+    - (BSD-2-Clause OR Ruby) AND PostgreSQL
+    - (Ruby OR BSD-2-Clause) AND (Ruby OR BSD-2-Clause OR Python-2.0.1)
+    - (Ruby OR BSD-2-Clause) AND BSD-3-Clause AND ISC AND Public Domain AND MIT and
+      CC0 AND zlib AND Unicode-DFS-2015
+    - (Ruby OR BSD-2-Clause) AND Unicode-DFS-2015
+    - (Ruby OR MIT) AND BSD-2-Clause AND (BSD-2-Clause OR Ruby) AND MIT
+    - BSD-2-Clause
+    - GPL-2.0-only AND Ruby AND BSD-3-Clause AND CC-BY-2.5 AND OFL-1.1-RFN
+    - MIT
+    - MIT AND (Ruby OR BSD-2-Clause)
+    - Ruby OR BSD-2-Clause
+    module:
+    - MIT
+  name: ruby
+  profiles:
+    common:
+      rpms:
+      - ruby
+  references:
+    community: http://ruby-lang.org/
+    documentation: https://www.ruby-lang.org/en/documentation/
+    tracker: https://bugs.ruby-lang.org/
+  stream: '3.3'
+  summary: An interpreter of object-oriented scripting language
+  version: '8100020240130123411'
+document: modulemd
+version: 2
+...
