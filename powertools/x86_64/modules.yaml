@@ -11301,7 +11301,7 @@ data:
 ...
 ---
 data:
-  name: python39
+  name: python39-devel
   stream: "3.9"
   version: 8100020240516111311
   context: d47b87a4
@@ -11588,6 +11588,7 @@ data:
     - python39-debuginfo-0:3.9.19-1.module+el8.10.0+21815+bb024982.x86_64
     - python39-debugsource-0:3.9.19-1.module+el8.10.0+21815+bb024982.x86_64
     - python39-devel-0:3.9.19-1.module+el8.10.0+21815+bb024982.x86_64
+    - python39-debug-0:3.9.19-1.module+el8.10.0+21815+bb024982.x86_64
     - python39-idle-0:3.9.19-1.module+el8.10.0+21815+bb024982.x86_64
     - python39-idna-0:2.10-4.module+el8.10.0+21815+bb024982.noarch
     - python39-libs-0:3.9.19-1.module+el8.10.0+21815+bb024982.x86_64

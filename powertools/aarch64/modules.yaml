@@ -9333,7 +9333,7 @@ version: 2
 ---
 data:
   stream: "3.9"
-  name: python39
+  name: python39-devel
   version: 8100020240516111311
   context: d47b87a4
   arch: aarch64
