@@ -456,16 +456,6 @@ data:
         - x86_64
         rationale: A build dependency.
         ref: stream-2.03-rhel-8.3.0
-      perl-IO-Socket-INET6:
-        arches:
-        - aarch64
-        - i686
-        - ppc64le
-        - s390x
-        - x86_64
-        buildorder: 1
-        rationale: A build dependency.
-        ref: stream-2.72-rhel-8.3.0
       perl-IO-Socket-SSL:
         arches:
         - aarch64
@@ -557,7 +547,6 @@ data:
   filter:
     rpms:
     - perl-Devel-StackTrace
-    - perl-IO-Socket-INET6
     - perl-IO-Tty
     - perl-IPC-Run
     - perl-Net-IDN-Encode
